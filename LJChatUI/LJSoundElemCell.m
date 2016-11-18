@@ -43,12 +43,16 @@
     }
 }
 
-- (void)bubbleContainerViewDidTap:(LJBubbleContainerView *)bubbleView {
-    if ([self.playImageView isAnimating]) {
-        [self.playImageView stopAnimating];
-    } else {
-        [self.playImageView startAnimating];
-    }
+- (void)startPlaySound {
+    [self.playImageView startAnimating];
+}
+
+- (void)stopPlaySound {
+    [self.playImageView stopAnimating];
+}
+
+- (BOOL)isPlaying {
+    return [self.playImageView isAnimating];
 }
 
 @end

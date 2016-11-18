@@ -20,6 +20,7 @@
     if (self = [super initWithCoder:aDecoder]) {
         //1.长按手势
         UILongPressGestureRecognizer *longPGR = [[UILongPressGestureRecognizer alloc] initWithTarget:self action:@selector(handleLongPRG:)];
+        longPGR.minimumPressDuration = 0.8f;
         [self addGestureRecognizer:longPGR];
         //2.点击手势
         UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(handleTapRG:)];

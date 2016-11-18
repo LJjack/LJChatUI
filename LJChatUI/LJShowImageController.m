@@ -54,7 +54,11 @@
 
 + (instancetype)showImageControllerWithFile:(NSString *)imgPath {
     LJShowImageController *showImageC = [[LJShowImageController alloc] init];
-    showImageC.image = [UIImage imageWithContentsOfFile:imgPath];
+    UIImage *image = [UIImage imageNamed:imgPath];
+    if (!image) {
+        image = [UIImage imageWithContentsOfFile:imgPath];
+    }
+    showImageC.image = image;
     return showImageC;
 }
 

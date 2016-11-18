@@ -10,7 +10,7 @@
 #import "LJShowImageController.h"
 #import "LJMapController.h"
 
-#import "LJTextElemCell.h"
+#import "LJElemCellHeader.h"
 
 @interface LJTextController ()<LJElemCellDelegate>
 
@@ -53,6 +53,10 @@
         [(LJTextElemCell *)cell setText:[[NSAttributedString alloc] initWithString:@"is发撒开发商打离开房间爱是否是打发大家撒放空间撒飞机，撒酒疯洒落的法律；发，爱上了；fjasfs.dfk是大风蓝色方面是否考虑啥地方第三方拉舒服死了大佛的麻烦啥地方是范德萨"]];
 
     }
+    if ([identifier containsString:@"ImageElemCell"]) {
+        [(LJImageElemCell *)cell setImageName:@"goldengate"];
+    }
+    
     cell.isSelfBubble = indexPath.row % 2 == 0;
     
     return cell;
@@ -61,7 +65,28 @@
 #pragma mark - LJElemCellDelegate
 
 - (void)elemCell:(LJElemCell *)cell didTapBubbleIndexPath:(NSIndexPath *)indexPath {
-    
+    if ([cell isKindOfClass:[LJImageElemCell class]]) {
+        LJImageElemCell *imageCell = (LJImageElemCell *)cell;
+        LJShowImageController *showC = [LJShowImageController showImageControllerWithFile:imageCell.imageName];
+        
+        showC.modalTransitionStyle = UIModalTransitionStyleCrossDissolve;
+        showC.modalPresentationStyle = UIModalPresentationFullScreen;
+        [self presentViewController:showC animated:YES completion:nil];
+        
+    } else if ([cell isKindOfClass:[LJLocationElemCell class]]) {
+//        LJLocationElemCell *locationCell = (LJLocationElemCell *)cell;
+        
+    } else if ([cell isKindOfClass:[LJSoundElemCell class]]) {
+        LJSoundElemCell *soundCell = (LJSoundElemCell *)cell;
+        if (soundCell.isPlaying) {
+            [soundCell stopPlaySound];
+        } else {
+            [soundCell startPlaySound];
+        }
+    } else if ([cell isKindOfClass:[LJVideoElemCell class]]) {
+//        LJVideoElemCell *soundCell = (LJVideoElemCell *)cell;
+        
+    }
 }
 
 @end

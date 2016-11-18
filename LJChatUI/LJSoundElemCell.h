@@ -10,4 +10,10 @@
 
 @interface LJSoundElemCell : LJElemCell
 
+@property (nonatomic, assign) BOOL isPlaying;
+
+- (void)startPlaySound;
+
+- (void)stopPlaySound;
+
 @end

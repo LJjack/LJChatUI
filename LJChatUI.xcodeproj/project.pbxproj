@@ -59,6 +59,7 @@
 		8326643C1DDEF705003FC30C /* LJShowImageController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LJShowImageController.m; sourceTree = "<group>"; };
 		8326643E1DDEF789003FC30C /* LJMapController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJMapController.h; sourceTree = "<group>"; };
 		8326643F1DDEF789003FC30C /* LJMapController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LJMapController.m; sourceTree = "<group>"; };
+		832664411DDF0676003FC30C /* LJElemCellHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJElemCellHeader.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,6 +136,7 @@
 				8326641C1DDEF579003FC30C /* LJImageElemCell.m */,
 				8326641D1DDEF579003FC30C /* LJLocationElemCell.h */,
 				8326641E1DDEF579003FC30C /* LJLocationElemCell.m */,
+				832664411DDF0676003FC30C /* LJElemCellHeader.h */,
 			);
 			name = Cell;
 			sourceTree = "<group>";
