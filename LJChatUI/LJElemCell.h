@@ -9,13 +9,26 @@
 #import <UIKit/UIKit.h>
 #import "LJBubbleContainerView.h"
 
+@class LJElemCell;
+
+@protocol LJElemCellDelegate <NSObject>
+
+- (void)elemCell:(LJElemCell *)cell didTapBubbleIndexPath:(NSIndexPath *)indexPath;
+
+@end
+
 @interface LJElemCell : UITableViewCell
 
-@property (weak, readonly, nonatomic) LJBubbleContainerView *borderView;
+@property (nonatomic, readonly, weak) LJBubbleContainerView *borderView;
 
-@property (weak, readonly, nonatomic) UIImageView *iconView;
+@property (nonatomic, readonly, weak) UIImageView *iconView;
 
-@property (assign, nonatomic) BOOL isSelfBubble;
+@property (nonatomic, strong) NSIndexPath *indexPath;
+
+@property (nonatomic,   weak) id<LJElemCellDelegate> delegate;
+
+@property (nonatomic, assign) BOOL isSelfBubble;
+
 
 - (void)bubbleContainerViewDidTap:(LJBubbleContainerView *)bubbleView;
 

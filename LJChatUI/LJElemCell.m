@@ -30,6 +30,10 @@
 
 #pragma mark - LJBubbleContainerViewDelegate
 
-- (void)bubbleContainerViewDidTap:(LJBubbleContainerView *)bubbleView { }
+- (void)bubbleContainerViewDidTap:(LJBubbleContainerView *)bubbleView {
+    if ([self.delegate respondsToSelector:@selector(elemCell:didTapBubbleIndexPath:)]) {
+        [self.delegate elemCell:self didTapBubbleIndexPath:self.indexPath];
+    }
+}
 
 @end

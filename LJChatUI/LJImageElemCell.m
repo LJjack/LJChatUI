@@ -21,8 +21,9 @@
     
 }
 
-- (void)bubbleContainerViewDidTap:(LJBubbleContainerView *)bubbleView {
-    
+- (void)setImageName:(NSString *)imageName {
+    _imageName = imageName;
+    self.showImageView.image = [UIImage imageNamed:imageName];
 }
 
 @end

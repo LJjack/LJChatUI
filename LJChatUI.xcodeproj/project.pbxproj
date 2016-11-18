@@ -22,6 +22,8 @@
 		832664361DDEF579003FC30C /* LJTextElemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 832664261DDEF579003FC30C /* LJTextElemCell.m */; };
 		832664371DDEF579003FC30C /* LJVideoElemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 832664281DDEF579003FC30C /* LJVideoElemCell.m */; };
 		832664381DDEF579003FC30C /* UIView+LJMask.m in Sources */ = {isa = PBXBuildFile; fileRef = 8326642A1DDEF579003FC30C /* UIView+LJMask.m */; };
+		8326643D1DDEF705003FC30C /* LJShowImageController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8326643C1DDEF705003FC30C /* LJShowImageController.m */; };
+		832664401DDEF789003FC30C /* LJMapController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8326643F1DDEF789003FC30C /* LJMapController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -53,6 +55,10 @@
 		832664281DDEF579003FC30C /* LJVideoElemCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LJVideoElemCell.m; sourceTree = "<group>"; };
 		832664291DDEF579003FC30C /* UIView+LJMask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+LJMask.h"; sourceTree = "<group>"; };
 		8326642A1DDEF579003FC30C /* UIView+LJMask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+LJMask.m"; sourceTree = "<group>"; };
+		8326643B1DDEF705003FC30C /* LJShowImageController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJShowImageController.h; sourceTree = "<group>"; };
+		8326643C1DDEF705003FC30C /* LJShowImageController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LJShowImageController.m; sourceTree = "<group>"; };
+		8326643E1DDEF789003FC30C /* LJMapController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJMapController.h; sourceTree = "<group>"; };
+		8326643F1DDEF789003FC30C /* LJMapController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LJMapController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +97,10 @@
 				8326643A1DDEF5B4003FC30C /* View */,
 				832664231DDEF579003FC30C /* LJTextController.h */,
 				832664241DDEF579003FC30C /* LJTextController.m */,
+				8326643B1DDEF705003FC30C /* LJShowImageController.h */,
+				8326643C1DDEF705003FC30C /* LJShowImageController.m */,
+				8326643E1DDEF789003FC30C /* LJMapController.h */,
+				8326643F1DDEF789003FC30C /* LJMapController.m */,
 				832664291DDEF579003FC30C /* UIView+LJMask.h */,
 				8326642A1DDEF579003FC30C /* UIView+LJMask.m */,
 				832664111DDEF579003FC30C /* Assets.xcassets */,
@@ -113,14 +123,14 @@
 		832664391DDEF591003FC30C /* Cell */ = {
 			isa = PBXGroup;
 			children = (
+				832664191DDEF579003FC30C /* LJElemCell.h */,
+				8326641A1DDEF579003FC30C /* LJElemCell.m */,
 				832664251DDEF579003FC30C /* LJTextElemCell.h */,
 				832664261DDEF579003FC30C /* LJTextElemCell.m */,
 				832664271DDEF579003FC30C /* LJVideoElemCell.h */,
 				832664281DDEF579003FC30C /* LJVideoElemCell.m */,
 				832664211DDEF579003FC30C /* LJSoundElemCell.h */,
 				832664221DDEF579003FC30C /* LJSoundElemCell.m */,
-				832664191DDEF579003FC30C /* LJElemCell.h */,
-				8326641A1DDEF579003FC30C /* LJElemCell.m */,
 				8326641B1DDEF579003FC30C /* LJImageElemCell.h */,
 				8326641C1DDEF579003FC30C /* LJImageElemCell.m */,
 				8326641D1DDEF579003FC30C /* LJLocationElemCell.h */,
@@ -222,8 +232,10 @@
 				832664371DDEF579003FC30C /* LJVideoElemCell.m in Sources */,
 				832664381DDEF579003FC30C /* UIView+LJMask.m in Sources */,
 				832664361DDEF579003FC30C /* LJTextElemCell.m in Sources */,
+				832664401DDEF789003FC30C /* LJMapController.m in Sources */,
 				832664341DDEF579003FC30C /* LJSoundElemCell.m in Sources */,
 				832664311DDEF579003FC30C /* LJImageElemCell.m in Sources */,
+				8326643D1DDEF705003FC30C /* LJShowImageController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -291,7 +303,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -332,7 +344,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -345,6 +357,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = N5VR4US535;
 				INFOPLIST_FILE = LJChatUI/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = BJ.LJChatUI;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -357,6 +370,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = N5VR4US535;
 				INFOPLIST_FILE = LJChatUI/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = BJ.LJChatUI;
 				PRODUCT_NAME = "$(TARGET_NAME)";

@@ -10,4 +10,6 @@
 
 @interface LJImageElemCell : LJElemCell
 
+@property (nonatomic, copy) NSString *imageName;
+
 @end
