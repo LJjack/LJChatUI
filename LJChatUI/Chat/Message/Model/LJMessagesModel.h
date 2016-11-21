@@ -22,6 +22,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic, strong) NSMutableArray<TIMMessage *> *messages;
 //
+@property (nonatomic, weak) id delegate;
 
 @property (nonatomic, copy) NSString *otherName;
 

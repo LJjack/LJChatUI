@@ -14,7 +14,6 @@
 
 @interface LJMessageController ()<UITableViewDataSource, UITableViewDelegate,LJElemCellDelegate>
 
-@property (weak, nonatomic) IBOutlet UITableView *tableView;
 
 @end
 

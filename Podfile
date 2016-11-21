@@ -3,6 +3,7 @@
 
 target 'LJChatUI' do
     pod 'TZImagePickerController'
+    pod 'MBProgressHUD'
     pod 'YYModel'
     pod 'FMDB'
 

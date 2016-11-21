@@ -9,6 +9,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>MBProgressHUD.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-LJChatUI.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -27,22 +32,27 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>538774B32AB415FF8970675202758E99</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>9F12FB4A63E20F601CFB2E64A65B57C1</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>9FBB85E9B98E408C446C29331D235824</key>
+		<key>D058B89EB3B3DF45457A2DCD3971AFFE</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>AA3271C6C1426BA36479C341AE6000B6</key>
+		<key>DD86496546E337CCD5C8FFAEFBBAD3DB</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>FB33B8A53302BB3DC4B336D0C57CF627</key>
+		<key>F88C4D5CC6F80519E73E22A7BCF72285</key>
 		<dict>
 			<key>primary</key>
 			<true/>

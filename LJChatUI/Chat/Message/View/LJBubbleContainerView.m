@@ -16,25 +16,23 @@
     [self addOrRemoveNotificationCenter:NO];
 }
 
-- (instancetype)initWithCoder:(NSCoder *)aDecoder {
-    if (self = [super initWithCoder:aDecoder]) {
-        //1.长按手势
-        UILongPressGestureRecognizer *longPGR = [[UILongPressGestureRecognizer alloc] initWithTarget:self action:@selector(handleLongPRG:)];
-        longPGR.minimumPressDuration = 0.8f;
-        [self addGestureRecognizer:longPGR];
-        //2.点击手势
-        UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(handleTapRG:)];
-        [self addGestureRecognizer:tap];
-        
-        UIMenuItem *copyMenuItem = [[UIMenuItem alloc] initWithTitle:@"复制" action:@selector(copyElem:)];
-        UIMenuItem *forwordMenuItem = [[UIMenuItem alloc] initWithTitle:@"转发" action:@selector(forwordElem:)];
-        UIMenuItem *deleteMenuItem = [[UIMenuItem alloc] initWithTitle:@"删除" action:@selector(deleteElem:)];
-        [[UIMenuController sharedMenuController] setMenuItems: @[copyMenuItem,forwordMenuItem,deleteMenuItem]];
-        [[UIMenuController sharedMenuController] update];
-        
-        [self addOrRemoveNotificationCenter:YES];
-    }
-    return self;
+- (void)awakeFromNib {
+    [super awakeFromNib];
+    //1.长按手势
+    UILongPressGestureRecognizer *longPGR = [[UILongPressGestureRecognizer alloc] initWithTarget:self action:@selector(handleLongPRG:)];
+    longPGR.minimumPressDuration = 0.8f;
+    [self addGestureRecognizer:longPGR];
+    //2.点击手势
+    UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(handleTapRG:)];
+    [self addGestureRecognizer:tap];
+    
+    UIMenuItem *copyMenuItem = [[UIMenuItem alloc] initWithTitle:@"复制" action:@selector(copyElem:)];
+    UIMenuItem *forwordMenuItem = [[UIMenuItem alloc] initWithTitle:@"转发" action:@selector(forwordElem:)];
+    UIMenuItem *deleteMenuItem = [[UIMenuItem alloc] initWithTitle:@"删除" action:@selector(deleteElem:)];
+    [[UIMenuController sharedMenuController] setMenuItems: @[copyMenuItem,forwordMenuItem,deleteMenuItem]];
+    [[UIMenuController sharedMenuController] update];
+    
+    [self addOrRemoveNotificationCenter:YES];
 }
 
 - (void)drawRect:(CGRect)rect {

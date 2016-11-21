@@ -159,8 +159,6 @@
     
 }
 
-
-
 // 接受商品
 - (void)reveiceGoods:(TIMCustomElem *)elem
             senderId:(NSString *)senderId
@@ -274,11 +272,8 @@
 #pragma mark - Private Methods
 
 - (void)sendMessage:(TIMMessage*)message {
-    
-
-    
+    [self reveiceMessage:message isAtTop:NO];
     [self.chatingConversation sendMessage:message succ:^{
-        
         
         NSLog(@"发送 成功");
     } fail:^(int code, NSString *msg) {

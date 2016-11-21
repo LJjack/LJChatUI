@@ -6,11 +6,9 @@
 //  Copyright © 2016年 刘俊杰. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "LJMsgConfigController.h"
 #import "LJMessagesModel.h"
 
-@interface LJMessageController : UIViewController
-
-@property (nonatomic, strong) LJMessagesModel *msgModel;
+@interface LJMessageController : LJMsgConfigController
 
 @end
