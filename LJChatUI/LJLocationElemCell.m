@@ -10,8 +10,8 @@
 
 @implementation LJLocationElemCell
 
-- (void)bubbleContainerViewDidTap:(LJBubbleContainerView *)bubbleView {
+- (void)setElem:(TIMLocationElem *)elem {
+    _elem = elem;
     
 }
-
 @end

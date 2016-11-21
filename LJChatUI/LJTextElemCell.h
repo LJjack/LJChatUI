@@ -12,4 +12,6 @@
 
 @property (nonatomic, strong) NSAttributedString *text;
 
+@property (nonatomic, strong) TIMTextElem *elem;
+
 @end

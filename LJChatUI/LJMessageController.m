@@ -1,24 +1,25 @@
 //
-//  LJTextController.m
+//  LJMessageController.m
 //  LJChatView
 //
 //  Created by 刘俊杰 on 2016/11/17.
 //  Copyright © 2016年 刘俊杰. All rights reserved.
 //
 
-#import "LJTextController.h"
+#import "LJMessageController.h"
 #import "LJShowImageController.h"
 #import "LJMapController.h"
 
 #import "LJElemCellHeader.h"
 
-@interface LJTextController ()<LJElemCellDelegate>
+
+@interface LJMessageController ()<LJElemCellDelegate>
 
 @property (nonatomic, copy) NSArray *listData;
 
 @end
 
-@implementation LJTextController
+@implementation LJMessageController
 
 - (void)viewDidLoad {
     [super viewDidLoad];

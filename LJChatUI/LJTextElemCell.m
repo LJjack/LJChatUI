@@ -28,4 +28,10 @@
     _textView.attributedText = text;
 }
 
+- (void)setElem:(TIMTextElem *)elem {
+    _elem = elem;
+    NSAttributedString *aString = [[NSAttributedString alloc] initWithString:elem.text];
+    _textView.attributedText = aString;
+}
+
 @end

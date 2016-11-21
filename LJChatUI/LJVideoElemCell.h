@@ -10,4 +10,6 @@
 
 @interface LJVideoElemCell : LJElemCell
 
+@property (nonatomic, strong) TIMVideoElem *elem;
+
 @end

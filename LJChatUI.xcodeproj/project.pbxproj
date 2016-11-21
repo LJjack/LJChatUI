@@ -18,15 +18,219 @@
 		832664321DDEF579003FC30C /* LJLocationElemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8326641E1DDEF579003FC30C /* LJLocationElemCell.m */; };
 		832664331DDEF579003FC30C /* LJShowFPS.m in Sources */ = {isa = PBXBuildFile; fileRef = 832664201DDEF579003FC30C /* LJShowFPS.m */; };
 		832664341DDEF579003FC30C /* LJSoundElemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 832664221DDEF579003FC30C /* LJSoundElemCell.m */; };
-		832664351DDEF579003FC30C /* LJTextController.m in Sources */ = {isa = PBXBuildFile; fileRef = 832664241DDEF579003FC30C /* LJTextController.m */; };
+		832664351DDEF579003FC30C /* LJMessageController.m in Sources */ = {isa = PBXBuildFile; fileRef = 832664241DDEF579003FC30C /* LJMessageController.m */; };
 		832664361DDEF579003FC30C /* LJTextElemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 832664261DDEF579003FC30C /* LJTextElemCell.m */; };
 		832664371DDEF579003FC30C /* LJVideoElemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 832664281DDEF579003FC30C /* LJVideoElemCell.m */; };
 		832664381DDEF579003FC30C /* UIView+LJMask.m in Sources */ = {isa = PBXBuildFile; fileRef = 8326642A1DDEF579003FC30C /* UIView+LJMask.m */; };
 		8326643D1DDEF705003FC30C /* LJShowImageController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8326643C1DDEF705003FC30C /* LJShowImageController.m */; };
 		832664401DDEF789003FC30C /* LJMapController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8326643F1DDEF789003FC30C /* LJMapController.m */; };
+		83EB17FE1DE294AD003C1E98 /* LJMessagesModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 83EB17FD1DE294AD003C1E98 /* LJMessagesModel.m */; };
+		83EB180A1DE297B6003C1E98 /* LJIMConfigFile.m in Sources */ = {isa = PBXBuildFile; fileRef = 83EB18011DE297B6003C1E98 /* LJIMConfigFile.m */; };
+		83EB180B1DE297B6003C1E98 /* LJIMLoginParam.m in Sources */ = {isa = PBXBuildFile; fileRef = 83EB18031DE297B6003C1E98 /* LJIMLoginParam.m */; };
+		83EB180C1DE297B6003C1E98 /* LJIMManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 83EB18051DE297B6003C1E98 /* LJIMManager.m */; };
+		83EB180D1DE297B6003C1E98 /* LJIMManagerListener.m in Sources */ = {isa = PBXBuildFile; fileRef = 83EB18071DE297B6003C1E98 /* LJIMManagerListener.m */; };
+		83EB180E1DE297B6003C1E98 /* TIMConversation+LJAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 83EB18091DE297B6003C1E98 /* TIMConversation+LJAdd.m */; };
+		83EB1A071DE297D1003C1E98 /* NSDictionary+LJURL.m in Sources */ = {isa = PBXBuildFile; fileRef = 83EB192A1DE297D1003C1E98 /* NSDictionary+LJURL.m */; };
+		83EB1A081DE297D1003C1E98 /* NSObject+LDProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = 83EB192C1DE297D1003C1E98 /* NSObject+LDProperty.m */; };
+		83EB1A091DE297D1003C1E98 /* LDFmdbProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 83EB192F1DE297D1003C1E98 /* LDFmdbProvider.m */; };
+		83EB1A0A1DE297D1003C1E98 /* LDHttpClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 83EB19311DE297D1003C1E98 /* LDHttpClient.m */; };
+		83EB1A0B1DE297D1003C1E98 /* LDRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 83EB19331DE297D1003C1E98 /* LDRequest.m */; };
+		83EB1A0C1DE297D1003C1E98 /* LDRequestBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 83EB19351DE297D1003C1E98 /* LDRequestBuilder.m */; };
+		83EB1A0D1DE297D1003C1E98 /* BJURLRequestSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 83EB19381DE297D1003C1E98 /* BJURLRequestSerialization.m */; };
+		83EB1A0E1DE297D1003C1E98 /* IMCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83EB193A1DE297D1003C1E98 /* IMCore.framework */; };
+		83EB1A0F1DE297D1003C1E98 /* ImSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83EB193B1DE297D1003C1E98 /* ImSDK.framework */; };
+		83EB1A101DE297D1003C1E98 /* QALSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83EB193C1DE297D1003C1E98 /* QALSDK.framework */; };
+		83EB1A111DE297D1003C1E98 /* TLSSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83EB193D1DE297D1003C1E98 /* TLSSDK.framework */; };
+		83EB1A141DE2993F003C1E98 /* LJGoodsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 83EB1A131DE2993F003C1E98 /* LJGoodsModel.m */; };
+		83EB1A2E1DE29D37003C1E98 /* LJSoundManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 83EB1A171DE29D37003C1E98 /* LJSoundManager.m */; };
+		83EB1A2F1DE29D37003C1E98 /* LJSoundModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 83EB1A191DE29D37003C1E98 /* LJSoundModel.m */; };
+		83EB1A301DE29D37003C1E98 /* LJSoundPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 83EB1A1B1DE29D37003C1E98 /* LJSoundPlayer.m */; };
+		83EB1A311DE29D37003C1E98 /* LJSoundRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = 83EB1A1D1DE29D37003C1E98 /* LJSoundRecord.m */; };
+		83EB1A321DE29D37003C1E98 /* NSString+LJFile.m in Sources */ = {isa = PBXBuildFile; fileRef = 83EB1A1F1DE29D37003C1E98 /* NSString+LJFile.m */; };
+		83EB1A331DE29D37003C1E98 /* LJFullVideoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 83EB1A221DE29D37003C1E98 /* LJFullVideoView.m */; };
+		83EB1A341DE29D37003C1E98 /* LJMovieDecoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 83EB1A241DE29D37003C1E98 /* LJMovieDecoder.m */; };
+		83EB1A351DE29D37003C1E98 /* LJRecordVideoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 83EB1A261DE29D37003C1E98 /* LJRecordVideoView.m */; };
+		83EB1A361DE29D37003C1E98 /* LJRoundProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 83EB1A281DE29D37003C1E98 /* LJRoundProgressView.m */; };
+		83EB1A371DE29D37003C1E98 /* LJShortVideoPlayView.m in Sources */ = {isa = PBXBuildFile; fileRef = 83EB1A2A1DE29D37003C1E98 /* LJShortVideoPlayView.m */; };
+		83EB1A381DE29D37003C1E98 /* LJVideoSource.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83EB1A2B1DE29D37003C1E98 /* LJVideoSource.xcassets */; };
+		83EB1A391DE29D37003C1E98 /* UIImage+LJVideo.m in Sources */ = {isa = PBXBuildFile; fileRef = 83EB1A2D1DE29D37003C1E98 /* UIImage+LJVideo.m */; };
+		83EB1AFE1DE29D87003C1E98 /* GJGCChatInputBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 83EB1A3C1DE29D87003C1E98 /* GJGCChatInputBar.m */; };
+		83EB1AFF1DE29D87003C1E98 /* GJGCChatInputBarItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 83EB1A3E1DE29D87003C1E98 /* GJGCChatInputBarItem.m */; };
+		83EB1B001DE29D87003C1E98 /* GJGCChatInputConst.m in Sources */ = {isa = PBXBuildFile; fileRef = 83EB1A401DE29D87003C1E98 /* GJGCChatInputConst.m */; };
+		83EB1B011DE29D87003C1E98 /* GJGCChatInputExpandEmojiPanel.m in Sources */ = {isa = PBXBuildFile; fileRef = 83EB1A421DE29D87003C1E98 /* GJGCChatInputExpandEmojiPanel.m */; };
+		83EB1B021DE29D87003C1E98 /* GJGCChatInputExpandEmojiPanelGifPageItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 83EB1A441DE29D87003C1E98 /* GJGCChatInputExpandEmojiPanelGifPageItem.m */; };
+		83EB1B031DE29D87003C1E98 /* GJGCChatInputExpandEmojiPanelGifSubItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 83EB1A461DE29D87003C1E98 /* GJGCChatInputExpandEmojiPanelGifSubItem.m */; };
+		83EB1B041DE29D87003C1E98 /* GJGCChatInputExpandEmojiPanelMenuBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 83EB1A481DE29D87003C1E98 /* GJGCChatInputExpandEmojiPanelMenuBar.m */; };
+		83EB1B051DE29D87003C1E98 /* GJGCChatInputExpandEmojiPanelMenuBarDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 83EB1A4A1DE29D87003C1E98 /* GJGCChatInputExpandEmojiPanelMenuBarDataSource.m */; };
+		83EB1B061DE29D87003C1E98 /* GJGCChatInputExpandEmojiPanelMenuBarDataSourceItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 83EB1A4C1DE29D87003C1E98 /* GJGCChatInputExpandEmojiPanelMenuBarDataSourceItem.m */; };
+		83EB1B071DE29D87003C1E98 /* GJGCChatInputExpandEmojiPanelPageItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 83EB1A4E1DE29D87003C1E98 /* GJGCChatInputExpandEmojiPanelPageItem.m */; };
+		83EB1B081DE29D87003C1E98 /* GJGCChatInputExpandMenuPanel.m in Sources */ = {isa = PBXBuildFile; fileRef = 83EB1A501DE29D87003C1E98 /* GJGCChatInputExpandMenuPanel.m */; };
+		83EB1B091DE29D87003C1E98 /* GJGCChatInputExpandMenuPanelConfigModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 83EB1A521DE29D87003C1E98 /* GJGCChatInputExpandMenuPanelConfigModel.m */; };
+		83EB1B0A1DE29D87003C1E98 /* GJGCChatInputExpandMenuPanelDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 83EB1A541DE29D87003C1E98 /* GJGCChatInputExpandMenuPanelDataSource.m */; };
+		83EB1B0B1DE29D87003C1E98 /* GJGCChatInputExpandMenuPanelItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 83EB1A561DE29D87003C1E98 /* GJGCChatInputExpandMenuPanelItem.m */; };
+		83EB1B0C1DE29D87003C1E98 /* GJGCChatInputGifFloatView.m in Sources */ = {isa = PBXBuildFile; fileRef = 83EB1A581DE29D87003C1E98 /* GJGCChatInputGifFloatView.m */; };
+		83EB1B0D1DE29D87003C1E98 /* GJGCChatInputPanel.m in Sources */ = {isa = PBXBuildFile; fileRef = 83EB1A5A1DE29D87003C1E98 /* GJGCChatInputPanel.m */; };
+		83EB1B0E1DE29D87003C1E98 /* GJGCChatInputPanelStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 83EB1A5D1DE29D87003C1E98 /* GJGCChatInputPanelStyle.m */; };
+		83EB1B0F1DE29D87003C1E98 /* GJGCChatInputRecordAudioTipView.m in Sources */ = {isa = PBXBuildFile; fileRef = 83EB1A5F1DE29D87003C1E98 /* GJGCChatInputRecordAudioTipView.m */; };
+		83EB1B101DE29D87003C1E98 /* GJGCChatInputTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 83EB1A611DE29D87003C1E98 /* GJGCChatInputTextView.m */; };
+		83EB1B111DE29D87003C1E98 /* GJGCIconSeprateButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 83EB1A631DE29D87003C1E98 /* GJGCIconSeprateButton.m */; };
+		83EB1B121DE29D87003C1E98 /* GJGCIconSeprateImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 83EB1A651DE29D87003C1E98 /* GJGCIconSeprateImageView.m */; };
+		83EB1B131DE29D87003C1E98 /* 001[憨笑]@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 83EB1A681DE29D87003C1E98 /* 001[憨笑]@2x.png */; };
+		83EB1B141DE29D87003C1E98 /* 002[偷笑]@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 83EB1A691DE29D87003C1E98 /* 002[偷笑]@2x.png */; };
+		83EB1B151DE29D87003C1E98 /* 003[大哭]@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 83EB1A6A1DE29D87003C1E98 /* 003[大哭]@2x.png */; };
+		83EB1B161DE29D87003C1E98 /* 004[发怒]@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 83EB1A6B1DE29D87003C1E98 /* 004[发怒]@2x.png */; };
+		83EB1B171DE29D87003C1E98 /* 005[微笑]@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 83EB1A6C1DE29D87003C1E98 /* 005[微笑]@2x.png */; };
+		83EB1B181DE29D87003C1E98 /* 006[流泪]@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 83EB1A6D1DE29D87003C1E98 /* 006[流泪]@2x.png */; };
+		83EB1B191DE29D87003C1E98 /* 007[流汗]@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 83EB1A6E1DE29D87003C1E98 /* 007[流汗]@2x.png */; };
+		83EB1B1A1DE29D87003C1E98 /* 008[呲牙]@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 83EB1A6F1DE29D87003C1E98 /* 008[呲牙]@2x.png */; };
+		83EB1B1B1DE29D87003C1E98 /* 009[晕]@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 83EB1A701DE29D87003C1E98 /* 009[晕]@2x.png */; };
+		83EB1B1C1DE29D87003C1E98 /* 010[傲慢]@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 83EB1A711DE29D87003C1E98 /* 010[傲慢]@2x.png */; };
+		83EB1B1D1DE29D87003C1E98 /* 011[色]@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 83EB1A721DE29D87003C1E98 /* 011[色]@2x.png */; };
+		83EB1B1E1DE29D87003C1E98 /* 012[快哭了]@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 83EB1A731DE29D87003C1E98 /* 012[快哭了]@2x.png */; };
+		83EB1B1F1DE29D87003C1E98 /* 013[亲亲]@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 83EB1A741DE29D87003C1E98 /* 013[亲亲]@2x.png */; };
+		83EB1B201DE29D87003C1E98 /* 014[抓狂]@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 83EB1A751DE29D87003C1E98 /* 014[抓狂]@2x.png */; };
+		83EB1B211DE29D87003C1E98 /* 015[抠鼻]@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 83EB1A761DE29D87003C1E98 /* 015[抠鼻]@2x.png */; };
+		83EB1B221DE29D87003C1E98 /* 016[震惊]@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 83EB1A771DE29D87003C1E98 /* 016[震惊]@2x.png */; };
+		83EB1B231DE29D87003C1E98 /* 017[鼓掌]@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 83EB1A781DE29D87003C1E98 /* 017[鼓掌]@2x.png */; };
+		83EB1B241DE29D87003C1E98 /* 018[坏笑]@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 83EB1A791DE29D87003C1E98 /* 018[坏笑]@2x.png */; };
+		83EB1B251DE29D87003C1E98 /* 019[鄙视]@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 83EB1A7A1DE29D87003C1E98 /* 019[鄙视]@2x.png */; };
+		83EB1B261DE29D87003C1E98 /* 020[惊恐]@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 83EB1A7B1DE29D87003C1E98 /* 020[惊恐]@2x.png */; };
+		83EB1B271DE29D87003C1E98 /* 021[委屈]@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 83EB1A7C1DE29D87003C1E98 /* 021[委屈]@2x.png */; };
+		83EB1B281DE29D87003C1E98 /* 022[睡觉]@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 83EB1A7D1DE29D87003C1E98 /* 022[睡觉]@2x.png */; };
+		83EB1B291DE29D87003C1E98 /* 023[困]@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 83EB1A7E1DE29D87003C1E98 /* 023[困]@2x.png */; };
+		83EB1B2A1DE29D87003C1E98 /* 024[衰]@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 83EB1A7F1DE29D87003C1E98 /* 024[衰]@2x.png */; };
+		83EB1B2B1DE29D87003C1E98 /* 025[疑问]@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 83EB1A801DE29D87003C1E98 /* 025[疑问]@2x.png */; };
+		83EB1B2C1DE29D87003C1E98 /* 026[调皮]@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 83EB1A811DE29D87003C1E98 /* 026[调皮]@2x.png */; };
+		83EB1B2D1DE29D87003C1E98 /* 027[敲打]@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 83EB1A821DE29D87003C1E98 /* 027[敲打]@2x.png */; };
+		83EB1B2E1DE29D87003C1E98 /* 028[吐]@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 83EB1A831DE29D87003C1E98 /* 028[吐]@2x.png */; };
+		83EB1B2F1DE29D87003C1E98 /* 029[害羞]@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 83EB1A841DE29D87003C1E98 /* 029[害羞]@2x.png */; };
+		83EB1B301DE29D87003C1E98 /* 030[闭嘴]@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 83EB1A851DE29D87003C1E98 /* 030[闭嘴]@2x.png */; };
+		83EB1B311DE29D87003C1E98 /* 031[阴险]@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 83EB1A861DE29D87003C1E98 /* 031[阴险]@2x.png */; };
+		83EB1B321DE29D87003C1E98 /* 032[尴尬]@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 83EB1A871DE29D87003C1E98 /* 032[尴尬]@2x.png */; };
+		83EB1B331DE29D87003C1E98 /* 033[右哼哼]@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 83EB1A881DE29D87003C1E98 /* 033[右哼哼]@2x.png */; };
+		83EB1B341DE29D87003C1E98 /* 034[左哼哼]@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 83EB1A891DE29D87003C1E98 /* 034[左哼哼]@2x.png */; };
+		83EB1B351DE29D87003C1E98 /* 035[嘘]@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 83EB1A8A1DE29D87003C1E98 /* 035[嘘]@2x.png */; };
+		83EB1B361DE29D87003C1E98 /* 036[爱财]@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 83EB1A8B1DE29D87003C1E98 /* 036[爱财]@2x.png */; };
+		83EB1B371DE29D87003C1E98 /* 037[得意]@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 83EB1A8C1DE29D87003C1E98 /* 037[得意]@2x.png */; };
+		83EB1B381DE29D87003C1E98 /* 038[白眼]@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 83EB1A8D1DE29D87003C1E98 /* 038[白眼]@2x.png */; };
+		83EB1B391DE29D87003C1E98 /* 039[糗大了]@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 83EB1A8E1DE29D87003C1E98 /* 039[糗大了]@2x.png */; };
+		83EB1B3A1DE29D87003C1E98 /* 040[美味]@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 83EB1A8F1DE29D87003C1E98 /* 040[美味]@2x.png */; };
+		83EB1B3B1DE29D87003C1E98 /* 041[哈欠]@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 83EB1A901DE29D87003C1E98 /* 041[哈欠]@2x.png */; };
+		83EB1B3C1DE29D87003C1E98 /* 042[咒骂]@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 83EB1A911DE29D87003C1E98 /* 042[咒骂]@2x.png */; };
+		83EB1B3D1DE29D87003C1E98 /* 043[可怜]@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 83EB1A921DE29D87003C1E98 /* 043[可怜]@2x.png */; };
+		83EB1B3E1DE29D87003C1E98 /* 044[惊吓]@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 83EB1A931DE29D87003C1E98 /* 044[惊吓]@2x.png */; };
+		83EB1B3F1DE29D87003C1E98 /* 045[难过]@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 83EB1A941DE29D87003C1E98 /* 045[难过]@2x.png */; };
+		83EB1B401DE29D87003C1E98 /* 046[奋斗]@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 83EB1A951DE29D87003C1E98 /* 046[奋斗]@2x.png */; };
+		83EB1B411DE29D87003C1E98 /* 047[猪头]@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 83EB1A961DE29D87003C1E98 /* 047[猪头]@2x.png */; };
+		83EB1B421DE29D87003C1E98 /* 048[炸弹]@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 83EB1A971DE29D87003C1E98 /* 048[炸弹]@2x.png */; };
+		83EB1B431DE29D87003C1E98 /* 049[咖啡]@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 83EB1A981DE29D87003C1E98 /* 049[咖啡]@2x.png */; };
+		83EB1B441DE29D87003C1E98 /* 050[礼品]@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 83EB1A991DE29D87003C1E98 /* 050[礼品]@2x.png */; };
+		83EB1B451DE29D87003C1E98 /* 051[玫瑰]@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 83EB1A9A1DE29D87003C1E98 /* 051[玫瑰]@2x.png */; };
+		83EB1B461DE29D87003C1E98 /* 052[凋谢]@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 83EB1A9B1DE29D87003C1E98 /* 052[凋谢]@2x.png */; };
+		83EB1B471DE29D87003C1E98 /* 053[蛋糕]@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 83EB1A9C1DE29D87003C1E98 /* 053[蛋糕]@2x.png */; };
+		83EB1B481DE29D87003C1E98 /* 054[爱心]@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 83EB1A9D1DE29D87003C1E98 /* 054[爱心]@2x.png */; };
+		83EB1B491DE29D87003C1E98 /* 055[心碎]@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 83EB1A9E1DE29D87003C1E98 /* 055[心碎]@2x.png */; };
+		83EB1B4A1DE29D87003C1E98 /* 056[示爱]@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 83EB1A9F1DE29D87003C1E98 /* 056[示爱]@2x.png */; };
+		83EB1B4B1DE29D87003C1E98 /* 057[太阳]@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 83EB1AA01DE29D87003C1E98 /* 057[太阳]@2x.png */; };
+		83EB1B4C1DE29D87003C1E98 /* 058[月亮]@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 83EB1AA11DE29D87003C1E98 /* 058[月亮]@2x.png */; };
+		83EB1B4D1DE29D87003C1E98 /* 059[瓢虫]@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 83EB1AA21DE29D87003C1E98 /* 059[瓢虫]@2x.png */; };
+		83EB1B4E1DE29D87003C1E98 /* 060[闪电]@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 83EB1AA31DE29D87003C1E98 /* 060[闪电]@2x.png */; };
+		83EB1B4F1DE29D87003C1E98 /* 061[OK]@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 83EB1AA41DE29D87003C1E98 /* 061[OK]@2x.png */; };
+		83EB1B501DE29D87003C1E98 /* 062[勾引]@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 83EB1AA51DE29D87003C1E98 /* 062[勾引]@2x.png */; };
+		83EB1B511DE29D87003C1E98 /* 063[强]@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 83EB1AA61DE29D87003C1E98 /* 063[强]@2x.png */; };
+		83EB1B521DE29D87003C1E98 /* 064[弱]@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 83EB1AA71DE29D87003C1E98 /* 064[弱]@2x.png */; };
+		83EB1B531DE29D87003C1E98 /* 065[胜利]@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 83EB1AA81DE29D87003C1E98 /* 065[胜利]@2x.png */; };
+		83EB1B541DE29D87003C1E98 /* 066[抱拳]@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 83EB1AA91DE29D87003C1E98 /* 066[抱拳]@2x.png */; };
+		83EB1B551DE29D87003C1E98 /* 067[握手]@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 83EB1AAA1DE29D87003C1E98 /* 067[握手]@2x.png */; };
+		83EB1B561DE29D87003C1E98 /* 068[刀]@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 83EB1AAB1DE29D87003C1E98 /* 068[刀]@2x.png */; };
+		83EB1B571DE29D87003C1E98 /* 069[喝彩]@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 83EB1AAC1DE29D87003C1E98 /* 069[喝彩]@2x.png */; };
+		83EB1B581DE29D87003C1E98 /* 070[篮球]@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 83EB1AAD1DE29D87003C1E98 /* 070[篮球]@2x.png */; };
+		83EB1B591DE29D87003C1E98 /* 071[足球]@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 83EB1AAE1DE29D87003C1E98 /* 071[足球]@2x.png */; };
+		83EB1B5A1DE29D87003C1E98 /* 072[乒乓]@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 83EB1AAF1DE29D87003C1E98 /* 072[乒乓]@2x.png */; };
+		83EB1B5B1DE29D87003C1E98 /* 073[米饭]@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 83EB1AB01DE29D87003C1E98 /* 073[米饭]@2x.png */; };
+		83EB1B5C1DE29D87003C1E98 /* 074[西瓜]@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 83EB1AB11DE29D87003C1E98 /* 074[西瓜]@2x.png */; };
+		83EB1B5D1DE29D87003C1E98 /* 075[啤酒]@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 83EB1AB21DE29D87003C1E98 /* 075[啤酒]@2x.png */; };
+		83EB1B5E1DE29D87003C1E98 /* 076[便便]@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 83EB1AB31DE29D87003C1E98 /* 076[便便]@2x.png */; };
+		83EB1B5F1DE29D87003C1E98 /* 077[跳绳]@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 83EB1AB41DE29D87003C1E98 /* 077[跳绳]@2x.png */; };
+		83EB1B601DE29D87003C1E98 /* 078[右跳]@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 83EB1AB51DE29D87003C1E98 /* 078[右跳]@2x.png */; };
+		83EB1B611DE29D87003C1E98 /* 079[抱抱]@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 83EB1AB61DE29D87003C1E98 /* 079[抱抱]@2x.png */; };
+		83EB1B621DE29D87003C1E98 /* 080[可爱]@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 83EB1AB71DE29D87003C1E98 /* 080[可爱]@2x.png */; };
+		83EB1B631DE29D87003C1E98 /* 081[撇嘴]@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 83EB1AB81DE29D87003C1E98 /* 081[撇嘴]@2x.png */; };
+		83EB1B641DE29D87003C1E98 /* 082[酷]@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 83EB1AB91DE29D87003C1E98 /* 082[酷]@2x.png */; };
+		83EB1B651DE29D87003C1E98 /* 083[冷汗]@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 83EB1ABA1DE29D87003C1E98 /* 083[冷汗]@2x.png */; };
+		83EB1B661DE29D87003C1E98 /* 084[折磨]@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 83EB1ABB1DE29D87003C1E98 /* 084[折磨]@2x.png */; };
+		83EB1B671DE29D87003C1E98 /* 085[骷髅头]@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 83EB1ABC1DE29D87003C1E98 /* 085[骷髅头]@2x.png */; };
+		83EB1B681DE29D87003C1E98 /* 086[再见]@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 83EB1ABD1DE29D87003C1E98 /* 086[再见]@2x.png */; };
+		83EB1B691DE29D87003C1E98 /* 087[擦汗]@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 83EB1ABE1DE29D87003C1E98 /* 087[擦汗]@2x.png */; };
+		83EB1B6A1DE29D87003C1E98 /* 092[菜刀]@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 83EB1ABF1DE29D87003C1E98 /* 092[菜刀]@2x.png */; };
+		83EB1B6B1DE29D87003C1E98 /* 093[拳头]@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 83EB1AC01DE29D87003C1E98 /* 093[拳头]@2x.png */; };
+		83EB1B6C1DE29D87003C1E98 /* 094[差劲]@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 83EB1AC11DE29D87003C1E98 /* 094[差劲]@2x.png */; };
+		83EB1B6D1DE29D87003C1E98 /* 095[爱你]@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 83EB1AC21DE29D87003C1E98 /* 095[爱你]@2x.png */; };
+		83EB1B6E1DE29D87003C1E98 /* 096[NO]@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 83EB1AC31DE29D87003C1E98 /* 096[NO]@2x.png */; };
+		83EB1B6F1DE29D87003C1E98 /* 097[飞吻]@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 83EB1AC41DE29D87003C1E98 /* 097[飞吻]@2x.png */; };
+		83EB1B701DE29D87003C1E98 /* 098[接吻]@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 83EB1AC51DE29D87003C1E98 /* 098[接吻]@2x.png */; };
+		83EB1B711DE29D87003C1E98 /* 099[发抖]@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 83EB1AC61DE29D87003C1E98 /* 099[发抖]@2x.png */; };
+		83EB1B721DE29D87003C1E98 /* 100[呕火]@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 83EB1AC71DE29D87003C1E98 /* 100[呕火]@2x.png */; };
+		83EB1B731DE29D87003C1E98 /* 101[点头]@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 83EB1AC81DE29D87003C1E98 /* 101[点头]@2x.png */; };
+		83EB1B741DE29D87003C1E98 /* 102[回头]@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 83EB1AC91DE29D87003C1E98 /* 102[回头]@2x.png */; };
+		83EB1B751DE29D87003C1E98 /* 103[挥手帕]@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 83EB1ACA1DE29D87003C1E98 /* 103[挥手帕]@2x.png */; };
+		83EB1B761DE29D87003C1E98 /* 104[激动]@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 83EB1ACB1DE29D87003C1E98 /* 104[激动]@2x.png */; };
+		83EB1B771DE29D87003C1E98 /* 105[跳跳]@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 83EB1ACC1DE29D87003C1E98 /* 105[跳跳]@2x.png */; };
+		83EB1B781DE29D87003C1E98 /* 106[左太极]@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 83EB1ACD1DE29D87003C1E98 /* 106[左太极]@2x.png */; };
+		83EB1B791DE29D87003C1E98 /* 107[右太极]@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 83EB1ACE1DE29D87003C1E98 /* 107[右太极]@2x.png */; };
+		83EB1B7A1DE29D87003C1E98 /* 108[打太极]@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 83EB1ACF1DE29D87003C1E98 /* 108[打太极]@2x.png */; };
+		83EB1B7B1DE29D87003C1E98 /* emoji.plist in Resources */ = {isa = PBXBuildFile; fileRef = 83EB1AD01DE29D87003C1E98 /* emoji.plist */; };
+		83EB1B7C1DE29D87003C1E98 /* emojiName.plist in Resources */ = {isa = PBXBuildFile; fileRef = 83EB1AD11DE29D87003C1E98 /* emojiName.plist */; };
+		83EB1B7D1DE29D87003C1E98 /* 删除@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 83EB1AD21DE29D87003C1E98 /* 删除@2x.png */; };
+		83EB1B7E1DE29D87003C1E98 /* 删除@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 83EB1AD31DE29D87003C1E98 /* 删除@3x.png */; };
+		83EB1B7F1DE29D87003C1E98 /* 大表情-bg-预览-居中@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 83EB1AD41DE29D87003C1E98 /* 大表情-bg-预览-居中@2x.png */; };
+		83EB1B801DE29D87003C1E98 /* 大表情-bg-预览@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 83EB1AD51DE29D87003C1E98 /* 大表情-bg-预览@2x.png */; };
+		83EB1B811DE29D87003C1E98 /* 聊天-icon-文字键盘@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 83EB1AD61DE29D87003C1E98 /* 聊天-icon-文字键盘@2x.png */; };
+		83EB1B821DE29D87003C1E98 /* 聊天-icon-语音-绿@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 83EB1AD71DE29D87003C1E98 /* 聊天-icon-语音-绿@2x.png */; };
+		83EB1B831DE29D87003C1E98 /* 聊天-icon-语音1-绿@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 83EB1AD81DE29D87003C1E98 /* 聊天-icon-语音1-绿@2x.png */; };
+		83EB1B841DE29D87003C1E98 /* 聊天-icon-语音2-绿@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 83EB1AD91DE29D87003C1E98 /* 聊天-icon-语音2-绿@2x.png */; };
+		83EB1B851DE29D87003C1E98 /* 聊天-icon-语音及切换键盘-灰@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 83EB1ADA1DE29D87003C1E98 /* 聊天-icon-语音及切换键盘-灰@2x.png */; };
+		83EB1B861DE29D87003C1E98 /* 聊天-icon-语音及切换键盘1-灰@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 83EB1ADB1DE29D87003C1E98 /* 聊天-icon-语音及切换键盘1-灰@2x.png */; };
+		83EB1B871DE29D87003C1E98 /* 聊天-icon-语音及切换键盘2-灰@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 83EB1ADC1DE29D87003C1E98 /* 聊天-icon-语音及切换键盘2-灰@2x.png */; };
+		83EB1B881DE29D87003C1E98 /* 聊天-icon-选择照片帖子@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 83EB1ADD1DE29D87003C1E98 /* 聊天-icon-选择照片帖子@2x.png */; };
+		83EB1B891DE29D87003C1E98 /* 聊天-icon-选择表情@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 83EB1ADE1DE29D87003C1E98 /* 聊天-icon-选择表情@2x.png */; };
+		83EB1B8A1DE29D87003C1E98 /* 聊天-icon-选择表情@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 83EB1ADF1DE29D87003C1E98 /* 聊天-icon-选择表情@3x.png */; };
+		83EB1B8B1DE29D87003C1E98 /* 聊天语音-icon-取消@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 83EB1AE01DE29D87003C1E98 /* 聊天语音-icon-取消@2x.png */; };
+		83EB1B8C1DE29D87003C1E98 /* 聊天语音-icon-话筒@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 83EB1AE11DE29D87003C1E98 /* 聊天语音-icon-话筒@2x.png */; };
+		83EB1B8D1DE29D87003C1E98 /* 聊天语音-icon-音量@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 83EB1AE21DE29D87003C1E98 /* 聊天语音-icon-音量@2x.png */; };
+		83EB1B8E1DE29D87003C1E98 /* 聊天键盘-icon-位置@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 83EB1AE31DE29D87003C1E98 /* 聊天键盘-icon-位置@2x.png */; };
+		83EB1B8F1DE29D87003C1E98 /* 聊天键盘-icon-位置@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 83EB1AE41DE29D87003C1E98 /* 聊天键盘-icon-位置@3x.png */; };
+		83EB1B901DE29D87003C1E98 /* 聊天键盘-icon-小视频@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 83EB1AE51DE29D87003C1E98 /* 聊天键盘-icon-小视频@2x.png */; };
+		83EB1B911DE29D87003C1E98 /* 聊天键盘-icon-小视频@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 83EB1AE61DE29D87003C1E98 /* 聊天键盘-icon-小视频@3x.png */; };
+		83EB1B921DE29D87003C1E98 /* 聊天键盘-icon-拍照@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 83EB1AE71DE29D87003C1E98 /* 聊天键盘-icon-拍照@2x.png */; };
+		83EB1B931DE29D87003C1E98 /* 聊天键盘-icon-拍照@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 83EB1AE81DE29D87003C1E98 /* 聊天键盘-icon-拍照@3x.png */; };
+		83EB1B941DE29D87003C1E98 /* 聊天键盘-icon-群主召唤@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 83EB1AE91DE29D87003C1E98 /* 聊天键盘-icon-群主召唤@2x.png */; };
+		83EB1B951DE29D87003C1E98 /* 聊天键盘-icon-群主召唤@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 83EB1AEA1DE29D87003C1E98 /* 聊天键盘-icon-群主召唤@3x.png */; };
+		83EB1B961DE29D87003C1E98 /* 聊天键盘-icon-选择帖子@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 83EB1AEB1DE29D87003C1E98 /* 聊天键盘-icon-选择帖子@2x.png */; };
+		83EB1B971DE29D87003C1E98 /* 聊天键盘-icon-选择帖子@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 83EB1AEC1DE29D87003C1E98 /* 聊天键盘-icon-选择帖子@3x.png */; };
+		83EB1B981DE29D87003C1E98 /* 聊天键盘-icon-选择照片@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 83EB1AED1DE29D87003C1E98 /* 聊天键盘-icon-选择照片@2x.png */; };
+		83EB1B991DE29D87003C1E98 /* 聊天键盘-icon-选择照片@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 83EB1AEE1DE29D87003C1E98 /* 聊天键盘-icon-选择照片@3x.png */; };
+		83EB1B9A1DE29D87003C1E98 /* 聊天键盘切换-btn-圆-点击@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 83EB1AEF1DE29D87003C1E98 /* 聊天键盘切换-btn-圆-点击@2x.png */; };
+		83EB1B9B1DE29D87003C1E98 /* 聊天键盘切换-btn-圆-点击@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 83EB1AF01DE29D87003C1E98 /* 聊天键盘切换-btn-圆-点击@3x.png */; };
+		83EB1B9C1DE29D87003C1E98 /* 聊天键盘切换-btn-圆@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 83EB1AF11DE29D87003C1E98 /* 聊天键盘切换-btn-圆@2x.png */; };
+		83EB1B9D1DE29D87003C1E98 /* 聊天键盘切换-btn-圆@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 83EB1AF21DE29D87003C1E98 /* 聊天键盘切换-btn-圆@3x.png */; };
+		83EB1B9E1DE29D87003C1E98 /* 输入框-灰色@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 83EB1AF31DE29D87003C1E98 /* 输入框-灰色@2x.png */; };
+		83EB1B9F1DE29D87003C1E98 /* 输入框-白色@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 83EB1AF41DE29D87003C1E98 /* 输入框-白色@2x.png */; };
+		83EB1BA01DE29D87003C1E98 /* FLAnimatedImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 83EB1AF81DE29D87003C1E98 /* FLAnimatedImage.m */; };
+		83EB1BA11DE29D87003C1E98 /* FLAnimatedImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 83EB1AFA1DE29D87003C1E98 /* FLAnimatedImageView.m */; };
+		83EB1BA21DE29D87003C1E98 /* UIView+GJCFViewFrameUitil.m in Sources */ = {isa = PBXBuildFile; fileRef = 83EB1AFD1DE29D87003C1E98 /* UIView+GJCFViewFrameUitil.m */; };
+		83EB1BA51DE29DAE003C1E98 /* NSString+LJHash.m in Sources */ = {isa = PBXBuildFile; fileRef = 83EB1BA41DE29DAE003C1E98 /* NSString+LJHash.m */; };
+		83EB1BA71DE29E0F003C1E98 /* libstdc++.6.0.9.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 83EB1BA61DE29E0F003C1E98 /* libstdc++.6.0.9.tbd */; };
+		83EB1BA91DE29E25003C1E98 /* libz.1.2.8.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 83EB1BA81DE29E25003C1E98 /* libz.1.2.8.tbd */; };
+		83EB1BAC1DE29E3F003C1E98 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 83EB1BAA1DE29E3F003C1E98 /* libc++.tbd */; };
+		83EB1BAD1DE29E3F003C1E98 /* libc++abi.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 83EB1BAB1DE29E3F003C1E98 /* libc++abi.tbd */; };
+		83EB1BAF1DE29E5C003C1E98 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 83EB1BAE1DE29E5C003C1E98 /* libsqlite3.tbd */; };
+		83EB1BB11DE29E6F003C1E98 /* libicucore.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 83EB1BB01DE29E6F003C1E98 /* libicucore.tbd */; };
+		9EC5DBC28C3EF7B16B558A2B /* libPods-LJChatUI.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B4252FB0A6388864088E720 /* libPods-LJChatUI.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4B4252FB0A6388864088E720 /* libPods-LJChatUI.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LJChatUI.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		832663CF1DDEF513003FC30C /* LJChatUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LJChatUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		832663D31DDEF513003FC30C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		832663E31DDEF513003FC30C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -47,8 +251,8 @@
 		832664201DDEF579003FC30C /* LJShowFPS.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LJShowFPS.m; sourceTree = "<group>"; };
 		832664211DDEF579003FC30C /* LJSoundElemCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJSoundElemCell.h; sourceTree = "<group>"; };
 		832664221DDEF579003FC30C /* LJSoundElemCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LJSoundElemCell.m; sourceTree = "<group>"; };
-		832664231DDEF579003FC30C /* LJTextController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJTextController.h; sourceTree = "<group>"; };
-		832664241DDEF579003FC30C /* LJTextController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LJTextController.m; sourceTree = "<group>"; };
+		832664231DDEF579003FC30C /* LJMessageController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJMessageController.h; sourceTree = "<group>"; };
+		832664241DDEF579003FC30C /* LJMessageController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LJMessageController.m; sourceTree = "<group>"; };
 		832664251DDEF579003FC30C /* LJTextElemCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJTextElemCell.h; sourceTree = "<group>"; };
 		832664261DDEF579003FC30C /* LJTextElemCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LJTextElemCell.m; sourceTree = "<group>"; };
 		832664271DDEF579003FC30C /* LJVideoElemCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJVideoElemCell.h; sourceTree = "<group>"; };
@@ -60,6 +264,261 @@
 		8326643E1DDEF789003FC30C /* LJMapController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJMapController.h; sourceTree = "<group>"; };
 		8326643F1DDEF789003FC30C /* LJMapController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LJMapController.m; sourceTree = "<group>"; };
 		832664411DDF0676003FC30C /* LJElemCellHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJElemCellHeader.h; sourceTree = "<group>"; };
+		83EB17FC1DE294AD003C1E98 /* LJMessagesModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJMessagesModel.h; sourceTree = "<group>"; };
+		83EB17FD1DE294AD003C1E98 /* LJMessagesModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LJMessagesModel.m; sourceTree = "<group>"; };
+		83EB18001DE297B6003C1E98 /* LJIMConfigFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJIMConfigFile.h; sourceTree = "<group>"; };
+		83EB18011DE297B6003C1E98 /* LJIMConfigFile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LJIMConfigFile.m; sourceTree = "<group>"; };
+		83EB18021DE297B6003C1E98 /* LJIMLoginParam.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJIMLoginParam.h; sourceTree = "<group>"; };
+		83EB18031DE297B6003C1E98 /* LJIMLoginParam.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LJIMLoginParam.m; sourceTree = "<group>"; };
+		83EB18041DE297B6003C1E98 /* LJIMManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJIMManager.h; sourceTree = "<group>"; };
+		83EB18051DE297B6003C1E98 /* LJIMManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LJIMManager.m; sourceTree = "<group>"; };
+		83EB18061DE297B6003C1E98 /* LJIMManagerListener.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJIMManagerListener.h; sourceTree = "<group>"; };
+		83EB18071DE297B6003C1E98 /* LJIMManagerListener.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LJIMManagerListener.m; sourceTree = "<group>"; };
+		83EB18081DE297B6003C1E98 /* TIMConversation+LJAdd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TIMConversation+LJAdd.h"; sourceTree = "<group>"; };
+		83EB18091DE297B6003C1E98 /* TIMConversation+LJAdd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "TIMConversation+LJAdd.m"; sourceTree = "<group>"; };
+		83EB19291DE297D1003C1E98 /* NSDictionary+LJURL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+LJURL.h"; sourceTree = "<group>"; };
+		83EB192A1DE297D1003C1E98 /* NSDictionary+LJURL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+LJURL.m"; sourceTree = "<group>"; };
+		83EB192B1DE297D1003C1E98 /* NSObject+LDProperty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+LDProperty.h"; sourceTree = "<group>"; };
+		83EB192C1DE297D1003C1E98 /* NSObject+LDProperty.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+LDProperty.m"; sourceTree = "<group>"; };
+		83EB192E1DE297D1003C1E98 /* LDFmdbProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LDFmdbProvider.h; sourceTree = "<group>"; };
+		83EB192F1DE297D1003C1E98 /* LDFmdbProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LDFmdbProvider.m; sourceTree = "<group>"; };
+		83EB19301DE297D1003C1E98 /* LDHttpClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LDHttpClient.h; sourceTree = "<group>"; };
+		83EB19311DE297D1003C1E98 /* LDHttpClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LDHttpClient.m; sourceTree = "<group>"; };
+		83EB19321DE297D1003C1E98 /* LDRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LDRequest.h; sourceTree = "<group>"; };
+		83EB19331DE297D1003C1E98 /* LDRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LDRequest.m; sourceTree = "<group>"; };
+		83EB19341DE297D1003C1E98 /* LDRequestBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LDRequestBuilder.h; sourceTree = "<group>"; };
+		83EB19351DE297D1003C1E98 /* LDRequestBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LDRequestBuilder.m; sourceTree = "<group>"; };
+		83EB19371DE297D1003C1E98 /* BJURLRequestSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BJURLRequestSerialization.h; sourceTree = "<group>"; };
+		83EB19381DE297D1003C1E98 /* BJURLRequestSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BJURLRequestSerialization.m; sourceTree = "<group>"; };
+		83EB193A1DE297D1003C1E98 /* IMCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = IMCore.framework; sourceTree = "<group>"; };
+		83EB193B1DE297D1003C1E98 /* ImSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ImSDK.framework; sourceTree = "<group>"; };
+		83EB193C1DE297D1003C1E98 /* QALSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = QALSDK.framework; sourceTree = "<group>"; };
+		83EB193D1DE297D1003C1E98 /* TLSSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TLSSDK.framework; sourceTree = "<group>"; };
+		83EB1A121DE2993F003C1E98 /* LJGoodsModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJGoodsModel.h; sourceTree = "<group>"; };
+		83EB1A131DE2993F003C1E98 /* LJGoodsModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LJGoodsModel.m; sourceTree = "<group>"; };
+		83EB1A161DE29D37003C1E98 /* LJSoundManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJSoundManager.h; sourceTree = "<group>"; };
+		83EB1A171DE29D37003C1E98 /* LJSoundManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LJSoundManager.m; sourceTree = "<group>"; };
+		83EB1A181DE29D37003C1E98 /* LJSoundModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJSoundModel.h; sourceTree = "<group>"; };
+		83EB1A191DE29D37003C1E98 /* LJSoundModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LJSoundModel.m; sourceTree = "<group>"; };
+		83EB1A1A1DE29D37003C1E98 /* LJSoundPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJSoundPlayer.h; sourceTree = "<group>"; };
+		83EB1A1B1DE29D37003C1E98 /* LJSoundPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LJSoundPlayer.m; sourceTree = "<group>"; };
+		83EB1A1C1DE29D37003C1E98 /* LJSoundRecord.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJSoundRecord.h; sourceTree = "<group>"; };
+		83EB1A1D1DE29D37003C1E98 /* LJSoundRecord.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LJSoundRecord.m; sourceTree = "<group>"; };
+		83EB1A1E1DE29D37003C1E98 /* NSString+LJFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+LJFile.h"; sourceTree = "<group>"; };
+		83EB1A1F1DE29D37003C1E98 /* NSString+LJFile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+LJFile.m"; sourceTree = "<group>"; };
+		83EB1A211DE29D37003C1E98 /* LJFullVideoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJFullVideoView.h; sourceTree = "<group>"; };
+		83EB1A221DE29D37003C1E98 /* LJFullVideoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LJFullVideoView.m; sourceTree = "<group>"; };
+		83EB1A231DE29D37003C1E98 /* LJMovieDecoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJMovieDecoder.h; sourceTree = "<group>"; };
+		83EB1A241DE29D37003C1E98 /* LJMovieDecoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LJMovieDecoder.m; sourceTree = "<group>"; };
+		83EB1A251DE29D37003C1E98 /* LJRecordVideoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJRecordVideoView.h; sourceTree = "<group>"; };
+		83EB1A261DE29D37003C1E98 /* LJRecordVideoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LJRecordVideoView.m; sourceTree = "<group>"; };
+		83EB1A271DE29D37003C1E98 /* LJRoundProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJRoundProgressView.h; sourceTree = "<group>"; };
+		83EB1A281DE29D37003C1E98 /* LJRoundProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LJRoundProgressView.m; sourceTree = "<group>"; };
+		83EB1A291DE29D37003C1E98 /* LJShortVideoPlayView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJShortVideoPlayView.h; sourceTree = "<group>"; };
+		83EB1A2A1DE29D37003C1E98 /* LJShortVideoPlayView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LJShortVideoPlayView.m; sourceTree = "<group>"; };
+		83EB1A2B1DE29D37003C1E98 /* LJVideoSource.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = LJVideoSource.xcassets; sourceTree = "<group>"; };
+		83EB1A2C1DE29D37003C1E98 /* UIImage+LJVideo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+LJVideo.h"; sourceTree = "<group>"; };
+		83EB1A2D1DE29D37003C1E98 /* UIImage+LJVideo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+LJVideo.m"; sourceTree = "<group>"; };
+		83EB1A3B1DE29D87003C1E98 /* GJGCChatInputBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GJGCChatInputBar.h; sourceTree = "<group>"; };
+		83EB1A3C1DE29D87003C1E98 /* GJGCChatInputBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GJGCChatInputBar.m; sourceTree = "<group>"; };
+		83EB1A3D1DE29D87003C1E98 /* GJGCChatInputBarItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GJGCChatInputBarItem.h; sourceTree = "<group>"; };
+		83EB1A3E1DE29D87003C1E98 /* GJGCChatInputBarItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GJGCChatInputBarItem.m; sourceTree = "<group>"; };
+		83EB1A3F1DE29D87003C1E98 /* GJGCChatInputConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GJGCChatInputConst.h; sourceTree = "<group>"; };
+		83EB1A401DE29D87003C1E98 /* GJGCChatInputConst.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GJGCChatInputConst.m; sourceTree = "<group>"; };
+		83EB1A411DE29D87003C1E98 /* GJGCChatInputExpandEmojiPanel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GJGCChatInputExpandEmojiPanel.h; sourceTree = "<group>"; };
+		83EB1A421DE29D87003C1E98 /* GJGCChatInputExpandEmojiPanel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GJGCChatInputExpandEmojiPanel.m; sourceTree = "<group>"; };
+		83EB1A431DE29D87003C1E98 /* GJGCChatInputExpandEmojiPanelGifPageItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GJGCChatInputExpandEmojiPanelGifPageItem.h; sourceTree = "<group>"; };
+		83EB1A441DE29D87003C1E98 /* GJGCChatInputExpandEmojiPanelGifPageItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GJGCChatInputExpandEmojiPanelGifPageItem.m; sourceTree = "<group>"; };
+		83EB1A451DE29D87003C1E98 /* GJGCChatInputExpandEmojiPanelGifSubItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GJGCChatInputExpandEmojiPanelGifSubItem.h; sourceTree = "<group>"; };
+		83EB1A461DE29D87003C1E98 /* GJGCChatInputExpandEmojiPanelGifSubItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GJGCChatInputExpandEmojiPanelGifSubItem.m; sourceTree = "<group>"; };
+		83EB1A471DE29D87003C1E98 /* GJGCChatInputExpandEmojiPanelMenuBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GJGCChatInputExpandEmojiPanelMenuBar.h; sourceTree = "<group>"; };
+		83EB1A481DE29D87003C1E98 /* GJGCChatInputExpandEmojiPanelMenuBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GJGCChatInputExpandEmojiPanelMenuBar.m; sourceTree = "<group>"; };
+		83EB1A491DE29D87003C1E98 /* GJGCChatInputExpandEmojiPanelMenuBarDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GJGCChatInputExpandEmojiPanelMenuBarDataSource.h; sourceTree = "<group>"; };
+		83EB1A4A1DE29D87003C1E98 /* GJGCChatInputExpandEmojiPanelMenuBarDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GJGCChatInputExpandEmojiPanelMenuBarDataSource.m; sourceTree = "<group>"; };
+		83EB1A4B1DE29D87003C1E98 /* GJGCChatInputExpandEmojiPanelMenuBarDataSourceItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GJGCChatInputExpandEmojiPanelMenuBarDataSourceItem.h; sourceTree = "<group>"; };
+		83EB1A4C1DE29D87003C1E98 /* GJGCChatInputExpandEmojiPanelMenuBarDataSourceItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GJGCChatInputExpandEmojiPanelMenuBarDataSourceItem.m; sourceTree = "<group>"; };
+		83EB1A4D1DE29D87003C1E98 /* GJGCChatInputExpandEmojiPanelPageItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GJGCChatInputExpandEmojiPanelPageItem.h; sourceTree = "<group>"; };
+		83EB1A4E1DE29D87003C1E98 /* GJGCChatInputExpandEmojiPanelPageItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GJGCChatInputExpandEmojiPanelPageItem.m; sourceTree = "<group>"; };
+		83EB1A4F1DE29D87003C1E98 /* GJGCChatInputExpandMenuPanel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GJGCChatInputExpandMenuPanel.h; sourceTree = "<group>"; };
+		83EB1A501DE29D87003C1E98 /* GJGCChatInputExpandMenuPanel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GJGCChatInputExpandMenuPanel.m; sourceTree = "<group>"; };
+		83EB1A511DE29D87003C1E98 /* GJGCChatInputExpandMenuPanelConfigModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GJGCChatInputExpandMenuPanelConfigModel.h; sourceTree = "<group>"; };
+		83EB1A521DE29D87003C1E98 /* GJGCChatInputExpandMenuPanelConfigModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GJGCChatInputExpandMenuPanelConfigModel.m; sourceTree = "<group>"; };
+		83EB1A531DE29D87003C1E98 /* GJGCChatInputExpandMenuPanelDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GJGCChatInputExpandMenuPanelDataSource.h; sourceTree = "<group>"; };
+		83EB1A541DE29D87003C1E98 /* GJGCChatInputExpandMenuPanelDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GJGCChatInputExpandMenuPanelDataSource.m; sourceTree = "<group>"; };
+		83EB1A551DE29D87003C1E98 /* GJGCChatInputExpandMenuPanelItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GJGCChatInputExpandMenuPanelItem.h; sourceTree = "<group>"; };
+		83EB1A561DE29D87003C1E98 /* GJGCChatInputExpandMenuPanelItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GJGCChatInputExpandMenuPanelItem.m; sourceTree = "<group>"; };
+		83EB1A571DE29D87003C1E98 /* GJGCChatInputGifFloatView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GJGCChatInputGifFloatView.h; sourceTree = "<group>"; };
+		83EB1A581DE29D87003C1E98 /* GJGCChatInputGifFloatView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GJGCChatInputGifFloatView.m; sourceTree = "<group>"; };
+		83EB1A591DE29D87003C1E98 /* GJGCChatInputPanel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GJGCChatInputPanel.h; sourceTree = "<group>"; };
+		83EB1A5A1DE29D87003C1E98 /* GJGCChatInputPanel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GJGCChatInputPanel.m; sourceTree = "<group>"; };
+		83EB1A5B1DE29D87003C1E98 /* GJGCChatInputPanelDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GJGCChatInputPanelDelegate.h; sourceTree = "<group>"; };
+		83EB1A5C1DE29D87003C1E98 /* GJGCChatInputPanelStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GJGCChatInputPanelStyle.h; sourceTree = "<group>"; };
+		83EB1A5D1DE29D87003C1E98 /* GJGCChatInputPanelStyle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GJGCChatInputPanelStyle.m; sourceTree = "<group>"; };
+		83EB1A5E1DE29D87003C1E98 /* GJGCChatInputRecordAudioTipView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GJGCChatInputRecordAudioTipView.h; sourceTree = "<group>"; };
+		83EB1A5F1DE29D87003C1E98 /* GJGCChatInputRecordAudioTipView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GJGCChatInputRecordAudioTipView.m; sourceTree = "<group>"; };
+		83EB1A601DE29D87003C1E98 /* GJGCChatInputTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GJGCChatInputTextView.h; sourceTree = "<group>"; };
+		83EB1A611DE29D87003C1E98 /* GJGCChatInputTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GJGCChatInputTextView.m; sourceTree = "<group>"; };
+		83EB1A621DE29D87003C1E98 /* GJGCIconSeprateButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GJGCIconSeprateButton.h; sourceTree = "<group>"; };
+		83EB1A631DE29D87003C1E98 /* GJGCIconSeprateButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GJGCIconSeprateButton.m; sourceTree = "<group>"; };
+		83EB1A641DE29D87003C1E98 /* GJGCIconSeprateImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GJGCIconSeprateImageView.h; sourceTree = "<group>"; };
+		83EB1A651DE29D87003C1E98 /* GJGCIconSeprateImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GJGCIconSeprateImageView.m; sourceTree = "<group>"; };
+		83EB1A681DE29D87003C1E98 /* 001[憨笑]@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "001[憨笑]@2x.png"; sourceTree = "<group>"; };
+		83EB1A691DE29D87003C1E98 /* 002[偷笑]@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "002[偷笑]@2x.png"; sourceTree = "<group>"; };
+		83EB1A6A1DE29D87003C1E98 /* 003[大哭]@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "003[大哭]@2x.png"; sourceTree = "<group>"; };
+		83EB1A6B1DE29D87003C1E98 /* 004[发怒]@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "004[发怒]@2x.png"; sourceTree = "<group>"; };
+		83EB1A6C1DE29D87003C1E98 /* 005[微笑]@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "005[微笑]@2x.png"; sourceTree = "<group>"; };
+		83EB1A6D1DE29D87003C1E98 /* 006[流泪]@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "006[流泪]@2x.png"; sourceTree = "<group>"; };
+		83EB1A6E1DE29D87003C1E98 /* 007[流汗]@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "007[流汗]@2x.png"; sourceTree = "<group>"; };
+		83EB1A6F1DE29D87003C1E98 /* 008[呲牙]@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "008[呲牙]@2x.png"; sourceTree = "<group>"; };
+		83EB1A701DE29D87003C1E98 /* 009[晕]@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "009[晕]@2x.png"; sourceTree = "<group>"; };
+		83EB1A711DE29D87003C1E98 /* 010[傲慢]@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "010[傲慢]@2x.png"; sourceTree = "<group>"; };
+		83EB1A721DE29D87003C1E98 /* 011[色]@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "011[色]@2x.png"; sourceTree = "<group>"; };
+		83EB1A731DE29D87003C1E98 /* 012[快哭了]@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "012[快哭了]@2x.png"; sourceTree = "<group>"; };
+		83EB1A741DE29D87003C1E98 /* 013[亲亲]@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "013[亲亲]@2x.png"; sourceTree = "<group>"; };
+		83EB1A751DE29D87003C1E98 /* 014[抓狂]@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "014[抓狂]@2x.png"; sourceTree = "<group>"; };
+		83EB1A761DE29D87003C1E98 /* 015[抠鼻]@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "015[抠鼻]@2x.png"; sourceTree = "<group>"; };
+		83EB1A771DE29D87003C1E98 /* 016[震惊]@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "016[震惊]@2x.png"; sourceTree = "<group>"; };
+		83EB1A781DE29D87003C1E98 /* 017[鼓掌]@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "017[鼓掌]@2x.png"; sourceTree = "<group>"; };
+		83EB1A791DE29D87003C1E98 /* 018[坏笑]@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "018[坏笑]@2x.png"; sourceTree = "<group>"; };
+		83EB1A7A1DE29D87003C1E98 /* 019[鄙视]@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "019[鄙视]@2x.png"; sourceTree = "<group>"; };
+		83EB1A7B1DE29D87003C1E98 /* 020[惊恐]@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "020[惊恐]@2x.png"; sourceTree = "<group>"; };
+		83EB1A7C1DE29D87003C1E98 /* 021[委屈]@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "021[委屈]@2x.png"; sourceTree = "<group>"; };
+		83EB1A7D1DE29D87003C1E98 /* 022[睡觉]@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "022[睡觉]@2x.png"; sourceTree = "<group>"; };
+		83EB1A7E1DE29D87003C1E98 /* 023[困]@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "023[困]@2x.png"; sourceTree = "<group>"; };
+		83EB1A7F1DE29D87003C1E98 /* 024[衰]@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "024[衰]@2x.png"; sourceTree = "<group>"; };
+		83EB1A801DE29D87003C1E98 /* 025[疑问]@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "025[疑问]@2x.png"; sourceTree = "<group>"; };
+		83EB1A811DE29D87003C1E98 /* 026[调皮]@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "026[调皮]@2x.png"; sourceTree = "<group>"; };
+		83EB1A821DE29D87003C1E98 /* 027[敲打]@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "027[敲打]@2x.png"; sourceTree = "<group>"; };
+		83EB1A831DE29D87003C1E98 /* 028[吐]@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "028[吐]@2x.png"; sourceTree = "<group>"; };
+		83EB1A841DE29D87003C1E98 /* 029[害羞]@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "029[害羞]@2x.png"; sourceTree = "<group>"; };
+		83EB1A851DE29D87003C1E98 /* 030[闭嘴]@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "030[闭嘴]@2x.png"; sourceTree = "<group>"; };
+		83EB1A861DE29D87003C1E98 /* 031[阴险]@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "031[阴险]@2x.png"; sourceTree = "<group>"; };
+		83EB1A871DE29D87003C1E98 /* 032[尴尬]@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "032[尴尬]@2x.png"; sourceTree = "<group>"; };
+		83EB1A881DE29D87003C1E98 /* 033[右哼哼]@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "033[右哼哼]@2x.png"; sourceTree = "<group>"; };
+		83EB1A891DE29D87003C1E98 /* 034[左哼哼]@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "034[左哼哼]@2x.png"; sourceTree = "<group>"; };
+		83EB1A8A1DE29D87003C1E98 /* 035[嘘]@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "035[嘘]@2x.png"; sourceTree = "<group>"; };
+		83EB1A8B1DE29D87003C1E98 /* 036[爱财]@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "036[爱财]@2x.png"; sourceTree = "<group>"; };
+		83EB1A8C1DE29D87003C1E98 /* 037[得意]@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "037[得意]@2x.png"; sourceTree = "<group>"; };
+		83EB1A8D1DE29D87003C1E98 /* 038[白眼]@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "038[白眼]@2x.png"; sourceTree = "<group>"; };
+		83EB1A8E1DE29D87003C1E98 /* 039[糗大了]@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "039[糗大了]@2x.png"; sourceTree = "<group>"; };
+		83EB1A8F1DE29D87003C1E98 /* 040[美味]@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "040[美味]@2x.png"; sourceTree = "<group>"; };
+		83EB1A901DE29D87003C1E98 /* 041[哈欠]@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "041[哈欠]@2x.png"; sourceTree = "<group>"; };
+		83EB1A911DE29D87003C1E98 /* 042[咒骂]@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "042[咒骂]@2x.png"; sourceTree = "<group>"; };
+		83EB1A921DE29D87003C1E98 /* 043[可怜]@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "043[可怜]@2x.png"; sourceTree = "<group>"; };
+		83EB1A931DE29D87003C1E98 /* 044[惊吓]@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "044[惊吓]@2x.png"; sourceTree = "<group>"; };
+		83EB1A941DE29D87003C1E98 /* 045[难过]@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "045[难过]@2x.png"; sourceTree = "<group>"; };
+		83EB1A951DE29D87003C1E98 /* 046[奋斗]@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "046[奋斗]@2x.png"; sourceTree = "<group>"; };
+		83EB1A961DE29D87003C1E98 /* 047[猪头]@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "047[猪头]@2x.png"; sourceTree = "<group>"; };
+		83EB1A971DE29D87003C1E98 /* 048[炸弹]@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "048[炸弹]@2x.png"; sourceTree = "<group>"; };
+		83EB1A981DE29D87003C1E98 /* 049[咖啡]@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "049[咖啡]@2x.png"; sourceTree = "<group>"; };
+		83EB1A991DE29D87003C1E98 /* 050[礼品]@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "050[礼品]@2x.png"; sourceTree = "<group>"; };
+		83EB1A9A1DE29D87003C1E98 /* 051[玫瑰]@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "051[玫瑰]@2x.png"; sourceTree = "<group>"; };
+		83EB1A9B1DE29D87003C1E98 /* 052[凋谢]@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "052[凋谢]@2x.png"; sourceTree = "<group>"; };
+		83EB1A9C1DE29D87003C1E98 /* 053[蛋糕]@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "053[蛋糕]@2x.png"; sourceTree = "<group>"; };
+		83EB1A9D1DE29D87003C1E98 /* 054[爱心]@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "054[爱心]@2x.png"; sourceTree = "<group>"; };
+		83EB1A9E1DE29D87003C1E98 /* 055[心碎]@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "055[心碎]@2x.png"; sourceTree = "<group>"; };
+		83EB1A9F1DE29D87003C1E98 /* 056[示爱]@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "056[示爱]@2x.png"; sourceTree = "<group>"; };
+		83EB1AA01DE29D87003C1E98 /* 057[太阳]@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "057[太阳]@2x.png"; sourceTree = "<group>"; };
+		83EB1AA11DE29D87003C1E98 /* 058[月亮]@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "058[月亮]@2x.png"; sourceTree = "<group>"; };
+		83EB1AA21DE29D87003C1E98 /* 059[瓢虫]@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "059[瓢虫]@2x.png"; sourceTree = "<group>"; };
+		83EB1AA31DE29D87003C1E98 /* 060[闪电]@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "060[闪电]@2x.png"; sourceTree = "<group>"; };
+		83EB1AA41DE29D87003C1E98 /* 061[OK]@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "061[OK]@2x.png"; sourceTree = "<group>"; };
+		83EB1AA51DE29D87003C1E98 /* 062[勾引]@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "062[勾引]@2x.png"; sourceTree = "<group>"; };
+		83EB1AA61DE29D87003C1E98 /* 063[强]@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "063[强]@2x.png"; sourceTree = "<group>"; };
+		83EB1AA71DE29D87003C1E98 /* 064[弱]@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "064[弱]@2x.png"; sourceTree = "<group>"; };
+		83EB1AA81DE29D87003C1E98 /* 065[胜利]@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "065[胜利]@2x.png"; sourceTree = "<group>"; };
+		83EB1AA91DE29D87003C1E98 /* 066[抱拳]@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "066[抱拳]@2x.png"; sourceTree = "<group>"; };
+		83EB1AAA1DE29D87003C1E98 /* 067[握手]@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "067[握手]@2x.png"; sourceTree = "<group>"; };
+		83EB1AAB1DE29D87003C1E98 /* 068[刀]@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "068[刀]@2x.png"; sourceTree = "<group>"; };
+		83EB1AAC1DE29D87003C1E98 /* 069[喝彩]@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "069[喝彩]@2x.png"; sourceTree = "<group>"; };
+		83EB1AAD1DE29D87003C1E98 /* 070[篮球]@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "070[篮球]@2x.png"; sourceTree = "<group>"; };
+		83EB1AAE1DE29D87003C1E98 /* 071[足球]@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "071[足球]@2x.png"; sourceTree = "<group>"; };
+		83EB1AAF1DE29D87003C1E98 /* 072[乒乓]@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "072[乒乓]@2x.png"; sourceTree = "<group>"; };
+		83EB1AB01DE29D87003C1E98 /* 073[米饭]@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "073[米饭]@2x.png"; sourceTree = "<group>"; };
+		83EB1AB11DE29D87003C1E98 /* 074[西瓜]@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "074[西瓜]@2x.png"; sourceTree = "<group>"; };
+		83EB1AB21DE29D87003C1E98 /* 075[啤酒]@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "075[啤酒]@2x.png"; sourceTree = "<group>"; };
+		83EB1AB31DE29D87003C1E98 /* 076[便便]@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "076[便便]@2x.png"; sourceTree = "<group>"; };
+		83EB1AB41DE29D87003C1E98 /* 077[跳绳]@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "077[跳绳]@2x.png"; sourceTree = "<group>"; };
+		83EB1AB51DE29D87003C1E98 /* 078[右跳]@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "078[右跳]@2x.png"; sourceTree = "<group>"; };
+		83EB1AB61DE29D87003C1E98 /* 079[抱抱]@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "079[抱抱]@2x.png"; sourceTree = "<group>"; };
+		83EB1AB71DE29D87003C1E98 /* 080[可爱]@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "080[可爱]@2x.png"; sourceTree = "<group>"; };
+		83EB1AB81DE29D87003C1E98 /* 081[撇嘴]@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "081[撇嘴]@2x.png"; sourceTree = "<group>"; };
+		83EB1AB91DE29D87003C1E98 /* 082[酷]@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "082[酷]@2x.png"; sourceTree = "<group>"; };
+		83EB1ABA1DE29D87003C1E98 /* 083[冷汗]@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "083[冷汗]@2x.png"; sourceTree = "<group>"; };
+		83EB1ABB1DE29D87003C1E98 /* 084[折磨]@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "084[折磨]@2x.png"; sourceTree = "<group>"; };
+		83EB1ABC1DE29D87003C1E98 /* 085[骷髅头]@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "085[骷髅头]@2x.png"; sourceTree = "<group>"; };
+		83EB1ABD1DE29D87003C1E98 /* 086[再见]@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "086[再见]@2x.png"; sourceTree = "<group>"; };
+		83EB1ABE1DE29D87003C1E98 /* 087[擦汗]@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "087[擦汗]@2x.png"; sourceTree = "<group>"; };
+		83EB1ABF1DE29D87003C1E98 /* 092[菜刀]@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "092[菜刀]@2x.png"; sourceTree = "<group>"; };
+		83EB1AC01DE29D87003C1E98 /* 093[拳头]@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "093[拳头]@2x.png"; sourceTree = "<group>"; };
+		83EB1AC11DE29D87003C1E98 /* 094[差劲]@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "094[差劲]@2x.png"; sourceTree = "<group>"; };
+		83EB1AC21DE29D87003C1E98 /* 095[爱你]@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "095[爱你]@2x.png"; sourceTree = "<group>"; };
+		83EB1AC31DE29D87003C1E98 /* 096[NO]@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "096[NO]@2x.png"; sourceTree = "<group>"; };
+		83EB1AC41DE29D87003C1E98 /* 097[飞吻]@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "097[飞吻]@2x.png"; sourceTree = "<group>"; };
+		83EB1AC51DE29D87003C1E98 /* 098[接吻]@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "098[接吻]@2x.png"; sourceTree = "<group>"; };
+		83EB1AC61DE29D87003C1E98 /* 099[发抖]@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "099[发抖]@2x.png"; sourceTree = "<group>"; };
+		83EB1AC71DE29D87003C1E98 /* 100[呕火]@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "100[呕火]@2x.png"; sourceTree = "<group>"; };
+		83EB1AC81DE29D87003C1E98 /* 101[点头]@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "101[点头]@2x.png"; sourceTree = "<group>"; };
+		83EB1AC91DE29D87003C1E98 /* 102[回头]@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "102[回头]@2x.png"; sourceTree = "<group>"; };
+		83EB1ACA1DE29D87003C1E98 /* 103[挥手帕]@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "103[挥手帕]@2x.png"; sourceTree = "<group>"; };
+		83EB1ACB1DE29D87003C1E98 /* 104[激动]@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "104[激动]@2x.png"; sourceTree = "<group>"; };
+		83EB1ACC1DE29D87003C1E98 /* 105[跳跳]@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "105[跳跳]@2x.png"; sourceTree = "<group>"; };
+		83EB1ACD1DE29D87003C1E98 /* 106[左太极]@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "106[左太极]@2x.png"; sourceTree = "<group>"; };
+		83EB1ACE1DE29D87003C1E98 /* 107[右太极]@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "107[右太极]@2x.png"; sourceTree = "<group>"; };
+		83EB1ACF1DE29D87003C1E98 /* 108[打太极]@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "108[打太极]@2x.png"; sourceTree = "<group>"; };
+		83EB1AD01DE29D87003C1E98 /* emoji.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = emoji.plist; sourceTree = "<group>"; };
+		83EB1AD11DE29D87003C1E98 /* emojiName.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = emojiName.plist; sourceTree = "<group>"; };
+		83EB1AD21DE29D87003C1E98 /* 删除@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "删除@2x.png"; sourceTree = "<group>"; };
+		83EB1AD31DE29D87003C1E98 /* 删除@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "删除@3x.png"; sourceTree = "<group>"; };
+		83EB1AD41DE29D87003C1E98 /* 大表情-bg-预览-居中@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "大表情-bg-预览-居中@2x.png"; sourceTree = "<group>"; };
+		83EB1AD51DE29D87003C1E98 /* 大表情-bg-预览@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "大表情-bg-预览@2x.png"; sourceTree = "<group>"; };
+		83EB1AD61DE29D87003C1E98 /* 聊天-icon-文字键盘@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "聊天-icon-文字键盘@2x.png"; sourceTree = "<group>"; };
+		83EB1AD71DE29D87003C1E98 /* 聊天-icon-语音-绿@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "聊天-icon-语音-绿@2x.png"; sourceTree = "<group>"; };
+		83EB1AD81DE29D87003C1E98 /* 聊天-icon-语音1-绿@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "聊天-icon-语音1-绿@2x.png"; sourceTree = "<group>"; };
+		83EB1AD91DE29D87003C1E98 /* 聊天-icon-语音2-绿@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "聊天-icon-语音2-绿@2x.png"; sourceTree = "<group>"; };
+		83EB1ADA1DE29D87003C1E98 /* 聊天-icon-语音及切换键盘-灰@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "聊天-icon-语音及切换键盘-灰@2x.png"; sourceTree = "<group>"; };
+		83EB1ADB1DE29D87003C1E98 /* 聊天-icon-语音及切换键盘1-灰@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "聊天-icon-语音及切换键盘1-灰@2x.png"; sourceTree = "<group>"; };
+		83EB1ADC1DE29D87003C1E98 /* 聊天-icon-语音及切换键盘2-灰@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "聊天-icon-语音及切换键盘2-灰@2x.png"; sourceTree = "<group>"; };
+		83EB1ADD1DE29D87003C1E98 /* 聊天-icon-选择照片帖子@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "聊天-icon-选择照片帖子@2x.png"; sourceTree = "<group>"; };
+		83EB1ADE1DE29D87003C1E98 /* 聊天-icon-选择表情@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "聊天-icon-选择表情@2x.png"; sourceTree = "<group>"; };
+		83EB1ADF1DE29D87003C1E98 /* 聊天-icon-选择表情@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "聊天-icon-选择表情@3x.png"; sourceTree = "<group>"; };
+		83EB1AE01DE29D87003C1E98 /* 聊天语音-icon-取消@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "聊天语音-icon-取消@2x.png"; sourceTree = "<group>"; };
+		83EB1AE11DE29D87003C1E98 /* 聊天语音-icon-话筒@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "聊天语音-icon-话筒@2x.png"; sourceTree = "<group>"; };
+		83EB1AE21DE29D87003C1E98 /* 聊天语音-icon-音量@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "聊天语音-icon-音量@2x.png"; sourceTree = "<group>"; };
+		83EB1AE31DE29D87003C1E98 /* 聊天键盘-icon-位置@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "聊天键盘-icon-位置@2x.png"; sourceTree = "<group>"; };
+		83EB1AE41DE29D87003C1E98 /* 聊天键盘-icon-位置@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "聊天键盘-icon-位置@3x.png"; sourceTree = "<group>"; };
+		83EB1AE51DE29D87003C1E98 /* 聊天键盘-icon-小视频@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "聊天键盘-icon-小视频@2x.png"; sourceTree = "<group>"; };
+		83EB1AE61DE29D87003C1E98 /* 聊天键盘-icon-小视频@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "聊天键盘-icon-小视频@3x.png"; sourceTree = "<group>"; };
+		83EB1AE71DE29D87003C1E98 /* 聊天键盘-icon-拍照@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "聊天键盘-icon-拍照@2x.png"; sourceTree = "<group>"; };
+		83EB1AE81DE29D87003C1E98 /* 聊天键盘-icon-拍照@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "聊天键盘-icon-拍照@3x.png"; sourceTree = "<group>"; };
+		83EB1AE91DE29D87003C1E98 /* 聊天键盘-icon-群主召唤@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "聊天键盘-icon-群主召唤@2x.png"; sourceTree = "<group>"; };
+		83EB1AEA1DE29D87003C1E98 /* 聊天键盘-icon-群主召唤@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "聊天键盘-icon-群主召唤@3x.png"; sourceTree = "<group>"; };
+		83EB1AEB1DE29D87003C1E98 /* 聊天键盘-icon-选择帖子@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "聊天键盘-icon-选择帖子@2x.png"; sourceTree = "<group>"; };
+		83EB1AEC1DE29D87003C1E98 /* 聊天键盘-icon-选择帖子@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "聊天键盘-icon-选择帖子@3x.png"; sourceTree = "<group>"; };
+		83EB1AED1DE29D87003C1E98 /* 聊天键盘-icon-选择照片@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "聊天键盘-icon-选择照片@2x.png"; sourceTree = "<group>"; };
+		83EB1AEE1DE29D87003C1E98 /* 聊天键盘-icon-选择照片@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "聊天键盘-icon-选择照片@3x.png"; sourceTree = "<group>"; };
+		83EB1AEF1DE29D87003C1E98 /* 聊天键盘切换-btn-圆-点击@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "聊天键盘切换-btn-圆-点击@2x.png"; sourceTree = "<group>"; };
+		83EB1AF01DE29D87003C1E98 /* 聊天键盘切换-btn-圆-点击@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "聊天键盘切换-btn-圆-点击@3x.png"; sourceTree = "<group>"; };
+		83EB1AF11DE29D87003C1E98 /* 聊天键盘切换-btn-圆@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "聊天键盘切换-btn-圆@2x.png"; sourceTree = "<group>"; };
+		83EB1AF21DE29D87003C1E98 /* 聊天键盘切换-btn-圆@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "聊天键盘切换-btn-圆@3x.png"; sourceTree = "<group>"; };
+		83EB1AF31DE29D87003C1E98 /* 输入框-灰色@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "输入框-灰色@2x.png"; sourceTree = "<group>"; };
+		83EB1AF41DE29D87003C1E98 /* 输入框-白色@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "输入框-白色@2x.png"; sourceTree = "<group>"; };
+		83EB1AF71DE29D87003C1E98 /* FLAnimatedImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLAnimatedImage.h; sourceTree = "<group>"; };
+		83EB1AF81DE29D87003C1E98 /* FLAnimatedImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLAnimatedImage.m; sourceTree = "<group>"; };
+		83EB1AF91DE29D87003C1E98 /* FLAnimatedImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLAnimatedImageView.h; sourceTree = "<group>"; };
+		83EB1AFA1DE29D87003C1E98 /* FLAnimatedImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLAnimatedImageView.m; sourceTree = "<group>"; };
+		83EB1AFC1DE29D87003C1E98 /* UIView+GJCFViewFrameUitil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+GJCFViewFrameUitil.h"; sourceTree = "<group>"; };
+		83EB1AFD1DE29D87003C1E98 /* UIView+GJCFViewFrameUitil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+GJCFViewFrameUitil.m"; sourceTree = "<group>"; };
+		83EB1BA31DE29DAE003C1E98 /* NSString+LJHash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+LJHash.h"; sourceTree = "<group>"; };
+		83EB1BA41DE29DAE003C1E98 /* NSString+LJHash.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+LJHash.m"; sourceTree = "<group>"; };
+		83EB1BA61DE29E0F003C1E98 /* libstdc++.6.0.9.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.6.0.9.tbd"; path = "usr/lib/libstdc++.6.0.9.tbd"; sourceTree = SDKROOT; };
+		83EB1BA81DE29E25003C1E98 /* libz.1.2.8.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.1.2.8.tbd; path = usr/lib/libz.1.2.8.tbd; sourceTree = SDKROOT; };
+		83EB1BAA1DE29E3F003C1E98 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		83EB1BAB1DE29E3F003C1E98 /* libc++abi.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++abi.tbd"; path = "usr/lib/libc++abi.tbd"; sourceTree = SDKROOT; };
+		83EB1BAE1DE29E5C003C1E98 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		83EB1BB01DE29E6F003C1E98 /* libicucore.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libicucore.tbd; path = usr/lib/libicucore.tbd; sourceTree = SDKROOT; };
+		9C181308277C664D39E74E5C /* Pods-LJChatUI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LJChatUI.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LJChatUI/Pods-LJChatUI.debug.xcconfig"; sourceTree = "<group>"; };
+		AA2B128398F52353810A78DB /* Pods-LJChatUI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LJChatUI.release.xcconfig"; path = "Pods/Target Support Files/Pods-LJChatUI/Pods-LJChatUI.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,17 +526,40 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				83EB1BB11DE29E6F003C1E98 /* libicucore.tbd in Frameworks */,
+				83EB1BAF1DE29E5C003C1E98 /* libsqlite3.tbd in Frameworks */,
+				83EB1BAC1DE29E3F003C1E98 /* libc++.tbd in Frameworks */,
+				83EB1BAD1DE29E3F003C1E98 /* libc++abi.tbd in Frameworks */,
+				83EB1BA91DE29E25003C1E98 /* libz.1.2.8.tbd in Frameworks */,
+				83EB1BA71DE29E0F003C1E98 /* libstdc++.6.0.9.tbd in Frameworks */,
+				83EB1A101DE297D1003C1E98 /* QALSDK.framework in Frameworks */,
+				83EB1A111DE297D1003C1E98 /* TLSSDK.framework in Frameworks */,
+				83EB1A0E1DE297D1003C1E98 /* IMCore.framework in Frameworks */,
+				83EB1A0F1DE297D1003C1E98 /* ImSDK.framework in Frameworks */,
+				9EC5DBC28C3EF7B16B558A2B /* libPods-LJChatUI.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		26240FDAAF454DD3CB1A67F6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9C181308277C664D39E74E5C /* Pods-LJChatUI.debug.xcconfig */,
+				AA2B128398F52353810A78DB /* Pods-LJChatUI.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		832663C61DDEF513003FC30C = {
 			isa = PBXGroup;
 			children = (
+				83EB180F1DE297D1003C1E98 /* Library */,
 				832663D11DDEF513003FC30C /* LJChatUI */,
 				832663D01DDEF513003FC30C /* Products */,
+				26240FDAAF454DD3CB1A67F6 /* Pods */,
+				9A716DAD23521A4A439D82AE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -96,18 +578,25 @@
 				832664101DDEF579003FC30C /* AppDelegate.m */,
 				832664391DDEF591003FC30C /* Cell */,
 				8326643A1DDEF5B4003FC30C /* View */,
-				832664231DDEF579003FC30C /* LJTextController.h */,
-				832664241DDEF579003FC30C /* LJTextController.m */,
+				832664231DDEF579003FC30C /* LJMessageController.h */,
+				832664241DDEF579003FC30C /* LJMessageController.m */,
+				83EB17FC1DE294AD003C1E98 /* LJMessagesModel.h */,
+				83EB17FD1DE294AD003C1E98 /* LJMessagesModel.m */,
+				83EB1A121DE2993F003C1E98 /* LJGoodsModel.h */,
+				83EB1A131DE2993F003C1E98 /* LJGoodsModel.m */,
+				83EB17FF1DE297B6003C1E98 /* LJIMAdapter */,
 				8326643B1DDEF705003FC30C /* LJShowImageController.h */,
 				8326643C1DDEF705003FC30C /* LJShowImageController.m */,
 				8326643E1DDEF789003FC30C /* LJMapController.h */,
 				8326643F1DDEF789003FC30C /* LJMapController.m */,
 				832664291DDEF579003FC30C /* UIView+LJMask.h */,
 				8326642A1DDEF579003FC30C /* UIView+LJMask.m */,
+				83EB1BA31DE29DAE003C1E98 /* NSString+LJHash.h */,
+				83EB1BA41DE29DAE003C1E98 /* NSString+LJHash.m */,
+				83EB1A151DE29D37003C1E98 /* LJSound */,
+				83EB1A201DE29D37003C1E98 /* LJVideo */,
 				832664111DDEF579003FC30C /* Assets.xcassets */,
 				832664151DDEF579003FC30C /* Main.storyboard */,
-				832664131DDEF579003FC30C /* LaunchScreen.storyboard */,
-				832663E31DDEF513003FC30C /* Info.plist */,
 				832663D21DDEF513003FC30C /* Supporting Files */,
 			);
 			path = LJChatUI;
@@ -116,6 +605,8 @@
 		832663D21DDEF513003FC30C /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				832664131DDEF579003FC30C /* LaunchScreen.storyboard */,
+				832663E31DDEF513003FC30C /* Info.plist */,
 				832663D31DDEF513003FC30C /* main.m */,
 			);
 			name = "Supporting Files";
@@ -124,19 +615,19 @@
 		832664391DDEF591003FC30C /* Cell */ = {
 			isa = PBXGroup;
 			children = (
+				832664411DDF0676003FC30C /* LJElemCellHeader.h */,
 				832664191DDEF579003FC30C /* LJElemCell.h */,
 				8326641A1DDEF579003FC30C /* LJElemCell.m */,
 				832664251DDEF579003FC30C /* LJTextElemCell.h */,
 				832664261DDEF579003FC30C /* LJTextElemCell.m */,
+				8326641B1DDEF579003FC30C /* LJImageElemCell.h */,
+				8326641C1DDEF579003FC30C /* LJImageElemCell.m */,
 				832664271DDEF579003FC30C /* LJVideoElemCell.h */,
 				832664281DDEF579003FC30C /* LJVideoElemCell.m */,
 				832664211DDEF579003FC30C /* LJSoundElemCell.h */,
 				832664221DDEF579003FC30C /* LJSoundElemCell.m */,
-				8326641B1DDEF579003FC30C /* LJImageElemCell.h */,
-				8326641C1DDEF579003FC30C /* LJImageElemCell.m */,
 				8326641D1DDEF579003FC30C /* LJLocationElemCell.h */,
 				8326641E1DDEF579003FC30C /* LJLocationElemCell.m */,
-				832664411DDF0676003FC30C /* LJElemCellHeader.h */,
 			);
 			name = Cell;
 			sourceTree = "<group>";
@@ -152,6 +643,377 @@
 			name = View;
 			sourceTree = "<group>";
 		};
+		83EB17FF1DE297B6003C1E98 /* LJIMAdapter */ = {
+			isa = PBXGroup;
+			children = (
+				83EB18001DE297B6003C1E98 /* LJIMConfigFile.h */,
+				83EB18011DE297B6003C1E98 /* LJIMConfigFile.m */,
+				83EB18021DE297B6003C1E98 /* LJIMLoginParam.h */,
+				83EB18031DE297B6003C1E98 /* LJIMLoginParam.m */,
+				83EB18041DE297B6003C1E98 /* LJIMManager.h */,
+				83EB18051DE297B6003C1E98 /* LJIMManager.m */,
+				83EB18061DE297B6003C1E98 /* LJIMManagerListener.h */,
+				83EB18071DE297B6003C1E98 /* LJIMManagerListener.m */,
+				83EB18081DE297B6003C1E98 /* TIMConversation+LJAdd.h */,
+				83EB18091DE297B6003C1E98 /* TIMConversation+LJAdd.m */,
+			);
+			path = LJIMAdapter;
+			sourceTree = "<group>";
+		};
+		83EB180F1DE297D1003C1E98 /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				83EB1A3A1DE29D87003C1E98 /* GJGCChatInputPanel */,
+				83EB1AF51DE29D87003C1E98 /* GJGCChatInputPanel-Depend */,
+				83EB19271DE297D1003C1E98 /* Linda */,
+				83EB19391DE297D1003C1E98 /* Tim_IM_2.4.0 */,
+			);
+			path = Library;
+			sourceTree = "<group>";
+		};
+		83EB19271DE297D1003C1E98 /* Linda */ = {
+			isa = PBXGroup;
+			children = (
+				83EB19281DE297D1003C1E98 /* Category */,
+				83EB192D1DE297D1003C1E98 /* db */,
+				83EB19301DE297D1003C1E98 /* LDHttpClient.h */,
+				83EB19311DE297D1003C1E98 /* LDHttpClient.m */,
+				83EB19321DE297D1003C1E98 /* LDRequest.h */,
+				83EB19331DE297D1003C1E98 /* LDRequest.m */,
+				83EB19341DE297D1003C1E98 /* LDRequestBuilder.h */,
+				83EB19351DE297D1003C1E98 /* LDRequestBuilder.m */,
+				83EB19361DE297D1003C1E98 /* Serialization */,
+			);
+			path = Linda;
+			sourceTree = "<group>";
+		};
+		83EB19281DE297D1003C1E98 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				83EB19291DE297D1003C1E98 /* NSDictionary+LJURL.h */,
+				83EB192A1DE297D1003C1E98 /* NSDictionary+LJURL.m */,
+				83EB192B1DE297D1003C1E98 /* NSObject+LDProperty.h */,
+				83EB192C1DE297D1003C1E98 /* NSObject+LDProperty.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		83EB192D1DE297D1003C1E98 /* db */ = {
+			isa = PBXGroup;
+			children = (
+				83EB192E1DE297D1003C1E98 /* LDFmdbProvider.h */,
+				83EB192F1DE297D1003C1E98 /* LDFmdbProvider.m */,
+			);
+			path = db;
+			sourceTree = "<group>";
+		};
+		83EB19361DE297D1003C1E98 /* Serialization */ = {
+			isa = PBXGroup;
+			children = (
+				83EB19371DE297D1003C1E98 /* BJURLRequestSerialization.h */,
+				83EB19381DE297D1003C1E98 /* BJURLRequestSerialization.m */,
+			);
+			path = Serialization;
+			sourceTree = "<group>";
+		};
+		83EB19391DE297D1003C1E98 /* Tim_IM_2.4.0 */ = {
+			isa = PBXGroup;
+			children = (
+				83EB193A1DE297D1003C1E98 /* IMCore.framework */,
+				83EB193B1DE297D1003C1E98 /* ImSDK.framework */,
+				83EB193C1DE297D1003C1E98 /* QALSDK.framework */,
+				83EB193D1DE297D1003C1E98 /* TLSSDK.framework */,
+			);
+			path = Tim_IM_2.4.0;
+			sourceTree = "<group>";
+		};
+		83EB1A151DE29D37003C1E98 /* LJSound */ = {
+			isa = PBXGroup;
+			children = (
+				83EB1A161DE29D37003C1E98 /* LJSoundManager.h */,
+				83EB1A171DE29D37003C1E98 /* LJSoundManager.m */,
+				83EB1A181DE29D37003C1E98 /* LJSoundModel.h */,
+				83EB1A191DE29D37003C1E98 /* LJSoundModel.m */,
+				83EB1A1A1DE29D37003C1E98 /* LJSoundPlayer.h */,
+				83EB1A1B1DE29D37003C1E98 /* LJSoundPlayer.m */,
+				83EB1A1C1DE29D37003C1E98 /* LJSoundRecord.h */,
+				83EB1A1D1DE29D37003C1E98 /* LJSoundRecord.m */,
+				83EB1A1E1DE29D37003C1E98 /* NSString+LJFile.h */,
+				83EB1A1F1DE29D37003C1E98 /* NSString+LJFile.m */,
+			);
+			path = LJSound;
+			sourceTree = "<group>";
+		};
+		83EB1A201DE29D37003C1E98 /* LJVideo */ = {
+			isa = PBXGroup;
+			children = (
+				83EB1A211DE29D37003C1E98 /* LJFullVideoView.h */,
+				83EB1A221DE29D37003C1E98 /* LJFullVideoView.m */,
+				83EB1A231DE29D37003C1E98 /* LJMovieDecoder.h */,
+				83EB1A241DE29D37003C1E98 /* LJMovieDecoder.m */,
+				83EB1A251DE29D37003C1E98 /* LJRecordVideoView.h */,
+				83EB1A261DE29D37003C1E98 /* LJRecordVideoView.m */,
+				83EB1A271DE29D37003C1E98 /* LJRoundProgressView.h */,
+				83EB1A281DE29D37003C1E98 /* LJRoundProgressView.m */,
+				83EB1A291DE29D37003C1E98 /* LJShortVideoPlayView.h */,
+				83EB1A2A1DE29D37003C1E98 /* LJShortVideoPlayView.m */,
+				83EB1A2B1DE29D37003C1E98 /* LJVideoSource.xcassets */,
+				83EB1A2C1DE29D37003C1E98 /* UIImage+LJVideo.h */,
+				83EB1A2D1DE29D37003C1E98 /* UIImage+LJVideo.m */,
+			);
+			path = LJVideo;
+			sourceTree = "<group>";
+		};
+		83EB1A3A1DE29D87003C1E98 /* GJGCChatInputPanel */ = {
+			isa = PBXGroup;
+			children = (
+				83EB1A3B1DE29D87003C1E98 /* GJGCChatInputBar.h */,
+				83EB1A3C1DE29D87003C1E98 /* GJGCChatInputBar.m */,
+				83EB1A3D1DE29D87003C1E98 /* GJGCChatInputBarItem.h */,
+				83EB1A3E1DE29D87003C1E98 /* GJGCChatInputBarItem.m */,
+				83EB1A3F1DE29D87003C1E98 /* GJGCChatInputConst.h */,
+				83EB1A401DE29D87003C1E98 /* GJGCChatInputConst.m */,
+				83EB1A411DE29D87003C1E98 /* GJGCChatInputExpandEmojiPanel.h */,
+				83EB1A421DE29D87003C1E98 /* GJGCChatInputExpandEmojiPanel.m */,
+				83EB1A431DE29D87003C1E98 /* GJGCChatInputExpandEmojiPanelGifPageItem.h */,
+				83EB1A441DE29D87003C1E98 /* GJGCChatInputExpandEmojiPanelGifPageItem.m */,
+				83EB1A451DE29D87003C1E98 /* GJGCChatInputExpandEmojiPanelGifSubItem.h */,
+				83EB1A461DE29D87003C1E98 /* GJGCChatInputExpandEmojiPanelGifSubItem.m */,
+				83EB1A471DE29D87003C1E98 /* GJGCChatInputExpandEmojiPanelMenuBar.h */,
+				83EB1A481DE29D87003C1E98 /* GJGCChatInputExpandEmojiPanelMenuBar.m */,
+				83EB1A491DE29D87003C1E98 /* GJGCChatInputExpandEmojiPanelMenuBarDataSource.h */,
+				83EB1A4A1DE29D87003C1E98 /* GJGCChatInputExpandEmojiPanelMenuBarDataSource.m */,
+				83EB1A4B1DE29D87003C1E98 /* GJGCChatInputExpandEmojiPanelMenuBarDataSourceItem.h */,
+				83EB1A4C1DE29D87003C1E98 /* GJGCChatInputExpandEmojiPanelMenuBarDataSourceItem.m */,
+				83EB1A4D1DE29D87003C1E98 /* GJGCChatInputExpandEmojiPanelPageItem.h */,
+				83EB1A4E1DE29D87003C1E98 /* GJGCChatInputExpandEmojiPanelPageItem.m */,
+				83EB1A4F1DE29D87003C1E98 /* GJGCChatInputExpandMenuPanel.h */,
+				83EB1A501DE29D87003C1E98 /* GJGCChatInputExpandMenuPanel.m */,
+				83EB1A511DE29D87003C1E98 /* GJGCChatInputExpandMenuPanelConfigModel.h */,
+				83EB1A521DE29D87003C1E98 /* GJGCChatInputExpandMenuPanelConfigModel.m */,
+				83EB1A531DE29D87003C1E98 /* GJGCChatInputExpandMenuPanelDataSource.h */,
+				83EB1A541DE29D87003C1E98 /* GJGCChatInputExpandMenuPanelDataSource.m */,
+				83EB1A551DE29D87003C1E98 /* GJGCChatInputExpandMenuPanelItem.h */,
+				83EB1A561DE29D87003C1E98 /* GJGCChatInputExpandMenuPanelItem.m */,
+				83EB1A571DE29D87003C1E98 /* GJGCChatInputGifFloatView.h */,
+				83EB1A581DE29D87003C1E98 /* GJGCChatInputGifFloatView.m */,
+				83EB1A591DE29D87003C1E98 /* GJGCChatInputPanel.h */,
+				83EB1A5A1DE29D87003C1E98 /* GJGCChatInputPanel.m */,
+				83EB1A5B1DE29D87003C1E98 /* GJGCChatInputPanelDelegate.h */,
+				83EB1A5C1DE29D87003C1E98 /* GJGCChatInputPanelStyle.h */,
+				83EB1A5D1DE29D87003C1E98 /* GJGCChatInputPanelStyle.m */,
+				83EB1A5E1DE29D87003C1E98 /* GJGCChatInputRecordAudioTipView.h */,
+				83EB1A5F1DE29D87003C1E98 /* GJGCChatInputRecordAudioTipView.m */,
+				83EB1A601DE29D87003C1E98 /* GJGCChatInputTextView.h */,
+				83EB1A611DE29D87003C1E98 /* GJGCChatInputTextView.m */,
+				83EB1A621DE29D87003C1E98 /* GJGCIconSeprateButton.h */,
+				83EB1A631DE29D87003C1E98 /* GJGCIconSeprateButton.m */,
+				83EB1A641DE29D87003C1E98 /* GJGCIconSeprateImageView.h */,
+				83EB1A651DE29D87003C1E98 /* GJGCIconSeprateImageView.m */,
+				83EB1A661DE29D87003C1E98 /* Resource */,
+			);
+			path = GJGCChatInputPanel;
+			sourceTree = "<group>";
+		};
+		83EB1A661DE29D87003C1E98 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				83EB1A671DE29D87003C1E98 /* emoji */,
+				83EB1AD41DE29D87003C1E98 /* 大表情-bg-预览-居中@2x.png */,
+				83EB1AD51DE29D87003C1E98 /* 大表情-bg-预览@2x.png */,
+				83EB1AD61DE29D87003C1E98 /* 聊天-icon-文字键盘@2x.png */,
+				83EB1AD71DE29D87003C1E98 /* 聊天-icon-语音-绿@2x.png */,
+				83EB1AD81DE29D87003C1E98 /* 聊天-icon-语音1-绿@2x.png */,
+				83EB1AD91DE29D87003C1E98 /* 聊天-icon-语音2-绿@2x.png */,
+				83EB1ADA1DE29D87003C1E98 /* 聊天-icon-语音及切换键盘-灰@2x.png */,
+				83EB1ADB1DE29D87003C1E98 /* 聊天-icon-语音及切换键盘1-灰@2x.png */,
+				83EB1ADC1DE29D87003C1E98 /* 聊天-icon-语音及切换键盘2-灰@2x.png */,
+				83EB1ADD1DE29D87003C1E98 /* 聊天-icon-选择照片帖子@2x.png */,
+				83EB1ADE1DE29D87003C1E98 /* 聊天-icon-选择表情@2x.png */,
+				83EB1ADF1DE29D87003C1E98 /* 聊天-icon-选择表情@3x.png */,
+				83EB1AE01DE29D87003C1E98 /* 聊天语音-icon-取消@2x.png */,
+				83EB1AE11DE29D87003C1E98 /* 聊天语音-icon-话筒@2x.png */,
+				83EB1AE21DE29D87003C1E98 /* 聊天语音-icon-音量@2x.png */,
+				83EB1AE31DE29D87003C1E98 /* 聊天键盘-icon-位置@2x.png */,
+				83EB1AE41DE29D87003C1E98 /* 聊天键盘-icon-位置@3x.png */,
+				83EB1AE51DE29D87003C1E98 /* 聊天键盘-icon-小视频@2x.png */,
+				83EB1AE61DE29D87003C1E98 /* 聊天键盘-icon-小视频@3x.png */,
+				83EB1AE71DE29D87003C1E98 /* 聊天键盘-icon-拍照@2x.png */,
+				83EB1AE81DE29D87003C1E98 /* 聊天键盘-icon-拍照@3x.png */,
+				83EB1AE91DE29D87003C1E98 /* 聊天键盘-icon-群主召唤@2x.png */,
+				83EB1AEA1DE29D87003C1E98 /* 聊天键盘-icon-群主召唤@3x.png */,
+				83EB1AEB1DE29D87003C1E98 /* 聊天键盘-icon-选择帖子@2x.png */,
+				83EB1AEC1DE29D87003C1E98 /* 聊天键盘-icon-选择帖子@3x.png */,
+				83EB1AED1DE29D87003C1E98 /* 聊天键盘-icon-选择照片@2x.png */,
+				83EB1AEE1DE29D87003C1E98 /* 聊天键盘-icon-选择照片@3x.png */,
+				83EB1AEF1DE29D87003C1E98 /* 聊天键盘切换-btn-圆-点击@2x.png */,
+				83EB1AF01DE29D87003C1E98 /* 聊天键盘切换-btn-圆-点击@3x.png */,
+				83EB1AF11DE29D87003C1E98 /* 聊天键盘切换-btn-圆@2x.png */,
+				83EB1AF21DE29D87003C1E98 /* 聊天键盘切换-btn-圆@3x.png */,
+				83EB1AF31DE29D87003C1E98 /* 输入框-灰色@2x.png */,
+				83EB1AF41DE29D87003C1E98 /* 输入框-白色@2x.png */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		83EB1A671DE29D87003C1E98 /* emoji */ = {
+			isa = PBXGroup;
+			children = (
+				83EB1A681DE29D87003C1E98 /* 001[憨笑]@2x.png */,
+				83EB1A691DE29D87003C1E98 /* 002[偷笑]@2x.png */,
+				83EB1A6A1DE29D87003C1E98 /* 003[大哭]@2x.png */,
+				83EB1A6B1DE29D87003C1E98 /* 004[发怒]@2x.png */,
+				83EB1A6C1DE29D87003C1E98 /* 005[微笑]@2x.png */,
+				83EB1A6D1DE29D87003C1E98 /* 006[流泪]@2x.png */,
+				83EB1A6E1DE29D87003C1E98 /* 007[流汗]@2x.png */,
+				83EB1A6F1DE29D87003C1E98 /* 008[呲牙]@2x.png */,
+				83EB1A701DE29D87003C1E98 /* 009[晕]@2x.png */,
+				83EB1A711DE29D87003C1E98 /* 010[傲慢]@2x.png */,
+				83EB1A721DE29D87003C1E98 /* 011[色]@2x.png */,
+				83EB1A731DE29D87003C1E98 /* 012[快哭了]@2x.png */,
+				83EB1A741DE29D87003C1E98 /* 013[亲亲]@2x.png */,
+				83EB1A751DE29D87003C1E98 /* 014[抓狂]@2x.png */,
+				83EB1A761DE29D87003C1E98 /* 015[抠鼻]@2x.png */,
+				83EB1A771DE29D87003C1E98 /* 016[震惊]@2x.png */,
+				83EB1A781DE29D87003C1E98 /* 017[鼓掌]@2x.png */,
+				83EB1A791DE29D87003C1E98 /* 018[坏笑]@2x.png */,
+				83EB1A7A1DE29D87003C1E98 /* 019[鄙视]@2x.png */,
+				83EB1A7B1DE29D87003C1E98 /* 020[惊恐]@2x.png */,
+				83EB1A7C1DE29D87003C1E98 /* 021[委屈]@2x.png */,
+				83EB1A7D1DE29D87003C1E98 /* 022[睡觉]@2x.png */,
+				83EB1A7E1DE29D87003C1E98 /* 023[困]@2x.png */,
+				83EB1A7F1DE29D87003C1E98 /* 024[衰]@2x.png */,
+				83EB1A801DE29D87003C1E98 /* 025[疑问]@2x.png */,
+				83EB1A811DE29D87003C1E98 /* 026[调皮]@2x.png */,
+				83EB1A821DE29D87003C1E98 /* 027[敲打]@2x.png */,
+				83EB1A831DE29D87003C1E98 /* 028[吐]@2x.png */,
+				83EB1A841DE29D87003C1E98 /* 029[害羞]@2x.png */,
+				83EB1A851DE29D87003C1E98 /* 030[闭嘴]@2x.png */,
+				83EB1A861DE29D87003C1E98 /* 031[阴险]@2x.png */,
+				83EB1A871DE29D87003C1E98 /* 032[尴尬]@2x.png */,
+				83EB1A881DE29D87003C1E98 /* 033[右哼哼]@2x.png */,
+				83EB1A891DE29D87003C1E98 /* 034[左哼哼]@2x.png */,
+				83EB1A8A1DE29D87003C1E98 /* 035[嘘]@2x.png */,
+				83EB1A8B1DE29D87003C1E98 /* 036[爱财]@2x.png */,
+				83EB1A8C1DE29D87003C1E98 /* 037[得意]@2x.png */,
+				83EB1A8D1DE29D87003C1E98 /* 038[白眼]@2x.png */,
+				83EB1A8E1DE29D87003C1E98 /* 039[糗大了]@2x.png */,
+				83EB1A8F1DE29D87003C1E98 /* 040[美味]@2x.png */,
+				83EB1A901DE29D87003C1E98 /* 041[哈欠]@2x.png */,
+				83EB1A911DE29D87003C1E98 /* 042[咒骂]@2x.png */,
+				83EB1A921DE29D87003C1E98 /* 043[可怜]@2x.png */,
+				83EB1A931DE29D87003C1E98 /* 044[惊吓]@2x.png */,
+				83EB1A941DE29D87003C1E98 /* 045[难过]@2x.png */,
+				83EB1A951DE29D87003C1E98 /* 046[奋斗]@2x.png */,
+				83EB1A961DE29D87003C1E98 /* 047[猪头]@2x.png */,
+				83EB1A971DE29D87003C1E98 /* 048[炸弹]@2x.png */,
+				83EB1A981DE29D87003C1E98 /* 049[咖啡]@2x.png */,
+				83EB1A991DE29D87003C1E98 /* 050[礼品]@2x.png */,
+				83EB1A9A1DE29D87003C1E98 /* 051[玫瑰]@2x.png */,
+				83EB1A9B1DE29D87003C1E98 /* 052[凋谢]@2x.png */,
+				83EB1A9C1DE29D87003C1E98 /* 053[蛋糕]@2x.png */,
+				83EB1A9D1DE29D87003C1E98 /* 054[爱心]@2x.png */,
+				83EB1A9E1DE29D87003C1E98 /* 055[心碎]@2x.png */,
+				83EB1A9F1DE29D87003C1E98 /* 056[示爱]@2x.png */,
+				83EB1AA01DE29D87003C1E98 /* 057[太阳]@2x.png */,
+				83EB1AA11DE29D87003C1E98 /* 058[月亮]@2x.png */,
+				83EB1AA21DE29D87003C1E98 /* 059[瓢虫]@2x.png */,
+				83EB1AA31DE29D87003C1E98 /* 060[闪电]@2x.png */,
+				83EB1AA41DE29D87003C1E98 /* 061[OK]@2x.png */,
+				83EB1AA51DE29D87003C1E98 /* 062[勾引]@2x.png */,
+				83EB1AA61DE29D87003C1E98 /* 063[强]@2x.png */,
+				83EB1AA71DE29D87003C1E98 /* 064[弱]@2x.png */,
+				83EB1AA81DE29D87003C1E98 /* 065[胜利]@2x.png */,
+				83EB1AA91DE29D87003C1E98 /* 066[抱拳]@2x.png */,
+				83EB1AAA1DE29D87003C1E98 /* 067[握手]@2x.png */,
+				83EB1AAB1DE29D87003C1E98 /* 068[刀]@2x.png */,
+				83EB1AAC1DE29D87003C1E98 /* 069[喝彩]@2x.png */,
+				83EB1AAD1DE29D87003C1E98 /* 070[篮球]@2x.png */,
+				83EB1AAE1DE29D87003C1E98 /* 071[足球]@2x.png */,
+				83EB1AAF1DE29D87003C1E98 /* 072[乒乓]@2x.png */,
+				83EB1AB01DE29D87003C1E98 /* 073[米饭]@2x.png */,
+				83EB1AB11DE29D87003C1E98 /* 074[西瓜]@2x.png */,
+				83EB1AB21DE29D87003C1E98 /* 075[啤酒]@2x.png */,
+				83EB1AB31DE29D87003C1E98 /* 076[便便]@2x.png */,
+				83EB1AB41DE29D87003C1E98 /* 077[跳绳]@2x.png */,
+				83EB1AB51DE29D87003C1E98 /* 078[右跳]@2x.png */,
+				83EB1AB61DE29D87003C1E98 /* 079[抱抱]@2x.png */,
+				83EB1AB71DE29D87003C1E98 /* 080[可爱]@2x.png */,
+				83EB1AB81DE29D87003C1E98 /* 081[撇嘴]@2x.png */,
+				83EB1AB91DE29D87003C1E98 /* 082[酷]@2x.png */,
+				83EB1ABA1DE29D87003C1E98 /* 083[冷汗]@2x.png */,
+				83EB1ABB1DE29D87003C1E98 /* 084[折磨]@2x.png */,
+				83EB1ABC1DE29D87003C1E98 /* 085[骷髅头]@2x.png */,
+				83EB1ABD1DE29D87003C1E98 /* 086[再见]@2x.png */,
+				83EB1ABE1DE29D87003C1E98 /* 087[擦汗]@2x.png */,
+				83EB1ABF1DE29D87003C1E98 /* 092[菜刀]@2x.png */,
+				83EB1AC01DE29D87003C1E98 /* 093[拳头]@2x.png */,
+				83EB1AC11DE29D87003C1E98 /* 094[差劲]@2x.png */,
+				83EB1AC21DE29D87003C1E98 /* 095[爱你]@2x.png */,
+				83EB1AC31DE29D87003C1E98 /* 096[NO]@2x.png */,
+				83EB1AC41DE29D87003C1E98 /* 097[飞吻]@2x.png */,
+				83EB1AC51DE29D87003C1E98 /* 098[接吻]@2x.png */,
+				83EB1AC61DE29D87003C1E98 /* 099[发抖]@2x.png */,
+				83EB1AC71DE29D87003C1E98 /* 100[呕火]@2x.png */,
+				83EB1AC81DE29D87003C1E98 /* 101[点头]@2x.png */,
+				83EB1AC91DE29D87003C1E98 /* 102[回头]@2x.png */,
+				83EB1ACA1DE29D87003C1E98 /* 103[挥手帕]@2x.png */,
+				83EB1ACB1DE29D87003C1E98 /* 104[激动]@2x.png */,
+				83EB1ACC1DE29D87003C1E98 /* 105[跳跳]@2x.png */,
+				83EB1ACD1DE29D87003C1E98 /* 106[左太极]@2x.png */,
+				83EB1ACE1DE29D87003C1E98 /* 107[右太极]@2x.png */,
+				83EB1ACF1DE29D87003C1E98 /* 108[打太极]@2x.png */,
+				83EB1AD01DE29D87003C1E98 /* emoji.plist */,
+				83EB1AD11DE29D87003C1E98 /* emojiName.plist */,
+				83EB1AD21DE29D87003C1E98 /* 删除@2x.png */,
+				83EB1AD31DE29D87003C1E98 /* 删除@3x.png */,
+			);
+			path = emoji;
+			sourceTree = "<group>";
+		};
+		83EB1AF51DE29D87003C1E98 /* GJGCChatInputPanel-Depend */ = {
+			isa = PBXGroup;
+			children = (
+				83EB1AF61DE29D87003C1E98 /* FLAnimatedImage */,
+				83EB1AFB1DE29D87003C1E98 /* UitilCategory */,
+			);
+			path = "GJGCChatInputPanel-Depend";
+			sourceTree = "<group>";
+		};
+		83EB1AF61DE29D87003C1E98 /* FLAnimatedImage */ = {
+			isa = PBXGroup;
+			children = (
+				83EB1AF71DE29D87003C1E98 /* FLAnimatedImage.h */,
+				83EB1AF81DE29D87003C1E98 /* FLAnimatedImage.m */,
+				83EB1AF91DE29D87003C1E98 /* FLAnimatedImageView.h */,
+				83EB1AFA1DE29D87003C1E98 /* FLAnimatedImageView.m */,
+			);
+			path = FLAnimatedImage;
+			sourceTree = "<group>";
+		};
+		83EB1AFB1DE29D87003C1E98 /* UitilCategory */ = {
+			isa = PBXGroup;
+			children = (
+				83EB1AFC1DE29D87003C1E98 /* UIView+GJCFViewFrameUitil.h */,
+				83EB1AFD1DE29D87003C1E98 /* UIView+GJCFViewFrameUitil.m */,
+			);
+			path = UitilCategory;
+			sourceTree = "<group>";
+		};
+		9A716DAD23521A4A439D82AE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				83EB1BB01DE29E6F003C1E98 /* libicucore.tbd */,
+				83EB1BAE1DE29E5C003C1E98 /* libsqlite3.tbd */,
+				83EB1BAA1DE29E3F003C1E98 /* libc++.tbd */,
+				83EB1BAB1DE29E3F003C1E98 /* libc++abi.tbd */,
+				83EB1BA81DE29E25003C1E98 /* libz.1.2.8.tbd */,
+				83EB1BA61DE29E0F003C1E98 /* libstdc++.6.0.9.tbd */,
+				4B4252FB0A6388864088E720 /* libPods-LJChatUI.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -159,9 +1021,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 832663E61DDEF513003FC30C /* Build configuration list for PBXNativeTarget "LJChatUI" */;
 			buildPhases = (
+				E2B52CCCF6B866506EBB64D8 /* [CP] Check Pods Manifest.lock */,
 				832663CB1DDEF513003FC30C /* Sources */,
 				832663CC1DDEF513003FC30C /* Frameworks */,
 				832663CD1DDEF513003FC30C /* Resources */,
+				D9755FF21E50135CB5806C55 /* [CP] Embed Pods Frameworks */,
+				4F230FB44890CCBC3536CDE9 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -211,33 +1076,273 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				83EB1B781DE29D87003C1E98 /* 106[左太极]@2x.png in Resources */,
+				83EB1B941DE29D87003C1E98 /* 聊天键盘-icon-群主召唤@2x.png in Resources */,
+				83EB1B8C1DE29D87003C1E98 /* 聊天语音-icon-话筒@2x.png in Resources */,
+				83EB1B691DE29D87003C1E98 /* 087[擦汗]@2x.png in Resources */,
+				83EB1B751DE29D87003C1E98 /* 103[挥手帕]@2x.png in Resources */,
+				83EB1B491DE29D87003C1E98 /* 055[心碎]@2x.png in Resources */,
+				83EB1B9A1DE29D87003C1E98 /* 聊天键盘切换-btn-圆-点击@2x.png in Resources */,
+				83EB1B2C1DE29D87003C1E98 /* 026[调皮]@2x.png in Resources */,
+				83EB1B5B1DE29D87003C1E98 /* 073[米饭]@2x.png in Resources */,
+				83EB1B441DE29D87003C1E98 /* 050[礼品]@2x.png in Resources */,
+				83EB1B1B1DE29D87003C1E98 /* 009[晕]@2x.png in Resources */,
 				8326642E1DDEF579003FC30C /* Main.storyboard in Resources */,
+				83EB1B891DE29D87003C1E98 /* 聊天-icon-选择表情@2x.png in Resources */,
+				83EB1B131DE29D87003C1E98 /* 001[憨笑]@2x.png in Resources */,
+				83EB1B321DE29D87003C1E98 /* 032[尴尬]@2x.png in Resources */,
+				83EB1B7E1DE29D87003C1E98 /* 删除@3x.png in Resources */,
+				83EB1B271DE29D87003C1E98 /* 021[委屈]@2x.png in Resources */,
+				83EB1B901DE29D87003C1E98 /* 聊天键盘-icon-小视频@2x.png in Resources */,
+				83EB1B3F1DE29D87003C1E98 /* 045[难过]@2x.png in Resources */,
+				83EB1B451DE29D87003C1E98 /* 051[玫瑰]@2x.png in Resources */,
+				83EB1B9D1DE29D87003C1E98 /* 聊天键盘切换-btn-圆@3x.png in Resources */,
+				83EB1B1A1DE29D87003C1E98 /* 008[呲牙]@2x.png in Resources */,
+				83EB1B631DE29D87003C1E98 /* 081[撇嘴]@2x.png in Resources */,
+				83EB1B8A1DE29D87003C1E98 /* 聊天-icon-选择表情@3x.png in Resources */,
+				83EB1B181DE29D87003C1E98 /* 006[流泪]@2x.png in Resources */,
+				83EB1B3E1DE29D87003C1E98 /* 044[惊吓]@2x.png in Resources */,
+				83EB1B1E1DE29D87003C1E98 /* 012[快哭了]@2x.png in Resources */,
+				83EB1B9B1DE29D87003C1E98 /* 聊天键盘切换-btn-圆-点击@3x.png in Resources */,
+				83EB1B4B1DE29D87003C1E98 /* 057[太阳]@2x.png in Resources */,
+				83EB1B831DE29D87003C1E98 /* 聊天-icon-语音1-绿@2x.png in Resources */,
+				83EB1B971DE29D87003C1E98 /* 聊天键盘-icon-选择帖子@3x.png in Resources */,
+				83EB1B911DE29D87003C1E98 /* 聊天键盘-icon-小视频@3x.png in Resources */,
+				83EB1B681DE29D87003C1E98 /* 086[再见]@2x.png in Resources */,
+				83EB1B5F1DE29D87003C1E98 /* 077[跳绳]@2x.png in Resources */,
+				83EB1B2B1DE29D87003C1E98 /* 025[疑问]@2x.png in Resources */,
+				83EB1B951DE29D87003C1E98 /* 聊天键盘-icon-群主召唤@3x.png in Resources */,
+				83EB1B7B1DE29D87003C1E98 /* emoji.plist in Resources */,
+				83EB1B2D1DE29D87003C1E98 /* 027[敲打]@2x.png in Resources */,
+				83EB1B741DE29D87003C1E98 /* 102[回头]@2x.png in Resources */,
+				83EB1B8D1DE29D87003C1E98 /* 聊天语音-icon-音量@2x.png in Resources */,
+				83EB1B341DE29D87003C1E98 /* 034[左哼哼]@2x.png in Resources */,
+				83EB1B241DE29D87003C1E98 /* 018[坏笑]@2x.png in Resources */,
+				83EB1B2A1DE29D87003C1E98 /* 024[衰]@2x.png in Resources */,
+				83EB1B421DE29D87003C1E98 /* 048[炸弹]@2x.png in Resources */,
+				83EB1B2E1DE29D87003C1E98 /* 028[吐]@2x.png in Resources */,
+				83EB1B4C1DE29D87003C1E98 /* 058[月亮]@2x.png in Resources */,
+				83EB1B551DE29D87003C1E98 /* 067[握手]@2x.png in Resources */,
+				83EB1B8E1DE29D87003C1E98 /* 聊天键盘-icon-位置@2x.png in Resources */,
+				83EB1B5C1DE29D87003C1E98 /* 074[西瓜]@2x.png in Resources */,
+				83EB1B761DE29D87003C1E98 /* 104[激动]@2x.png in Resources */,
+				83EB1B301DE29D87003C1E98 /* 030[闭嘴]@2x.png in Resources */,
+				83EB1B4E1DE29D87003C1E98 /* 060[闪电]@2x.png in Resources */,
+				83EB1B771DE29D87003C1E98 /* 105[跳跳]@2x.png in Resources */,
+				83EB1B161DE29D87003C1E98 /* 004[发怒]@2x.png in Resources */,
+				83EB1B641DE29D87003C1E98 /* 082[酷]@2x.png in Resources */,
+				83EB1B6C1DE29D87003C1E98 /* 094[差劲]@2x.png in Resources */,
+				83EB1B201DE29D87003C1E98 /* 014[抓狂]@2x.png in Resources */,
+				83EB1B5D1DE29D87003C1E98 /* 075[啤酒]@2x.png in Resources */,
+				83EB1B1F1DE29D87003C1E98 /* 013[亲亲]@2x.png in Resources */,
+				83EB1B311DE29D87003C1E98 /* 031[阴险]@2x.png in Resources */,
+				83EB1B281DE29D87003C1E98 /* 022[睡觉]@2x.png in Resources */,
 				8326642C1DDEF579003FC30C /* Assets.xcassets in Resources */,
+				83EB1B431DE29D87003C1E98 /* 049[咖啡]@2x.png in Resources */,
+				83EB1B811DE29D87003C1E98 /* 聊天-icon-文字键盘@2x.png in Resources */,
+				83EB1B671DE29D87003C1E98 /* 085[骷髅头]@2x.png in Resources */,
+				83EB1B4D1DE29D87003C1E98 /* 059[瓢虫]@2x.png in Resources */,
+				83EB1B961DE29D87003C1E98 /* 聊天键盘-icon-选择帖子@2x.png in Resources */,
+				83EB1B871DE29D87003C1E98 /* 聊天-icon-语音及切换键盘2-灰@2x.png in Resources */,
+				83EB1B471DE29D87003C1E98 /* 053[蛋糕]@2x.png in Resources */,
+				83EB1B531DE29D87003C1E98 /* 065[胜利]@2x.png in Resources */,
+				83EB1A381DE29D37003C1E98 /* LJVideoSource.xcassets in Resources */,
+				83EB1B571DE29D87003C1E98 /* 069[喝彩]@2x.png in Resources */,
+				83EB1B171DE29D87003C1E98 /* 005[微笑]@2x.png in Resources */,
+				83EB1B9F1DE29D87003C1E98 /* 输入框-白色@2x.png in Resources */,
+				83EB1B6B1DE29D87003C1E98 /* 093[拳头]@2x.png in Resources */,
+				83EB1B861DE29D87003C1E98 /* 聊天-icon-语音及切换键盘1-灰@2x.png in Resources */,
+				83EB1B7A1DE29D87003C1E98 /* 108[打太极]@2x.png in Resources */,
+				83EB1B251DE29D87003C1E98 /* 019[鄙视]@2x.png in Resources */,
+				83EB1B981DE29D87003C1E98 /* 聊天键盘-icon-选择照片@2x.png in Resources */,
+				83EB1B7C1DE29D87003C1E98 /* emojiName.plist in Resources */,
+				83EB1B651DE29D87003C1E98 /* 083[冷汗]@2x.png in Resources */,
+				83EB1B8F1DE29D87003C1E98 /* 聊天键盘-icon-位置@3x.png in Resources */,
+				83EB1B6A1DE29D87003C1E98 /* 092[菜刀]@2x.png in Resources */,
+				83EB1B801DE29D87003C1E98 /* 大表情-bg-预览@2x.png in Resources */,
+				83EB1B4A1DE29D87003C1E98 /* 056[示爱]@2x.png in Resources */,
+				83EB1B791DE29D87003C1E98 /* 107[右太极]@2x.png in Resources */,
+				83EB1B561DE29D87003C1E98 /* 068[刀]@2x.png in Resources */,
+				83EB1B1D1DE29D87003C1E98 /* 011[色]@2x.png in Resources */,
+				83EB1B621DE29D87003C1E98 /* 080[可爱]@2x.png in Resources */,
+				83EB1B291DE29D87003C1E98 /* 023[困]@2x.png in Resources */,
+				83EB1B481DE29D87003C1E98 /* 054[爱心]@2x.png in Resources */,
+				83EB1B5A1DE29D87003C1E98 /* 072[乒乓]@2x.png in Resources */,
+				83EB1B391DE29D87003C1E98 /* 039[糗大了]@2x.png in Resources */,
+				83EB1B921DE29D87003C1E98 /* 聊天键盘-icon-拍照@2x.png in Resources */,
+				83EB1B4F1DE29D87003C1E98 /* 061[OK]@2x.png in Resources */,
+				83EB1B371DE29D87003C1E98 /* 037[得意]@2x.png in Resources */,
 				8326642D1DDEF579003FC30C /* LaunchScreen.storyboard in Resources */,
+				83EB1B231DE29D87003C1E98 /* 017[鼓掌]@2x.png in Resources */,
+				83EB1B411DE29D87003C1E98 /* 047[猪头]@2x.png in Resources */,
+				83EB1B401DE29D87003C1E98 /* 046[奋斗]@2x.png in Resources */,
+				83EB1B351DE29D87003C1E98 /* 035[嘘]@2x.png in Resources */,
+				83EB1B931DE29D87003C1E98 /* 聊天键盘-icon-拍照@3x.png in Resources */,
+				83EB1B2F1DE29D87003C1E98 /* 029[害羞]@2x.png in Resources */,
+				83EB1B661DE29D87003C1E98 /* 084[折磨]@2x.png in Resources */,
+				83EB1B841DE29D87003C1E98 /* 聊天-icon-语音2-绿@2x.png in Resources */,
+				83EB1B501DE29D87003C1E98 /* 062[勾引]@2x.png in Resources */,
+				83EB1B3C1DE29D87003C1E98 /* 042[咒骂]@2x.png in Resources */,
+				83EB1B361DE29D87003C1E98 /* 036[爱财]@2x.png in Resources */,
+				83EB1B3B1DE29D87003C1E98 /* 041[哈欠]@2x.png in Resources */,
+				83EB1B611DE29D87003C1E98 /* 079[抱抱]@2x.png in Resources */,
+				83EB1B5E1DE29D87003C1E98 /* 076[便便]@2x.png in Resources */,
+				83EB1B991DE29D87003C1E98 /* 聊天键盘-icon-选择照片@3x.png in Resources */,
+				83EB1B191DE29D87003C1E98 /* 007[流汗]@2x.png in Resources */,
+				83EB1B511DE29D87003C1E98 /* 063[强]@2x.png in Resources */,
+				83EB1B821DE29D87003C1E98 /* 聊天-icon-语音-绿@2x.png in Resources */,
+				83EB1B221DE29D87003C1E98 /* 016[震惊]@2x.png in Resources */,
+				83EB1B731DE29D87003C1E98 /* 101[点头]@2x.png in Resources */,
+				83EB1B6D1DE29D87003C1E98 /* 095[爱你]@2x.png in Resources */,
+				83EB1B141DE29D87003C1E98 /* 002[偷笑]@2x.png in Resources */,
+				83EB1B541DE29D87003C1E98 /* 066[抱拳]@2x.png in Resources */,
+				83EB1B701DE29D87003C1E98 /* 098[接吻]@2x.png in Resources */,
+				83EB1B6F1DE29D87003C1E98 /* 097[飞吻]@2x.png in Resources */,
+				83EB1B581DE29D87003C1E98 /* 070[篮球]@2x.png in Resources */,
+				83EB1B7D1DE29D87003C1E98 /* 删除@2x.png in Resources */,
+				83EB1B9C1DE29D87003C1E98 /* 聊天键盘切换-btn-圆@2x.png in Resources */,
+				83EB1B1C1DE29D87003C1E98 /* 010[傲慢]@2x.png in Resources */,
+				83EB1B151DE29D87003C1E98 /* 003[大哭]@2x.png in Resources */,
+				83EB1B881DE29D87003C1E98 /* 聊天-icon-选择照片帖子@2x.png in Resources */,
+				83EB1B331DE29D87003C1E98 /* 033[右哼哼]@2x.png in Resources */,
+				83EB1B3A1DE29D87003C1E98 /* 040[美味]@2x.png in Resources */,
+				83EB1B211DE29D87003C1E98 /* 015[抠鼻]@2x.png in Resources */,
+				83EB1B261DE29D87003C1E98 /* 020[惊恐]@2x.png in Resources */,
+				83EB1B8B1DE29D87003C1E98 /* 聊天语音-icon-取消@2x.png in Resources */,
+				83EB1B3D1DE29D87003C1E98 /* 043[可怜]@2x.png in Resources */,
+				83EB1B721DE29D87003C1E98 /* 100[呕火]@2x.png in Resources */,
+				83EB1B521DE29D87003C1E98 /* 064[弱]@2x.png in Resources */,
+				83EB1B9E1DE29D87003C1E98 /* 输入框-灰色@2x.png in Resources */,
+				83EB1B381DE29D87003C1E98 /* 038[白眼]@2x.png in Resources */,
+				83EB1B591DE29D87003C1E98 /* 071[足球]@2x.png in Resources */,
+				83EB1B711DE29D87003C1E98 /* 099[发抖]@2x.png in Resources */,
+				83EB1B601DE29D87003C1E98 /* 078[右跳]@2x.png in Resources */,
+				83EB1B461DE29D87003C1E98 /* 052[凋谢]@2x.png in Resources */,
+				83EB1B851DE29D87003C1E98 /* 聊天-icon-语音及切换键盘-灰@2x.png in Resources */,
+				83EB1B7F1DE29D87003C1E98 /* 大表情-bg-预览-居中@2x.png in Resources */,
+				83EB1B6E1DE29D87003C1E98 /* 096[NO]@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4F230FB44890CCBC3536CDE9 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LJChatUI/Pods-LJChatUI-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D9755FF21E50135CB5806C55 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LJChatUI/Pods-LJChatUI-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E2B52CCCF6B866506EBB64D8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		832663CB1DDEF513003FC30C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				83EB1B0E1DE29D87003C1E98 /* GJGCChatInputPanelStyle.m in Sources */,
 				832664331DDEF579003FC30C /* LJShowFPS.m in Sources */,
-				832664351DDEF579003FC30C /* LJTextController.m in Sources */,
+				83EB1A0A1DE297D1003C1E98 /* LDHttpClient.m in Sources */,
+				832664351DDEF579003FC30C /* LJMessageController.m in Sources */,
+				83EB1A2E1DE29D37003C1E98 /* LJSoundManager.m in Sources */,
+				83EB1B071DE29D87003C1E98 /* GJGCChatInputExpandEmojiPanelPageItem.m in Sources */,
+				83EB1A091DE297D1003C1E98 /* LDFmdbProvider.m in Sources */,
 				832664301DDEF579003FC30C /* LJElemCell.m in Sources */,
 				832664321DDEF579003FC30C /* LJLocationElemCell.m in Sources */,
+				83EB1BA51DE29DAE003C1E98 /* NSString+LJHash.m in Sources */,
+				83EB1B001DE29D87003C1E98 /* GJGCChatInputConst.m in Sources */,
+				83EB1A321DE29D37003C1E98 /* NSString+LJFile.m in Sources */,
+				83EB1B0C1DE29D87003C1E98 /* GJGCChatInputGifFloatView.m in Sources */,
+				83EB1A141DE2993F003C1E98 /* LJGoodsModel.m in Sources */,
+				83EB1B101DE29D87003C1E98 /* GJGCChatInputTextView.m in Sources */,
+				83EB1B0B1DE29D87003C1E98 /* GJGCChatInputExpandMenuPanelItem.m in Sources */,
 				8326642F1DDEF579003FC30C /* LJBubbleContainerView.m in Sources */,
 				8326642B1DDEF579003FC30C /* AppDelegate.m in Sources */,
 				832663D41DDEF513003FC30C /* main.m in Sources */,
+				83EB1B031DE29D87003C1E98 /* GJGCChatInputExpandEmojiPanelGifSubItem.m in Sources */,
+				83EB180C1DE297B6003C1E98 /* LJIMManager.m in Sources */,
 				832664371DDEF579003FC30C /* LJVideoElemCell.m in Sources */,
 				832664381DDEF579003FC30C /* UIView+LJMask.m in Sources */,
+				83EB180B1DE297B6003C1E98 /* LJIMLoginParam.m in Sources */,
+				83EB1B061DE29D87003C1E98 /* GJGCChatInputExpandEmojiPanelMenuBarDataSourceItem.m in Sources */,
+				83EB1B0D1DE29D87003C1E98 /* GJGCChatInputPanel.m in Sources */,
+				83EB1A0D1DE297D1003C1E98 /* BJURLRequestSerialization.m in Sources */,
+				83EB1A341DE29D37003C1E98 /* LJMovieDecoder.m in Sources */,
+				83EB1A391DE29D37003C1E98 /* UIImage+LJVideo.m in Sources */,
+				83EB1A071DE297D1003C1E98 /* NSDictionary+LJURL.m in Sources */,
 				832664361DDEF579003FC30C /* LJTextElemCell.m in Sources */,
+				83EB17FE1DE294AD003C1E98 /* LJMessagesModel.m in Sources */,
+				83EB1B041DE29D87003C1E98 /* GJGCChatInputExpandEmojiPanelMenuBar.m in Sources */,
+				83EB1A361DE29D37003C1E98 /* LJRoundProgressView.m in Sources */,
 				832664401DDEF789003FC30C /* LJMapController.m in Sources */,
+				83EB1B081DE29D87003C1E98 /* GJGCChatInputExpandMenuPanel.m in Sources */,
+				83EB1B0A1DE29D87003C1E98 /* GJGCChatInputExpandMenuPanelDataSource.m in Sources */,
 				832664341DDEF579003FC30C /* LJSoundElemCell.m in Sources */,
+				83EB1A0C1DE297D1003C1E98 /* LDRequestBuilder.m in Sources */,
+				83EB180A1DE297B6003C1E98 /* LJIMConfigFile.m in Sources */,
+				83EB1B121DE29D87003C1E98 /* GJGCIconSeprateImageView.m in Sources */,
+				83EB1A0B1DE297D1003C1E98 /* LDRequest.m in Sources */,
+				83EB1BA11DE29D87003C1E98 /* FLAnimatedImageView.m in Sources */,
+				83EB1A301DE29D37003C1E98 /* LJSoundPlayer.m in Sources */,
+				83EB1AFE1DE29D87003C1E98 /* GJGCChatInputBar.m in Sources */,
+				83EB1B111DE29D87003C1E98 /* GJGCIconSeprateButton.m in Sources */,
+				83EB1B0F1DE29D87003C1E98 /* GJGCChatInputRecordAudioTipView.m in Sources */,
+				83EB1BA21DE29D87003C1E98 /* UIView+GJCFViewFrameUitil.m in Sources */,
+				83EB1A311DE29D37003C1E98 /* LJSoundRecord.m in Sources */,
+				83EB1AFF1DE29D87003C1E98 /* GJGCChatInputBarItem.m in Sources */,
 				832664311DDEF579003FC30C /* LJImageElemCell.m in Sources */,
+				83EB180E1DE297B6003C1E98 /* TIMConversation+LJAdd.m in Sources */,
+				83EB180D1DE297B6003C1E98 /* LJIMManagerListener.m in Sources */,
+				83EB1BA01DE29D87003C1E98 /* FLAnimatedImage.m in Sources */,
+				83EB1B011DE29D87003C1E98 /* GJGCChatInputExpandEmojiPanel.m in Sources */,
 				8326643D1DDEF705003FC30C /* LJShowImageController.m in Sources */,
+				83EB1A331DE29D37003C1E98 /* LJFullVideoView.m in Sources */,
+				83EB1A351DE29D37003C1E98 /* LJRecordVideoView.m in Sources */,
+				83EB1A081DE297D1003C1E98 /* NSObject+LDProperty.m in Sources */,
+				83EB1A371DE29D37003C1E98 /* LJShortVideoPlayView.m in Sources */,
+				83EB1B021DE29D87003C1E98 /* GJGCChatInputExpandEmojiPanelGifPageItem.m in Sources */,
+				83EB1A2F1DE29D37003C1E98 /* LJSoundModel.m in Sources */,
+				83EB1B051DE29D87003C1E98 /* GJGCChatInputExpandEmojiPanelMenuBarDataSource.m in Sources */,
+				83EB1B091DE29D87003C1E98 /* GJGCChatInputExpandMenuPanelConfigModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -355,9 +1460,14 @@
 		};
 		832663E71DDEF513003FC30C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9C181308277C664D39E74E5C /* Pods-LJChatUI.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = N5VR4US535;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)$(LOCAL_LIBRARY_DIR)/Tim_IM_2.4.0",
+				);
 				INFOPLIST_FILE = LJChatUI/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -368,9 +1478,14 @@
 		};
 		832663E81DDEF513003FC30C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AA2B128398F52353810A78DB /* Pods-LJChatUI.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = N5VR4US535;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)$(LOCAL_LIBRARY_DIR)/Tim_IM_2.4.0",
+				);
 				INFOPLIST_FILE = LJChatUI/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -398,6 +1513,7 @@
 				832663E81DDEF513003FC30C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

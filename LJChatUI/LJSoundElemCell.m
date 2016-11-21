@@ -28,11 +28,7 @@
     [super awakeFromNib];
     self.borderView.bubbleImageView = self.bubbleImageView;
     self.playImageView.animationDuration = 1;
-}
-
-- (void)setIsSelfBubble:(BOOL)isSelfBubble {
-    [super setIsSelfBubble:isSelfBubble];
-    if (isSelfBubble) {
+    if ([self.reuseIdentifier isEqualToString:@"senderSoundElemCell"]) {
         self.playImageView.animationImages = @[[UIImage imageNamed:@"SenderVoiceNodePlaying001"],
                                                [UIImage imageNamed:@"SenderVoiceNodePlaying002"],
                                                [UIImage imageNamed:@"SenderVoiceNodePlaying003"]];
@@ -41,6 +37,7 @@
                                                [UIImage imageNamed:@"ReceiverVoiceNodePlaying002"],
                                                [UIImage imageNamed:@"ReceiverVoiceNodePlaying003"]];
     }
+    
 }
 
 - (void)startPlaySound {
@@ -54,5 +51,18 @@
 - (BOOL)isPlaying {
     return [self.playImageView isAnimating];
 }
+
+- (void)setElem:(TIMSoundElem *)elem {
+    _elem = elem;
+
+    [elem getSound:^(NSData *data) {
+        
+        
+    } fail:^(int code, NSString *msg) {
+        
+        NSLog(@"下载音频失败, %@",msg);
+    }];
+}
+
 
 @end

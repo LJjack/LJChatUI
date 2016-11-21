@@ -10,10 +10,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Text Controller-->
+        <!--Message Controller-->
         <scene sceneID="93L-Tu-uGj">
             <objects>
-                <tableViewController id="LeC-BB-jva" customClass="LJTextController" sceneMemberID="viewController">
+                <tableViewController id="LeC-BB-jva" customClass="LJMessageController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="60" sectionHeaderHeight="1" sectionFooterHeight="1" id="g0F-lj-1db">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="1200"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

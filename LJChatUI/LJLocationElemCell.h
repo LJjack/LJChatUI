@@ -10,4 +10,6 @@
 
 @interface LJLocationElemCell : LJElemCell
 
+@property (nonatomic, strong) TIMLocationElem *elem;
+
 @end

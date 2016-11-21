@@ -7,6 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <ImSDK/TIMMessage.h>
+
 #import "LJBubbleContainerView.h"
 
 @class LJElemCell;
@@ -28,7 +30,6 @@
 @property (nonatomic,   weak) id<LJElemCellDelegate> delegate;
 
 @property (nonatomic, assign) BOOL isSelfBubble;
-
 
 - (void)bubbleContainerViewDidTap:(LJBubbleContainerView *)bubbleView;
 
