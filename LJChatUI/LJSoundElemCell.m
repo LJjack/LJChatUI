@@ -53,7 +53,7 @@
 }
 
 - (void)setElem:(TIMSoundElem *)elem {
-    _elem = elem;
+    [super setElem:elem];
 
     [elem getSound:^(NSData *data) {
         

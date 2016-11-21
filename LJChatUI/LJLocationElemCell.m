@@ -11,7 +11,7 @@
 @implementation LJLocationElemCell
 
 - (void)setElem:(TIMLocationElem *)elem {
-    _elem = elem;
+    [super setElem:elem];
     
 }
 @end

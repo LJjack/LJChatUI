@@ -12,6 +12,4 @@
 
 @property (nonatomic, copy) NSString *imageName;
 
-@property (nonatomic, strong) TIMImageElem *elem;
-
 @end

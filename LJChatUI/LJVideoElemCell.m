@@ -11,7 +11,7 @@
 @implementation LJVideoElemCell
 
 - (void)setElem:(TIMVideoElem *)elem {
-    _elem = elem;
+    [super setElem:elem];
 
     NSFileManager *fileManager = [NSFileManager defaultManager];
     NSString *nsTmpDir = NSTemporaryDirectory();

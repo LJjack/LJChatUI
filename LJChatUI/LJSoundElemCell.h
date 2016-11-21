@@ -12,8 +12,6 @@
 
 @property (nonatomic, assign) BOOL isPlaying;
 
-@property (nonatomic, strong) TIMSoundElem *elem;
-
 - (void)startPlaySound;
 
 - (void)stopPlaySound;

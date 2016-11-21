@@ -29,7 +29,8 @@
 }
 
 - (void)setElem:(TIMTextElem *)elem {
-    _elem = elem;
+    [super setElem:elem];
+    
     NSAttributedString *aString = [[NSAttributedString alloc] initWithString:elem.text];
     _textView.attributedText = aString;
 }

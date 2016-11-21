@@ -27,7 +27,7 @@
 }
 
 - (void)setElem:(TIMImageElem *)elem {
-    _elem = elem;
+    [super setElem:elem];
     
     if (elem && elem.imageList && elem.imageList.count) {
         for (TIMImage *imageModel in elem.imageList) {
