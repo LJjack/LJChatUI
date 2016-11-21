@@ -38,6 +38,7 @@
 }
 
 - (void)drawRect:(CGRect)rect {
+    [super drawRect:rect];
     if (!self.bubbleImageView) {
         if (self.hasReceiver) {
             [self lj_maskViewWithImage:[UIImage imageNamed:@"ReceiverNode"]];

@@ -12,9 +12,8 @@
 
 @interface LJMessagesModel ()
 
-@property (nonatomic, strong) NSMutableDictionary *failMessages;
 
-@property (nonatomic, strong) NSMutableArray *runMessages;//旧的消息还在运行状态
+//@property (nonatomic, strong) NSMutableArray<TIMMessage *> *messages;
 
 @end
 
@@ -351,7 +350,7 @@
     [msgs enumerateObjectsUsingBlock:^(TIMMessage * _Nonnull message, NSUInteger idx, BOOL * _Nonnull stop) {
         TIMMessageStatus status = [message status];
         if (status == TIM_MSG_STATUS_SENDING) {
-            [self.runMessages addObject:@(idx)];
+//            [self.runMessages addObject:@(idx)];
         }
         if (status == TIM_MSG_STATUS_HAS_DELETED) { // 过滤消息被删除
             [message delFromStorage];
@@ -359,7 +358,7 @@
             self.chatingConversation.lj_TopMessage = message;
             [self reveiceMessage:message isAtTop:YES];
             if (status == TIM_MSG_STATUS_SEND_FAIL) { //记录消息发送失败
-                self.failMessages[@(idx)] =  message;
+//                self.failMessages[@(idx)] =  message;
             }
             
         }

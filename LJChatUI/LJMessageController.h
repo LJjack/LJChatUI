@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "LJMessagesModel.h"
 
-@interface LJMessageController : UITableViewController
+@interface LJMessageController : UIViewController
 
 @property (nonatomic, strong) LJMessagesModel *msgModel;
 

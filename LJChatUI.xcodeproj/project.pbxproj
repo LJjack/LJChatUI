@@ -11,7 +11,7 @@
 		8326642B1DDEF579003FC30C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 832664101DDEF579003FC30C /* AppDelegate.m */; };
 		8326642C1DDEF579003FC30C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 832664111DDEF579003FC30C /* Assets.xcassets */; };
 		8326642D1DDEF579003FC30C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 832664131DDEF579003FC30C /* LaunchScreen.storyboard */; };
-		8326642E1DDEF579003FC30C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 832664151DDEF579003FC30C /* Main.storyboard */; };
+		8326642E1DDEF579003FC30C /* ChatMain.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 832664151DDEF579003FC30C /* ChatMain.storyboard */; };
 		8326642F1DDEF579003FC30C /* LJBubbleContainerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 832664181DDEF579003FC30C /* LJBubbleContainerView.m */; };
 		832664301DDEF579003FC30C /* LJElemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8326641A1DDEF579003FC30C /* LJElemCell.m */; };
 		832664311DDEF579003FC30C /* LJImageElemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8326641C1DDEF579003FC30C /* LJImageElemCell.m */; };
@@ -24,6 +24,9 @@
 		832664381DDEF579003FC30C /* UIView+LJMask.m in Sources */ = {isa = PBXBuildFile; fileRef = 8326642A1DDEF579003FC30C /* UIView+LJMask.m */; };
 		8326643D1DDEF705003FC30C /* LJShowImageController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8326643C1DDEF705003FC30C /* LJShowImageController.m */; };
 		832664401DDEF789003FC30C /* LJMapController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8326643F1DDEF789003FC30C /* LJMapController.m */; };
+		83B38F7B1DE2E8F700D443A7 /* LJChatController.m in Sources */ = {isa = PBXBuildFile; fileRef = 83B38F771DE2E8F700D443A7 /* LJChatController.m */; };
+		83B38F7C1DE2E8F700D443A7 /* LJChatCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 83B38F7A1DE2E8F700D443A7 /* LJChatCell.m */; };
+		83B38F7F1DE2EAFA00D443A7 /* LJMessageTimestampFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 83B38F7E1DE2EAFA00D443A7 /* LJMessageTimestampFormatter.m */; };
 		83EB17FE1DE294AD003C1E98 /* LJMessagesModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 83EB17FD1DE294AD003C1E98 /* LJMessagesModel.m */; };
 		83EB180A1DE297B6003C1E98 /* LJIMConfigFile.m in Sources */ = {isa = PBXBuildFile; fileRef = 83EB18011DE297B6003C1E98 /* LJIMConfigFile.m */; };
 		83EB180B1DE297B6003C1E98 /* LJIMLoginParam.m in Sources */ = {isa = PBXBuildFile; fileRef = 83EB18031DE297B6003C1E98 /* LJIMLoginParam.m */; };
@@ -226,6 +229,8 @@
 		83EB1BAD1DE29E3F003C1E98 /* libc++abi.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 83EB1BAB1DE29E3F003C1E98 /* libc++abi.tbd */; };
 		83EB1BAF1DE29E5C003C1E98 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 83EB1BAE1DE29E5C003C1E98 /* libsqlite3.tbd */; };
 		83EB1BB11DE29E6F003C1E98 /* libicucore.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 83EB1BB01DE29E6F003C1E98 /* libicucore.tbd */; };
+		83EB1BB41DE2AA46003C1E98 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83EB1BB31DE2AA46003C1E98 /* Main.storyboard */; };
+		83EB1BB81DE2AA5F003C1E98 /* LJLoginController.m in Sources */ = {isa = PBXBuildFile; fileRef = 83EB1BB71DE2AA5F003C1E98 /* LJLoginController.m */; };
 		9EC5DBC28C3EF7B16B558A2B /* libPods-LJChatUI.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B4252FB0A6388864088E720 /* libPods-LJChatUI.a */; };
 /* End PBXBuildFile section */
 
@@ -238,7 +243,7 @@
 		832664101DDEF579003FC30C /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		832664111DDEF579003FC30C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		832664141DDEF579003FC30C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
-		832664161DDEF579003FC30C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Main.storyboard; sourceTree = "<group>"; };
+		832664161DDEF579003FC30C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = ChatMain.storyboard; sourceTree = "<group>"; };
 		832664171DDEF579003FC30C /* LJBubbleContainerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJBubbleContainerView.h; sourceTree = "<group>"; };
 		832664181DDEF579003FC30C /* LJBubbleContainerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LJBubbleContainerView.m; sourceTree = "<group>"; };
 		832664191DDEF579003FC30C /* LJElemCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJElemCell.h; sourceTree = "<group>"; };
@@ -264,6 +269,12 @@
 		8326643E1DDEF789003FC30C /* LJMapController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJMapController.h; sourceTree = "<group>"; };
 		8326643F1DDEF789003FC30C /* LJMapController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LJMapController.m; sourceTree = "<group>"; };
 		832664411DDF0676003FC30C /* LJElemCellHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJElemCellHeader.h; sourceTree = "<group>"; };
+		83B38F761DE2E8F700D443A7 /* LJChatController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJChatController.h; sourceTree = "<group>"; };
+		83B38F771DE2E8F700D443A7 /* LJChatController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LJChatController.m; sourceTree = "<group>"; };
+		83B38F791DE2E8F700D443A7 /* LJChatCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJChatCell.h; sourceTree = "<group>"; };
+		83B38F7A1DE2E8F700D443A7 /* LJChatCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LJChatCell.m; sourceTree = "<group>"; };
+		83B38F7D1DE2EAFA00D443A7 /* LJMessageTimestampFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJMessageTimestampFormatter.h; sourceTree = "<group>"; };
+		83B38F7E1DE2EAFA00D443A7 /* LJMessageTimestampFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LJMessageTimestampFormatter.m; sourceTree = "<group>"; };
 		83EB17FC1DE294AD003C1E98 /* LJMessagesModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJMessagesModel.h; sourceTree = "<group>"; };
 		83EB17FD1DE294AD003C1E98 /* LJMessagesModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LJMessagesModel.m; sourceTree = "<group>"; };
 		83EB18001DE297B6003C1E98 /* LJIMConfigFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJIMConfigFile.h; sourceTree = "<group>"; };
@@ -517,6 +528,9 @@
 		83EB1BAB1DE29E3F003C1E98 /* libc++abi.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++abi.tbd"; path = "usr/lib/libc++abi.tbd"; sourceTree = SDKROOT; };
 		83EB1BAE1DE29E5C003C1E98 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
 		83EB1BB01DE29E6F003C1E98 /* libicucore.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libicucore.tbd; path = usr/lib/libicucore.tbd; sourceTree = SDKROOT; };
+		83EB1BB21DE2AA46003C1E98 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		83EB1BB61DE2AA5F003C1E98 /* LJLoginController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJLoginController.h; sourceTree = "<group>"; };
+		83EB1BB71DE2AA5F003C1E98 /* LJLoginController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LJLoginController.m; sourceTree = "<group>"; };
 		9C181308277C664D39E74E5C /* Pods-LJChatUI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LJChatUI.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LJChatUI/Pods-LJChatUI.debug.xcconfig"; sourceTree = "<group>"; };
 		AA2B128398F52353810A78DB /* Pods-LJChatUI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LJChatUI.release.xcconfig"; path = "Pods/Target Support Files/Pods-LJChatUI/Pods-LJChatUI.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -593,10 +607,15 @@
 				8326642A1DDEF579003FC30C /* UIView+LJMask.m */,
 				83EB1BA31DE29DAE003C1E98 /* NSString+LJHash.h */,
 				83EB1BA41DE29DAE003C1E98 /* NSString+LJHash.m */,
+				83B38F7D1DE2EAFA00D443A7 /* LJMessageTimestampFormatter.h */,
+				83B38F7E1DE2EAFA00D443A7 /* LJMessageTimestampFormatter.m */,
 				83EB1A151DE29D37003C1E98 /* LJSound */,
 				83EB1A201DE29D37003C1E98 /* LJVideo */,
 				832664111DDEF579003FC30C /* Assets.xcassets */,
-				832664151DDEF579003FC30C /* Main.storyboard */,
+				832664151DDEF579003FC30C /* ChatMain.storyboard */,
+				83B38F741DE2E8F700D443A7 /* LJChatList */,
+				83EB1BB51DE2AA5F003C1E98 /* Login */,
+				83EB1BB31DE2AA46003C1E98 /* Main.storyboard */,
 				832663D21DDEF513003FC30C /* Supporting Files */,
 			);
 			path = LJChatUI;
@@ -641,6 +660,33 @@
 				832664201DDEF579003FC30C /* LJShowFPS.m */,
 			);
 			name = View;
+			sourceTree = "<group>";
+		};
+		83B38F741DE2E8F700D443A7 /* LJChatList */ = {
+			isa = PBXGroup;
+			children = (
+				83B38F751DE2E8F700D443A7 /* Controller */,
+				83B38F781DE2E8F700D443A7 /* View */,
+			);
+			path = LJChatList;
+			sourceTree = "<group>";
+		};
+		83B38F751DE2E8F700D443A7 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				83B38F761DE2E8F700D443A7 /* LJChatController.h */,
+				83B38F771DE2E8F700D443A7 /* LJChatController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		83B38F781DE2E8F700D443A7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				83B38F791DE2E8F700D443A7 /* LJChatCell.h */,
+				83B38F7A1DE2E8F700D443A7 /* LJChatCell.m */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		83EB17FF1DE297B6003C1E98 /* LJIMAdapter */ = {
@@ -1000,6 +1046,15 @@
 			path = UitilCategory;
 			sourceTree = "<group>";
 		};
+		83EB1BB51DE2AA5F003C1E98 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				83EB1BB61DE2AA5F003C1E98 /* LJLoginController.h */,
+				83EB1BB71DE2AA5F003C1E98 /* LJLoginController.m */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
 		9A716DAD23521A4A439D82AE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -1087,7 +1142,7 @@
 				83EB1B5B1DE29D87003C1E98 /* 073[米饭]@2x.png in Resources */,
 				83EB1B441DE29D87003C1E98 /* 050[礼品]@2x.png in Resources */,
 				83EB1B1B1DE29D87003C1E98 /* 009[晕]@2x.png in Resources */,
-				8326642E1DDEF579003FC30C /* Main.storyboard in Resources */,
+				8326642E1DDEF579003FC30C /* ChatMain.storyboard in Resources */,
 				83EB1B891DE29D87003C1E98 /* 聊天-icon-选择表情@2x.png in Resources */,
 				83EB1B131DE29D87003C1E98 /* 001[憨笑]@2x.png in Resources */,
 				83EB1B321DE29D87003C1E98 /* 032[尴尬]@2x.png in Resources */,
@@ -1155,6 +1210,7 @@
 				83EB1B7A1DE29D87003C1E98 /* 108[打太极]@2x.png in Resources */,
 				83EB1B251DE29D87003C1E98 /* 019[鄙视]@2x.png in Resources */,
 				83EB1B981DE29D87003C1E98 /* 聊天键盘-icon-选择照片@2x.png in Resources */,
+				83EB1BB41DE2AA46003C1E98 /* Main.storyboard in Resources */,
 				83EB1B7C1DE29D87003C1E98 /* emojiName.plist in Resources */,
 				83EB1B651DE29D87003C1E98 /* 083[冷汗]@2x.png in Resources */,
 				83EB1B8F1DE29D87003C1E98 /* 聊天键盘-icon-位置@3x.png in Resources */,
@@ -1286,6 +1342,7 @@
 				83EB1A2E1DE29D37003C1E98 /* LJSoundManager.m in Sources */,
 				83EB1B071DE29D87003C1E98 /* GJGCChatInputExpandEmojiPanelPageItem.m in Sources */,
 				83EB1A091DE297D1003C1E98 /* LDFmdbProvider.m in Sources */,
+				83EB1BB81DE2AA5F003C1E98 /* LJLoginController.m in Sources */,
 				832664301DDEF579003FC30C /* LJElemCell.m in Sources */,
 				832664321DDEF579003FC30C /* LJLocationElemCell.m in Sources */,
 				83EB1BA51DE29DAE003C1E98 /* NSString+LJHash.m in Sources */,
@@ -1297,6 +1354,7 @@
 				83EB1B0B1DE29D87003C1E98 /* GJGCChatInputExpandMenuPanelItem.m in Sources */,
 				8326642F1DDEF579003FC30C /* LJBubbleContainerView.m in Sources */,
 				8326642B1DDEF579003FC30C /* AppDelegate.m in Sources */,
+				83B38F7F1DE2EAFA00D443A7 /* LJMessageTimestampFormatter.m in Sources */,
 				832663D41DDEF513003FC30C /* main.m in Sources */,
 				83EB1B031DE29D87003C1E98 /* GJGCChatInputExpandEmojiPanelGifSubItem.m in Sources */,
 				83EB180C1DE297B6003C1E98 /* LJIMManager.m in Sources */,
@@ -1306,9 +1364,11 @@
 				83EB1B061DE29D87003C1E98 /* GJGCChatInputExpandEmojiPanelMenuBarDataSourceItem.m in Sources */,
 				83EB1B0D1DE29D87003C1E98 /* GJGCChatInputPanel.m in Sources */,
 				83EB1A0D1DE297D1003C1E98 /* BJURLRequestSerialization.m in Sources */,
+				83B38F7C1DE2E8F700D443A7 /* LJChatCell.m in Sources */,
 				83EB1A341DE29D37003C1E98 /* LJMovieDecoder.m in Sources */,
 				83EB1A391DE29D37003C1E98 /* UIImage+LJVideo.m in Sources */,
 				83EB1A071DE297D1003C1E98 /* NSDictionary+LJURL.m in Sources */,
+				83B38F7B1DE2E8F700D443A7 /* LJChatController.m in Sources */,
 				832664361DDEF579003FC30C /* LJTextElemCell.m in Sources */,
 				83EB17FE1DE294AD003C1E98 /* LJMessagesModel.m in Sources */,
 				83EB1B041DE29D87003C1E98 /* GJGCChatInputExpandEmojiPanelMenuBar.m in Sources */,
@@ -1358,13 +1418,22 @@
 			path = Base.lproj;
 			sourceTree = "<group>";
 		};
-		832664151DDEF579003FC30C /* Main.storyboard */ = {
+		832664151DDEF579003FC30C /* ChatMain.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				832664161DDEF579003FC30C /* Base */,
 			);
-			name = Main.storyboard;
+			name = ChatMain.storyboard;
 			path = Base.lproj;
+			sourceTree = "<group>";
+		};
+		83EB1BB31DE2AA46003C1E98 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				83EB1BB21DE2AA46003C1E98 /* Base */,
+			);
+			name = Main.storyboard;
+			path = ../../../iOS/LJChatView/LJChatView;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

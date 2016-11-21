@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "21C636E813AE0366F3942A3C5A0C7743D65F4CE4",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "388CB1DEEB61C50DCFDA8AECEE75F3786EFDAC10" : 9223372036854775807,
+    "21C636E813AE0366F3942A3C5A0C7743D65F4CE4" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "783EBFCA-DE15-4E05-828D-B33357F7D218",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "388CB1DEEB61C50DCFDA8AECEE75F3786EFDAC10" : "..\/iOS\/LJChatView",
+    "21C636E813AE0366F3942A3C5A0C7743D65F4CE4" : "LJChatUI\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "LJChatUI",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "LJChatUI.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/LJjack\/LJChatUI.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "21C636E813AE0366F3942A3C5A0C7743D65F4CE4"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/LJjack\/LJChatView.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "388CB1DEEB61C50DCFDA8AECEE75F3786EFDAC10"
+    }
+  ]
+}

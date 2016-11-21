@@ -45,14 +45,14 @@
                     && isDirectory == NO) {
                     NSData *data = [fileManager contentsAtPath:imagePath];
                     if (data) {
-                        
+                        self.showImageView.image = [UIImage imageWithData:data];
                     }
                 } else {
                     [imageModel getImage:imagePath succ:^{
                         NSData *data = [fileManager contentsAtPath:imagePath];
                         if (data) {
                         } else {
-                            
+                            self.showImageView.image = [UIImage imageWithData:data];
                             NSLog(@"下载的图片是空的");
                         }
 
@@ -76,7 +76,7 @@
             && isDirectory == NO) {
             NSData *data = [fileManager contentsAtPath:imagePath];
             if (data) {
-
+                self.showImageView.image = [UIImage imageWithData:data];
             }
         }
         

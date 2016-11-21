@@ -12,10 +12,9 @@
 
 #import "LJElemCellHeader.h"
 
+@interface LJMessageController ()<UITableViewDataSource, UITableViewDelegate,LJElemCellDelegate>
 
-@interface LJMessageController ()<LJElemCellDelegate>
-
-@property (nonatomic, copy) NSArray *listData;
+@property (weak, nonatomic) IBOutlet UITableView *tableView;
 
 @end
 
@@ -23,11 +22,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.listData = @[@"senderTextElemCell",@"receiverTextElemCell",
-                      @"senderImageElemCell",@"receiverImageElemCell",
-                      @"senderSoundElemCell",@"receiverSoundElemCell",
-                      @"senderLocationElemCell",@"receiverLocationElemCell",
-                      @"senderVideoElemCell",@"receiverVideoElemCell"];
+    
     self.tableView.estimatedRowHeight = 100;
     self.tableView.rowHeight = UITableViewAutomaticDimension;
 }
@@ -41,24 +36,44 @@
 
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-
-    return self.listData.count;
+    return self.msgModel.messages.count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    NSString * identifier = self.listData[indexPath.row];
+    
+    TIMMessage *message = self.msgModel.messages[indexPath.row];
+    TIMElem *elem = [message getElem:0];
+    
+    static NSArray *array;
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        array = @[@"senderTextElemCell"    ,@"receiverTextElemCell",
+                  @"senderImageElemCell"   ,@"receiverImageElemCell",
+                  @"senderSoundElemCell"   ,@"receiverSoundElemCell",
+                  @"senderLocationElemCell",@"receiverLocationElemCell",
+                  @"senderVideoElemCell"   ,@"receiverVideoElemCell"];
+    });
+    BOOL isSelf = message.isSelf;
+    NSInteger num = isSelf?0:1;
+    if ([elem isKindOfClass:[TIMTextElem class]]) {
+        num += 0;
+    } else if ([elem isKindOfClass:[TIMImageElem class]]) {
+        num += 2;
+        
+    } else if ([elem isKindOfClass:[TIMSoundElem class]]) {
+        num += 4;
+    } else if ([elem isKindOfClass:[TIMLocationElem class]]) {
+        num += 6;
+    } else if ([elem isKindOfClass:[TIMVideoElem class]]) {
+        num += 8;
+    }
+    
+    NSString *identifier = array[num];
     LJElemCell *cell = [tableView dequeueReusableCellWithIdentifier:identifier
                                                            forIndexPath:indexPath];
     cell.delegate = self;
-    if ([identifier containsString:@"TextElemCell"]) {
-        [(LJTextElemCell *)cell setText:[[NSAttributedString alloc] initWithString:@"is发撒开发商打离开房间爱是否是打发大家撒放空间撒飞机，撒酒疯洒落的法律；发，爱上了；fjasfs.dfk是大风蓝色方面是否考虑啥地方第三方拉舒服死了大佛的麻烦啥地方是范德萨"]];
-
-    }
-    if ([identifier containsString:@"ImageElemCell"]) {
-        [(LJImageElemCell *)cell setImageName:@"goldengate"];
-    }
-    
-    cell.isSelfBubble = indexPath.row % 2 == 0;
+    cell.isSelfBubble = isSelf;
+    cell.message = message;
     
     return cell;
 }
