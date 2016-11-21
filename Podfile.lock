@@ -2,16 +2,19 @@ PODS:
   - FMDB (2.6.2):
     - FMDB/standard (= 2.6.2)
   - FMDB/standard (2.6.2)
+  - TZImagePickerController (1.7.1)
   - YYModel (1.0.4)
 
 DEPENDENCIES:
   - FMDB
+  - TZImagePickerController
   - YYModel
 
 SPEC CHECKSUMS:
   FMDB: 854a0341b4726e53276f2a8996f06f1b80f9259a
+  TZImagePickerController: cbfd57ba947263759b860f74132dd1bc33125afc
   YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
 
-PODFILE CHECKSUM: b07ecf49099eb275f63f290c6670bfbcdeb37a20
+PODFILE CHECKSUM: f36f9a5b02220134459568853a6d9aa0d588b63b
 
 COCOAPODS: 1.0.1

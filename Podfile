@@ -2,7 +2,8 @@
  platform :ios, ‘8.0’
 
 target 'LJChatUI' do
-  pod 'YYModel'
-  pod 'FMDB'
+    pod 'TZImagePickerController'
+    pod 'YYModel'
+    pod 'FMDB'
 
 end
