@@ -14,6 +14,9 @@
 		832664331DDEF579003FC30C /* LJShowFPS.m in Sources */ = {isa = PBXBuildFile; fileRef = 832664201DDEF579003FC30C /* LJShowFPS.m */; };
 		8326643D1DDEF705003FC30C /* LJShowImageController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8326643C1DDEF705003FC30C /* LJShowImageController.m */; };
 		832664401DDEF789003FC30C /* LJMapController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8326643F1DDEF789003FC30C /* LJMapController.m */; };
+		832DF9831DE3DB7C00F60632 /* NSString+LJEmojiParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 832DF9821DE3DB7C00F60632 /* NSString+LJEmojiParser.m */; };
+		832DF9861DE3E6B800F60632 /* NSAttributedString+LJEmoji.m in Sources */ = {isa = PBXBuildFile; fileRef = 832DF9851DE3E6B800F60632 /* NSAttributedString+LJEmoji.m */; };
+		832DF9881DE3EF1A00F60632 /* Reveal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 832DF9871DE3EF1A00F60632 /* Reveal.framework */; };
 		83B38FCB1DE2FA5100D443A7 /* LJChatController.m in Sources */ = {isa = PBXBuildFile; fileRef = 83B38F841DE2FA5100D443A7 /* LJChatController.m */; };
 		83B38FCC1DE2FA5100D443A7 /* LJChatCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 83B38F871DE2FA5100D443A7 /* LJChatCell.m */; };
 		83B38FCD1DE2FA5100D443A7 /* LJIMConfigFile.m in Sources */ = {isa = PBXBuildFile; fileRef = 83B38F8A1DE2FA5100D443A7 /* LJIMConfigFile.m */; };
@@ -253,6 +256,11 @@
 		8326643C1DDEF705003FC30C /* LJShowImageController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LJShowImageController.m; sourceTree = "<group>"; };
 		8326643E1DDEF789003FC30C /* LJMapController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJMapController.h; sourceTree = "<group>"; };
 		8326643F1DDEF789003FC30C /* LJMapController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LJMapController.m; sourceTree = "<group>"; };
+		832DF9811DE3DB7C00F60632 /* NSString+LJEmojiParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+LJEmojiParser.h"; sourceTree = "<group>"; };
+		832DF9821DE3DB7C00F60632 /* NSString+LJEmojiParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+LJEmojiParser.m"; sourceTree = "<group>"; };
+		832DF9841DE3E6B800F60632 /* NSAttributedString+LJEmoji.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSAttributedString+LJEmoji.h"; sourceTree = "<group>"; };
+		832DF9851DE3E6B800F60632 /* NSAttributedString+LJEmoji.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSAttributedString+LJEmoji.m"; sourceTree = "<group>"; };
+		832DF9871DE3EF1A00F60632 /* Reveal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Reveal.framework; sourceTree = "<group>"; };
 		83B38F831DE2FA5100D443A7 /* LJChatController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJChatController.h; sourceTree = "<group>"; };
 		83B38F841DE2FA5100D443A7 /* LJChatController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LJChatController.m; sourceTree = "<group>"; };
 		83B38F861DE2FA5100D443A7 /* LJChatCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJChatCell.h; sourceTree = "<group>"; };
@@ -555,6 +563,7 @@
 				83EB1BB11DE29E6F003C1E98 /* libicucore.tbd in Frameworks */,
 				83EB1BAF1DE29E5C003C1E98 /* libsqlite3.tbd in Frameworks */,
 				83EB1BAC1DE29E3F003C1E98 /* libc++.tbd in Frameworks */,
+				832DF9881DE3EF1A00F60632 /* Reveal.framework in Frameworks */,
 				83EB1BAD1DE29E3F003C1E98 /* libc++abi.tbd in Frameworks */,
 				83EB1BA91DE29E25003C1E98 /* libz.1.2.8.tbd in Frameworks */,
 				83EB1BA71DE29E0F003C1E98 /* libstdc++.6.0.9.tbd in Frameworks */,
@@ -581,6 +590,7 @@
 		832663C61DDEF513003FC30C = {
 			isa = PBXGroup;
 			children = (
+				832DF9871DE3EF1A00F60632 /* Reveal.framework */,
 				83EB180F1DE297D1003C1E98 /* Library */,
 				832663D11DDEF513003FC30C /* LJChatUI */,
 				832663D01DDEF513003FC30C /* Products */,
@@ -743,6 +753,10 @@
 			children = (
 				83B38FAE1DE2FA5100D443A7 /* UIView+LJMask.h */,
 				83B38FAF1DE2FA5100D443A7 /* UIView+LJMask.m */,
+				832DF9811DE3DB7C00F60632 /* NSString+LJEmojiParser.h */,
+				832DF9821DE3DB7C00F60632 /* NSString+LJEmojiParser.m */,
+				832DF9841DE3E6B800F60632 /* NSAttributedString+LJEmoji.h */,
+				832DF9851DE3E6B800F60632 /* NSAttributedString+LJEmoji.m */,
 			);
 			path = Categore;
 			sourceTree = "<group>";
@@ -750,17 +764,17 @@
 		83B38FB01DE2FA5100D443A7 /* Cell */ = {
 			isa = PBXGroup;
 			children = (
+				83B38FB31DE2FA5100D443A7 /* LJElemCellHeader.h */,
 				83B38FB11DE2FA5100D443A7 /* LJElemCell.h */,
 				83B38FB21DE2FA5100D443A7 /* LJElemCell.m */,
-				83B38FB31DE2FA5100D443A7 /* LJElemCellHeader.h */,
+				83B38FBA1DE2FA5100D443A7 /* LJTextElemCell.h */,
+				83B38FBB1DE2FA5100D443A7 /* LJTextElemCell.m */,
 				83B38FB41DE2FA5100D443A7 /* LJImageElemCell.h */,
 				83B38FB51DE2FA5100D443A7 /* LJImageElemCell.m */,
 				83B38FB61DE2FA5100D443A7 /* LJLocationElemCell.h */,
 				83B38FB71DE2FA5100D443A7 /* LJLocationElemCell.m */,
 				83B38FB81DE2FA5100D443A7 /* LJSoundElemCell.h */,
 				83B38FB91DE2FA5100D443A7 /* LJSoundElemCell.m */,
-				83B38FBA1DE2FA5100D443A7 /* LJTextElemCell.h */,
-				83B38FBB1DE2FA5100D443A7 /* LJTextElemCell.m */,
 				83B38FBC1DE2FA5100D443A7 /* LJVideoElemCell.h */,
 				83B38FBD1DE2FA5100D443A7 /* LJVideoElemCell.m */,
 			);
@@ -1426,6 +1440,7 @@
 				83B38FF31DE2FBFB00D443A7 /* UIViewController+LJHUD.m in Sources */,
 				8326642B1DDEF579003FC30C /* AppDelegate.m in Sources */,
 				832663D41DDEF513003FC30C /* main.m in Sources */,
+				832DF9861DE3E6B800F60632 /* NSAttributedString+LJEmoji.m in Sources */,
 				83EB1B031DE29D87003C1E98 /* GJGCChatInputExpandEmojiPanelGifSubItem.m in Sources */,
 				83EB1B061DE29D87003C1E98 /* GJGCChatInputExpandEmojiPanelMenuBarDataSourceItem.m in Sources */,
 				83EB1B0D1DE29D87003C1E98 /* GJGCChatInputPanel.m in Sources */,
@@ -1457,6 +1472,7 @@
 				83EB1AFF1DE29D87003C1E98 /* GJGCChatInputBarItem.m in Sources */,
 				83B38FE51DE2FA5100D443A7 /* LJMessageController.m in Sources */,
 				83B38FE61DE2FA5100D443A7 /* LJGoodsModel.m in Sources */,
+				832DF9831DE3DB7C00F60632 /* NSString+LJEmojiParser.m in Sources */,
 				83B38FE71DE2FA5100D443A7 /* LJMessagesModel.m in Sources */,
 				83EB1BA01DE29D87003C1E98 /* FLAnimatedImage.m in Sources */,
 				83B38FD41DE2FA5100D443A7 /* LJSoundPlayer.m in Sources */,
@@ -1599,6 +1615,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)$(LOCAL_LIBRARY_DIR)/Tim_IM_2.4.0",
+					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = LJChatUI/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -1617,6 +1634,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)$(LOCAL_LIBRARY_DIR)/Tim_IM_2.4.0",
+					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = LJChatUI/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;

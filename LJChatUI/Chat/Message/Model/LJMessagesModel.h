@@ -13,6 +13,24 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+@class LJMessagesModel;
+
+@protocol LJMessagesModelDelegate <NSObject>
+
+@required
+
+/**
+ *  消息发送完成
+ */
+- (void)messagesModel:(LJMessagesModel *)messagesModel didSendFinishRowAtIndex:(NSUInteger)index;
+
+/**
+ *  完成接受消息
+ */
+- (void)messagesModel:(LJMessagesModel *)messagesModel didReveiceFinishRowAtIndex:(NSUInteger)index;
+
+@end
+
 @interface LJMessagesModel : NSObject
 
 /**
@@ -22,7 +40,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic, strong) NSMutableArray<TIMMessage *> *messages;
 //
-@property (nonatomic, weak) id delegate;
+@property (nonatomic, weak) id<LJMessagesModelDelegate> delegate;
 
 @property (nonatomic, copy) NSString *otherName;
 

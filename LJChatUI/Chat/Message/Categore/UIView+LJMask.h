@@ -11,7 +11,7 @@
 @interface UIView (LJMask)
 
 /**
- 根据指定的图片给视图修改蒙版，默认拉伸区域CGRectMake(0.2, 0.5, 0.1, 0.1)
+ 根据指定的图片给视图修改蒙版，默认拉伸区域CGRectMake(0.2, 0.6, 0.1, 0.1)
 
  @param image 图片
  */
@@ -30,7 +30,7 @@
 @property (nonatomic, strong) CALayer *lj_maskLayer;//视图添加图片蒙版
 
 /**
- 视图添加图片蒙版，默认拉伸区域CGRectMake(0.2, 0.5, 0.1, 0.1)
+ 视图添加图片蒙版，默认拉伸区域CGRectMake(0.2, 0.6, 0.1, 0.1)
  
  @param image 图片
  */

@@ -151,12 +151,17 @@
 #pragma mark - 接受消息
 
 - (void)reveiceMessage:(TIMMessage *)message isAtTop:(BOOL)isAtTop {
+    NSUInteger index;
     if (isAtTop) {
         [self.messages insertObject:message atIndex:0];
+        index = 0;
     } else {
         [self.messages addObject:message];
+        index = self.messages.count - 1;
     }
-    
+    if ([self.delegate respondsToSelector:@selector(messagesModel:didReveiceFinishRowAtIndex:)]) {
+        [self.delegate messagesModel:self didReveiceFinishRowAtIndex:index];
+    }
 }
 
 // 接受商品
@@ -202,7 +207,6 @@
 }
 
 #pragma mark - 重新发送
-
 - (void)reSendAtIndex:(NSUInteger)index {
 //    TIMMessage * message = self.failMessages[@(index)];
 //    
@@ -217,7 +221,6 @@
 }
 
 #pragma mark - 删除
-
 // 删除指定位置的消息
 - (void)removeAtIndex:(NSUInteger)index {
 //    NSUInteger totalCount = self.messages.count;
@@ -272,7 +275,12 @@
 #pragma mark - Private Methods
 
 - (void)sendMessage:(TIMMessage*)message {
-    [self reveiceMessage:message isAtTop:NO];
+    [self.messages addObject:message];
+    
+    if ([self.delegate respondsToSelector:@selector(messagesModel:didSendFinishRowAtIndex:)]) {
+        [self.delegate messagesModel:self didSendFinishRowAtIndex:self.messages.count - 1];
+    }
+    
     [self.chatingConversation sendMessage:message succ:^{
         
         NSLog(@"发送 成功");
@@ -321,7 +329,6 @@
 - (void)setChatingConversation:(TIMConversation *)chatingConversation {
     _chatingConversation = chatingConversation;
     
-    
     NSString *receiver = [chatingConversation getReceiver];
     self.otherName = receiver;
     
@@ -335,8 +342,7 @@
     } fail:^(int code, NSString *msg) {
         
     }];
-    
-    NSArray<TIMMessage *> *msgs =  [chatingConversation getLastMsgs:20];
+    NSArray<TIMMessage *> *msgs = [chatingConversation getLastMsgs:20];
     [self handleReveicedOldMessage:msgs];
 }
 

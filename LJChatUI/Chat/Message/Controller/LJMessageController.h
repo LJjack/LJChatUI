@@ -7,7 +7,6 @@
 //
 
 #import "LJMsgConfigController.h"
-#import "LJMessagesModel.h"
 
 @interface LJMessageController : LJMsgConfigController
 

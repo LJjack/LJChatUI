@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="dqY-hh-cTI">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="dqY-hh-cTI">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -26,11 +26,11 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="1623"/>
                                 <color key="backgroundColor" red="0.92156862750000001" green="0.92156862750000001" blue="0.92156862750000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="receiverTextElemCell" rowHeight="60" id="per-vk-3l9" customClass="LJTextElemCell">
-                                        <rect key="frame" x="0.0" y="1" width="375" height="60"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="receiverTextElemCell" rowHeight="49" id="per-vk-3l9" customClass="LJTextElemCell">
+                                        <rect key="frame" x="0.0" y="1" width="375" height="49"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="per-vk-3l9" id="5YN-wW-Gb2">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="60"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="message-touxiang" translatesAutoresizingMaskIntoConstraints="NO" id="Gqe-C6-KK7">
@@ -41,16 +41,16 @@
                                                     </constraints>
                                                 </imageView>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zoX-Fu-szv" customClass="LJBubbleContainerView">
-                                                    <rect key="frame" x="70" y="8" width="84" height="44"/>
+                                                    <rect key="frame" x="66" y="8" width="59" height="33"/>
                                                     <subviews>
                                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ReceiverNode" highlightedImage="ReceiverNodeHL" translatesAutoresizingMaskIntoConstraints="NO" id="FBI-GF-47f">
-                                                            <rect key="frame" x="0.0" y="0.0" width="84" height="44"/>
-                                                            <rect key="contentStretch" x="0.20000000000000001" y="0.5" width="0.10000000000000001" height="0.10000000000000001"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="59" height="33"/>
+                                                            <rect key="contentStretch" x="0.20000000000000001" y="0.59999999999999998" width="0.10000000000000001" height="0.10000000000000001"/>
                                                         </imageView>
-                                                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" text="你好啊！" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vKl-0G-6mz">
-                                                            <rect key="frame" x="8" y="0.0" width="68" height="36"/>
+                                                        <textView multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" text="你好" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vKl-0G-6mz">
+                                                            <rect key="frame" x="8" y="0.0" width="43" height="33"/>
                                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                             <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                                         </textView>
                                                     </subviews>
@@ -58,19 +58,19 @@
                                                     <gestureRecognizers/>
                                                     <constraints>
                                                         <constraint firstItem="FBI-GF-47f" firstAttribute="top" secondItem="zoX-Fu-szv" secondAttribute="top" id="4Zs-Ma-rBa"/>
-                                                        <constraint firstAttribute="bottom" secondItem="vKl-0G-6mz" secondAttribute="bottom" constant="8" id="5vb-5x-oY1"/>
                                                         <constraint firstItem="FBI-GF-47f" firstAttribute="leading" secondItem="zoX-Fu-szv" secondAttribute="leading" id="6Q5-zH-7ky"/>
-                                                        <constraint firstAttribute="trailing" secondItem="vKl-0G-6mz" secondAttribute="trailing" constant="8" id="Jdf-5P-2Qa"/>
-                                                        <constraint firstItem="vKl-0G-6mz" firstAttribute="leading" secondItem="zoX-Fu-szv" secondAttribute="leading" constant="8" id="dgj-4i-tjC"/>
-                                                        <constraint firstItem="vKl-0G-6mz" firstAttribute="top" secondItem="zoX-Fu-szv" secondAttribute="top" id="dyv-C0-L0e"/>
+                                                        <constraint firstItem="vKl-0G-6mz" firstAttribute="leading" secondItem="zoX-Fu-szv" secondAttribute="leading" constant="8" id="6l1-dz-MDG"/>
+                                                        <constraint firstItem="vKl-0G-6mz" firstAttribute="top" secondItem="zoX-Fu-szv" secondAttribute="top" id="FAu-Kb-5oA"/>
+                                                        <constraint firstAttribute="bottom" secondItem="vKl-0G-6mz" secondAttribute="bottom" id="FWl-zw-ZzL"/>
                                                         <constraint firstAttribute="bottom" secondItem="FBI-GF-47f" secondAttribute="bottom" id="h3c-98-77z"/>
+                                                        <constraint firstAttribute="trailing" secondItem="vKl-0G-6mz" secondAttribute="trailing" constant="8" id="hgK-pg-BVN"/>
                                                         <constraint firstAttribute="trailing" secondItem="FBI-GF-47f" secondAttribute="trailing" id="lF3-HR-Ner"/>
                                                     </constraints>
                                                 </view>
                                             </subviews>
                                             <gestureRecognizers/>
                                             <constraints>
-                                                <constraint firstItem="zoX-Fu-szv" firstAttribute="leading" secondItem="Gqe-C6-KK7" secondAttribute="trailing" constant="12" id="78Y-a5-DCe"/>
+                                                <constraint firstItem="zoX-Fu-szv" firstAttribute="leading" secondItem="Gqe-C6-KK7" secondAttribute="trailing" constant="8" id="78Y-a5-DCe"/>
                                                 <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="zoX-Fu-szv" secondAttribute="trailing" constant="60" id="8KO-Bl-Sez"/>
                                                 <constraint firstItem="Gqe-C6-KK7" firstAttribute="leading" secondItem="5YN-wW-Gb2" secondAttribute="leading" constant="12" id="Qb4-7F-JaN"/>
                                                 <constraint firstAttribute="bottom" secondItem="zoX-Fu-szv" secondAttribute="bottom" constant="8" id="XsJ-Vx-IHp"/>
@@ -86,11 +86,11 @@
                                             <outlet property="textView" destination="vKl-0G-6mz" id="g2m-Cc-cNq"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="senderTextElemCell" rowHeight="60" id="cXR-Xw-jVr" customClass="LJTextElemCell">
-                                        <rect key="frame" x="0.0" y="61" width="375" height="60"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="senderTextElemCell" rowHeight="49" id="cXR-Xw-jVr" customClass="LJTextElemCell">
+                                        <rect key="frame" x="0.0" y="50" width="375" height="49"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="cXR-Xw-jVr" id="XAq-ra-wPQ">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="60"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="message-touxiang" translatesAutoresizingMaskIntoConstraints="NO" id="gfX-Xy-Unr">
@@ -101,40 +101,42 @@
                                                     </constraints>
                                                 </imageView>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VIa-0a-yT4" customClass="LJBubbleContainerView">
-                                                    <rect key="frame" x="221" y="8" width="84" height="44"/>
+                                                    <rect key="frame" x="250" y="8" width="59" height="33"/>
                                                     <subviews>
                                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SenderNode" highlightedImage="SenderNodeHL" translatesAutoresizingMaskIntoConstraints="NO" id="KZp-HT-ccC">
-                                                            <rect key="frame" x="0.0" y="0.0" width="84" height="44"/>
-                                                            <rect key="contentStretch" x="0.20000000000000001" y="0.5" width="0.10000000000000001" height="0.10000000000000001"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="59" height="33"/>
+                                                            <rect key="contentStretch" x="0.20000000000000001" y="0.59999999999999998" width="0.10000000000000001" height="0.10000000000000001"/>
                                                         </imageView>
-                                                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" text="你好啊！" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KHs-Xp-FrG">
-                                                            <rect key="frame" x="8" y="0.0" width="68" height="36"/>
+                                                        <textView multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" text="你好" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KHs-Xp-FrG">
+                                                            <rect key="frame" x="8" y="0.0" width="43" height="33"/>
                                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                             <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                            <dataDetectorType key="dataDetectorTypes" phoneNumber="YES" link="YES" address="YES"/>
                                                         </textView>
                                                     </subviews>
                                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                     <gestureRecognizers/>
                                                     <constraints>
-                                                        <constraint firstAttribute="bottom" secondItem="KHs-Xp-FrG" secondAttribute="bottom" constant="8" id="8Px-us-z69"/>
-                                                        <constraint firstItem="KZp-HT-ccC" firstAttribute="top" secondItem="VIa-0a-yT4" secondAttribute="top" id="awE-P3-6ZM"/>
-                                                        <constraint firstItem="KZp-HT-ccC" firstAttribute="leading" secondItem="VIa-0a-yT4" secondAttribute="leading" id="fHj-hX-YEN"/>
-                                                        <constraint firstItem="KHs-Xp-FrG" firstAttribute="top" secondItem="VIa-0a-yT4" secondAttribute="top" id="g1q-Re-07F"/>
-                                                        <constraint firstAttribute="trailing" secondItem="KHs-Xp-FrG" secondAttribute="trailing" constant="8" id="pls-Nt-rOy"/>
-                                                        <constraint firstItem="KHs-Xp-FrG" firstAttribute="leading" secondItem="VIa-0a-yT4" secondAttribute="leading" constant="8" id="scu-LY-eqr"/>
-                                                        <constraint firstAttribute="bottom" secondItem="KZp-HT-ccC" secondAttribute="bottom" id="sh3-P1-2bQ"/>
-                                                        <constraint firstAttribute="trailing" secondItem="KZp-HT-ccC" secondAttribute="trailing" id="zOm-Gt-Oec"/>
+                                                        <constraint firstAttribute="trailing" secondItem="KHs-Xp-FrG" secondAttribute="trailing" constant="8" id="2K3-4d-Kgw"/>
+                                                        <constraint firstItem="KZp-HT-ccC" firstAttribute="top" secondItem="VIa-0a-yT4" secondAttribute="top" id="95e-Fg-u9o"/>
+                                                        <constraint firstAttribute="bottom" secondItem="KZp-HT-ccC" secondAttribute="bottom" id="EL4-uv-9Zn"/>
+                                                        <constraint firstAttribute="trailing" secondItem="KZp-HT-ccC" secondAttribute="trailing" id="Gjf-Ax-fWk"/>
+                                                        <constraint firstItem="KHs-Xp-FrG" firstAttribute="leading" secondItem="VIa-0a-yT4" secondAttribute="leading" constant="8" id="clN-gD-jUL"/>
+                                                        <constraint firstItem="KZp-HT-ccC" firstAttribute="leading" secondItem="VIa-0a-yT4" secondAttribute="leading" id="uht-I8-3Gy"/>
+                                                        <constraint firstAttribute="bottom" secondItem="KHs-Xp-FrG" secondAttribute="bottom" id="wkz-Ya-Obn"/>
+                                                        <constraint firstItem="KHs-Xp-FrG" firstAttribute="top" secondItem="VIa-0a-yT4" secondAttribute="top" id="zIK-vZ-B0m"/>
                                                     </constraints>
                                                 </view>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="gfX-Xy-Unr" firstAttribute="top" secondItem="XAq-ra-wPQ" secondAttribute="top" constant="4" id="6xr-Xz-kea"/>
-                                                <constraint firstAttribute="bottom" secondItem="VIa-0a-yT4" secondAttribute="bottom" constant="8" id="8Pd-NH-qRa"/>
-                                                <constraint firstItem="gfX-Xy-Unr" firstAttribute="leading" secondItem="VIa-0a-yT4" secondAttribute="trailing" constant="12" id="LBY-Be-byM"/>
-                                                <constraint firstItem="VIa-0a-yT4" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="XAq-ra-wPQ" secondAttribute="leading" constant="60" id="a5P-ma-QTq"/>
-                                                <constraint firstItem="VIa-0a-yT4" firstAttribute="top" secondItem="XAq-ra-wPQ" secondAttribute="top" constant="8" id="oX8-Xv-opE"/>
+                                                <constraint firstItem="VIa-0a-yT4" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="XAq-ra-wPQ" secondAttribute="leading" constant="60" id="JtB-Vs-Yty"/>
+                                                <constraint firstAttribute="bottom" secondItem="VIa-0a-yT4" secondAttribute="bottom" constant="8" id="K7O-Ei-K8E"/>
+                                                <constraint firstItem="gfX-Xy-Unr" firstAttribute="leading" secondItem="VIa-0a-yT4" secondAttribute="trailing" constant="8" id="MNC-9r-AEv"/>
                                                 <constraint firstAttribute="trailing" secondItem="gfX-Xy-Unr" secondAttribute="trailing" constant="12" id="qiI-j0-74k"/>
+                                                <constraint firstItem="VIa-0a-yT4" firstAttribute="top" secondItem="XAq-ra-wPQ" secondAttribute="top" constant="8" id="r5e-lM-qhu"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" red="0.92156862750000001" green="0.92156862750000001" blue="0.92156862750000001" alpha="1" colorSpace="calibratedRGB"/>
@@ -146,7 +148,7 @@
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="receiverImageElemCell" rowHeight="160" id="OX3-s1-Q7U" customClass="LJImageElemCell">
-                                        <rect key="frame" x="0.0" y="121" width="375" height="160"/>
+                                        <rect key="frame" x="0.0" y="99" width="375" height="160"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="OX3-s1-Q7U" id="nbV-sr-LBt">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="160"/>
@@ -160,7 +162,7 @@
                                                     </constraints>
                                                 </imageView>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xj5-r3-LSZ" customClass="LJBubbleContainerView">
-                                                    <rect key="frame" x="70" y="8" width="245" height="144"/>
+                                                    <rect key="frame" x="66" y="8" width="245" height="144"/>
                                                     <subviews>
                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="goldengate" translatesAutoresizingMaskIntoConstraints="NO" id="cFP-U6-Tca">
                                                             <rect key="frame" x="0.0" y="0.0" width="245" height="144"/>
@@ -182,7 +184,7 @@
                                             <constraints>
                                                 <constraint firstItem="W6r-Bs-8fI" firstAttribute="top" secondItem="nbV-sr-LBt" secondAttribute="topMargin" constant="4" id="6n9-vV-wAF"/>
                                                 <constraint firstAttribute="bottom" secondItem="Xj5-r3-LSZ" secondAttribute="bottom" constant="8" id="7CW-QP-t9U"/>
-                                                <constraint firstItem="Xj5-r3-LSZ" firstAttribute="leading" secondItem="W6r-Bs-8fI" secondAttribute="trailing" constant="12" id="kqP-es-nMU"/>
+                                                <constraint firstItem="Xj5-r3-LSZ" firstAttribute="leading" secondItem="W6r-Bs-8fI" secondAttribute="trailing" constant="8" id="kqP-es-nMU"/>
                                                 <constraint firstItem="Xj5-r3-LSZ" firstAttribute="top" secondItem="nbV-sr-LBt" secondAttribute="top" constant="8" id="nTc-V5-vN2"/>
                                                 <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Xj5-r3-LSZ" secondAttribute="trailing" constant="60" id="u1q-UF-GKN"/>
                                                 <constraint firstItem="W6r-Bs-8fI" firstAttribute="leading" secondItem="nbV-sr-LBt" secondAttribute="leading" constant="12" id="xCo-6e-SPS"/>
@@ -196,7 +198,7 @@
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="senderImageElemCell" rowHeight="160" id="hd2-eG-uYN" customClass="LJImageElemCell">
-                                        <rect key="frame" x="0.0" y="281" width="375" height="160"/>
+                                        <rect key="frame" x="0.0" y="259" width="375" height="160"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="hd2-eG-uYN" id="7DQ-wV-q1N">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="160"/>
@@ -210,7 +212,7 @@
                                                     </constraints>
                                                 </imageView>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RY7-Bc-CWH" customClass="LJBubbleContainerView">
-                                                    <rect key="frame" x="60" y="8" width="245" height="144"/>
+                                                    <rect key="frame" x="64" y="8" width="245" height="144"/>
                                                     <subviews>
                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="goldengate" translatesAutoresizingMaskIntoConstraints="NO" id="I6y-fD-UOW">
                                                             <rect key="frame" x="0.0" y="0.0" width="245" height="144"/>
@@ -233,7 +235,7 @@
                                                 <constraint firstAttribute="trailing" secondItem="LQF-A5-XWz" secondAttribute="trailing" constant="12" id="D5i-Fj-W3O"/>
                                                 <constraint firstItem="RY7-Bc-CWH" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="7DQ-wV-q1N" secondAttribute="leading" constant="60" id="EYW-nS-Rkw"/>
                                                 <constraint firstItem="LQF-A5-XWz" firstAttribute="top" secondItem="7DQ-wV-q1N" secondAttribute="topMargin" constant="4" id="VIF-OT-zYJ"/>
-                                                <constraint firstItem="LQF-A5-XWz" firstAttribute="leading" secondItem="RY7-Bc-CWH" secondAttribute="trailing" constant="12" id="fhw-hd-79o"/>
+                                                <constraint firstItem="LQF-A5-XWz" firstAttribute="leading" secondItem="RY7-Bc-CWH" secondAttribute="trailing" constant="8" id="fhw-hd-79o"/>
                                                 <constraint firstItem="RY7-Bc-CWH" firstAttribute="top" secondItem="7DQ-wV-q1N" secondAttribute="top" constant="8" id="wic-SQ-FdB"/>
                                                 <constraint firstAttribute="bottom" secondItem="RY7-Bc-CWH" secondAttribute="bottom" constant="8" id="z6a-6X-JKg"/>
                                             </constraints>
@@ -246,7 +248,7 @@
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="receiverSoundElemCell" id="bcu-fP-Gi1" customClass="LJSoundElemCell">
-                                        <rect key="frame" x="0.0" y="441" width="375" height="60"/>
+                                        <rect key="frame" x="0.0" y="419" width="375" height="60"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="bcu-fP-Gi1" id="Zi4-6p-8B5">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="60"/>
@@ -260,7 +262,7 @@
                                                     </constraints>
                                                 </imageView>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iZr-xJ-3uv" customClass="LJBubbleContainerView">
-                                                    <rect key="frame" x="70" y="5" width="84" height="50"/>
+                                                    <rect key="frame" x="66" y="5" width="84" height="50"/>
                                                     <subviews>
                                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ReceiverNode" highlightedImage="ReceiverNodeHL" translatesAutoresizingMaskIntoConstraints="NO" id="7tO-UY-hzJ">
                                                             <rect key="frame" x="0.0" y="0.0" width="84" height="50"/>
@@ -283,7 +285,7 @@
                                                     </constraints>
                                                 </view>
                                                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2&quot;" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nt0-ea-G6h">
-                                                    <rect key="frame" x="156" y="23" width="13" height="15"/>
+                                                    <rect key="frame" x="152" y="23" width="13" height="15"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -294,14 +296,14 @@
                                                     </userDefinedRuntimeAttributes>
                                                 </label>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="soundNodeUnread" translatesAutoresizingMaskIntoConstraints="NO" id="dfI-3F-K1G">
-                                                    <rect key="frame" x="157" y="10" width="10" height="10"/>
+                                                    <rect key="frame" x="153" y="10" width="10" height="10"/>
                                                 </imageView>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="lRc-We-hjz" firstAttribute="leading" secondItem="Zi4-6p-8B5" secondAttribute="leading" constant="12" id="3pq-ac-YIS"/>
                                                 <constraint firstItem="iZr-xJ-3uv" firstAttribute="top" secondItem="Zi4-6p-8B5" secondAttribute="top" constant="5" id="4Cx-Q5-dWr"/>
                                                 <constraint firstAttribute="bottom" secondItem="nt0-ea-G6h" secondAttribute="bottom" constant="22" id="UVt-ED-1eT"/>
-                                                <constraint firstItem="iZr-xJ-3uv" firstAttribute="leading" secondItem="lRc-We-hjz" secondAttribute="trailing" constant="12" id="YDp-wM-dNz"/>
+                                                <constraint firstItem="iZr-xJ-3uv" firstAttribute="leading" secondItem="lRc-We-hjz" secondAttribute="trailing" constant="8" id="YDp-wM-dNz"/>
                                                 <constraint firstItem="dfI-3F-K1G" firstAttribute="leading" secondItem="iZr-xJ-3uv" secondAttribute="trailing" constant="3" id="eVc-9a-M6w"/>
                                                 <constraint firstAttribute="bottom" secondItem="iZr-xJ-3uv" secondAttribute="bottom" constant="5" id="qAE-fD-mMX"/>
                                                 <constraint firstItem="dfI-3F-K1G" firstAttribute="top" secondItem="Zi4-6p-8B5" secondAttribute="top" constant="10" id="svt-NW-Q5K"/>
@@ -321,7 +323,7 @@
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="senderSoundElemCell" rowHeight="60" id="IIs-4H-ddo" customClass="LJSoundElemCell">
-                                        <rect key="frame" x="0.0" y="501" width="375" height="60"/>
+                                        <rect key="frame" x="0.0" y="479" width="375" height="60"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="IIs-4H-ddo" id="K8J-mg-MzR">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="60"/>
@@ -335,7 +337,7 @@
                                                     </constraints>
                                                 </imageView>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1mJ-eF-WMZ" customClass="LJBubbleContainerView">
-                                                    <rect key="frame" x="221" y="5" width="84" height="50"/>
+                                                    <rect key="frame" x="225" y="5" width="84" height="50"/>
                                                     <subviews>
                                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SenderNode" highlightedImage="SenderNodeHL" translatesAutoresizingMaskIntoConstraints="NO" id="DDK-2p-q5C">
                                                             <rect key="frame" x="0.0" y="0.0" width="84" height="50"/>
@@ -358,7 +360,7 @@
                                                     </constraints>
                                                 </view>
                                                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2&quot;" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MGT-Fr-U5y">
-                                                    <rect key="frame" x="206" y="23" width="13" height="15"/>
+                                                    <rect key="frame" x="210" y="23" width="13" height="15"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -370,7 +372,7 @@
                                                 </label>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="1av-mK-TNS" firstAttribute="leading" secondItem="1mJ-eF-WMZ" secondAttribute="trailing" constant="12" id="33w-QQ-8Fs"/>
+                                                <constraint firstItem="1av-mK-TNS" firstAttribute="leading" secondItem="1mJ-eF-WMZ" secondAttribute="trailing" constant="8" id="33w-QQ-8Fs"/>
                                                 <constraint firstItem="1mJ-eF-WMZ" firstAttribute="leading" secondItem="MGT-Fr-U5y" secondAttribute="trailing" constant="2" id="99O-HF-Dfc"/>
                                                 <constraint firstItem="1av-mK-TNS" firstAttribute="top" secondItem="K8J-mg-MzR" secondAttribute="top" constant="4" id="HFl-lr-YES"/>
                                                 <constraint firstItem="1mJ-eF-WMZ" firstAttribute="top" secondItem="K8J-mg-MzR" secondAttribute="top" constant="5" id="HML-PJ-llO"/>
@@ -390,7 +392,7 @@
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="receiverLocationElemCell" rowHeight="160" id="FrY-Hb-1oA" customClass="LJLocationElemCell">
-                                        <rect key="frame" x="0.0" y="561" width="375" height="160"/>
+                                        <rect key="frame" x="0.0" y="539" width="375" height="160"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="FrY-Hb-1oA" id="TRQ-bk-aoy">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="160"/>
@@ -404,7 +406,7 @@
                                                     </constraints>
                                                 </imageView>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VqM-9j-xPN" customClass="LJBubbleContainerView">
-                                                    <rect key="frame" x="70" y="8" width="161" height="144"/>
+                                                    <rect key="frame" x="66" y="8" width="161" height="144"/>
                                                     <subviews>
                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="location" translatesAutoresizingMaskIntoConstraints="NO" id="ltL-aJ-i1R">
                                                             <rect key="frame" x="0.0" y="0.0" width="161" height="144"/>
@@ -429,7 +431,7 @@
                                                 <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="VqM-9j-xPN" secondAttribute="trailing" constant="60" id="N7e-hs-ER3"/>
                                                 <constraint firstAttribute="bottom" secondItem="VqM-9j-xPN" secondAttribute="bottom" constant="8" id="TN2-An-Kwt"/>
                                                 <constraint firstItem="yxU-WW-8cD" firstAttribute="top" secondItem="TRQ-bk-aoy" secondAttribute="topMargin" constant="4" id="d4p-qf-GQn"/>
-                                                <constraint firstItem="VqM-9j-xPN" firstAttribute="leading" secondItem="yxU-WW-8cD" secondAttribute="trailing" constant="12" id="vj7-Rn-sZZ"/>
+                                                <constraint firstItem="VqM-9j-xPN" firstAttribute="leading" secondItem="yxU-WW-8cD" secondAttribute="trailing" constant="8" id="vj7-Rn-sZZ"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" red="0.92156862750000001" green="0.92156862750000001" blue="0.92156862750000001" alpha="1" colorSpace="calibratedRGB"/>
@@ -439,7 +441,7 @@
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="senderLocationElemCell" rowHeight="160" id="02w-qx-VsI" customClass="LJLocationElemCell">
-                                        <rect key="frame" x="0.0" y="721" width="375" height="160"/>
+                                        <rect key="frame" x="0.0" y="699" width="375" height="160"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="02w-qx-VsI" id="rPa-UR-wwR">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="160"/>
@@ -453,7 +455,7 @@
                                                     </constraints>
                                                 </imageView>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Egy-8Y-bI4" customClass="LJBubbleContainerView">
-                                                    <rect key="frame" x="144" y="8" width="161" height="144"/>
+                                                    <rect key="frame" x="148" y="8" width="161" height="144"/>
                                                     <subviews>
                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="location" translatesAutoresizingMaskIntoConstraints="NO" id="r1N-gk-VzP">
                                                             <rect key="frame" x="0.0" y="0.0" width="161" height="144"/>
@@ -477,7 +479,7 @@
                                                 <constraint firstItem="Egy-8Y-bI4" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="rPa-UR-wwR" secondAttribute="leading" constant="60" id="NU4-nQ-x7d"/>
                                                 <constraint firstAttribute="bottom" secondItem="Egy-8Y-bI4" secondAttribute="bottom" constant="8" id="WMT-6k-dz7"/>
                                                 <constraint firstAttribute="trailing" secondItem="kHt-2u-BiM" secondAttribute="trailing" constant="12" id="e6y-Da-nSV"/>
-                                                <constraint firstItem="kHt-2u-BiM" firstAttribute="leading" secondItem="Egy-8Y-bI4" secondAttribute="trailing" constant="12" id="nAY-W4-wkz"/>
+                                                <constraint firstItem="kHt-2u-BiM" firstAttribute="leading" secondItem="Egy-8Y-bI4" secondAttribute="trailing" constant="8" id="nAY-W4-wkz"/>
                                                 <constraint firstItem="Egy-8Y-bI4" firstAttribute="top" secondItem="rPa-UR-wwR" secondAttribute="top" constant="8" id="x22-Z0-bZE"/>
                                             </constraints>
                                         </tableViewCellContentView>
@@ -488,7 +490,7 @@
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="senderVideoElemCell" rowHeight="160" id="ZJq-Rd-cQW" customClass="LJVideoElemCell">
-                                        <rect key="frame" x="0.0" y="881" width="375" height="160"/>
+                                        <rect key="frame" x="0.0" y="859" width="375" height="160"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ZJq-Rd-cQW" id="WXt-9k-Vh2">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="160"/>
@@ -502,7 +504,7 @@
                                                     </constraints>
                                                 </imageView>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="d4k-Su-Mwq" customClass="LJBubbleContainerView">
-                                                    <rect key="frame" x="60" y="8" width="245" height="144"/>
+                                                    <rect key="frame" x="64" y="8" width="245" height="144"/>
                                                     <subviews>
                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="video" translatesAutoresizingMaskIntoConstraints="NO" id="kaZ-Rb-tc3">
                                                             <rect key="frame" x="0.0" y="0.0" width="245" height="144"/>
@@ -525,7 +527,7 @@
                                                 <constraint firstItem="d4k-Su-Mwq" firstAttribute="top" secondItem="WXt-9k-Vh2" secondAttribute="top" constant="8" id="5h8-dG-RHu"/>
                                                 <constraint firstItem="wt1-zJ-Lk3" firstAttribute="top" secondItem="WXt-9k-Vh2" secondAttribute="topMargin" constant="4" id="Dr5-Kg-rX9"/>
                                                 <constraint firstAttribute="bottom" secondItem="d4k-Su-Mwq" secondAttribute="bottom" constant="8" id="KmV-ZW-5Sd"/>
-                                                <constraint firstItem="wt1-zJ-Lk3" firstAttribute="leading" secondItem="d4k-Su-Mwq" secondAttribute="trailing" constant="12" id="Nnx-u0-rGZ"/>
+                                                <constraint firstItem="wt1-zJ-Lk3" firstAttribute="leading" secondItem="d4k-Su-Mwq" secondAttribute="trailing" constant="8" id="Nnx-u0-rGZ"/>
                                                 <constraint firstAttribute="trailing" secondItem="wt1-zJ-Lk3" secondAttribute="trailing" constant="12" id="O3a-5H-uAp"/>
                                                 <constraint firstItem="d4k-Su-Mwq" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="WXt-9k-Vh2" secondAttribute="leading" constant="60" id="r8h-LQ-Uav"/>
                                             </constraints>
@@ -537,7 +539,7 @@
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="receiverVideoElemCell" rowHeight="160" id="nVo-x0-hvD" customClass="LJVideoElemCell">
-                                        <rect key="frame" x="0.0" y="1041" width="375" height="160"/>
+                                        <rect key="frame" x="0.0" y="1019" width="375" height="160"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="nVo-x0-hvD" id="40d-vP-aBu">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="160"/>
@@ -551,7 +553,7 @@
                                                     </constraints>
                                                 </imageView>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="evI-6O-BqE" customClass="LJBubbleContainerView">
-                                                    <rect key="frame" x="70" y="8" width="245" height="144"/>
+                                                    <rect key="frame" x="66" y="8" width="245" height="144"/>
                                                     <subviews>
                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="video" translatesAutoresizingMaskIntoConstraints="NO" id="Var-2G-l2e">
                                                             <rect key="frame" x="0.0" y="0.0" width="245" height="144"/>
@@ -573,7 +575,7 @@
                                             <constraints>
                                                 <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="evI-6O-BqE" secondAttribute="trailing" constant="60" id="4c2-kF-abP"/>
                                                 <constraint firstAttribute="bottom" secondItem="evI-6O-BqE" secondAttribute="bottom" constant="8" id="Upx-Fo-F1z"/>
-                                                <constraint firstItem="evI-6O-BqE" firstAttribute="leading" secondItem="zvu-c6-hQm" secondAttribute="trailing" constant="12" id="kvV-qL-yLM"/>
+                                                <constraint firstItem="evI-6O-BqE" firstAttribute="leading" secondItem="zvu-c6-hQm" secondAttribute="trailing" constant="8" id="kvV-qL-yLM"/>
                                                 <constraint firstItem="evI-6O-BqE" firstAttribute="top" secondItem="40d-vP-aBu" secondAttribute="top" constant="8" id="lab-Uq-I4V"/>
                                                 <constraint firstItem="zvu-c6-hQm" firstAttribute="leading" secondItem="40d-vP-aBu" secondAttribute="leading" constant="12" id="m4P-wQ-MYC"/>
                                                 <constraint firstItem="zvu-c6-hQm" firstAttribute="top" secondItem="40d-vP-aBu" secondAttribute="topMargin" constant="4" id="uPg-5b-LYp"/>
@@ -642,7 +644,7 @@
                                 <rect key="frame" x="0.0" y="28" width="375" height="69"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="wjf-br-2NP" id="3Gn-5O-SGu">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="68"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="69"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="message-touxiang" translatesAutoresizingMaskIntoConstraints="NO" id="d3t-es-aOy">
@@ -743,11 +745,11 @@
         </scene>
     </scenes>
     <resources>
-        <image name="ReceiverNode" width="65" height="54"/>
-        <image name="ReceiverNodeHL" width="65" height="54"/>
+        <image name="ReceiverNode" width="56" height="40"/>
+        <image name="ReceiverNodeHL" width="56" height="40"/>
         <image name="ReceiverVoiceNodePlaying" width="12" height="17"/>
-        <image name="SenderNode" width="65" height="54"/>
-        <image name="SenderNodeHL" width="65" height="54"/>
+        <image name="SenderNode" width="58" height="41"/>
+        <image name="SenderNodeHL" width="57" height="40"/>
         <image name="SenderVoiceNodePlaying" width="12" height="17"/>
         <image name="goldengate" width="320" height="180"/>
         <image name="location" width="161" height="109"/>

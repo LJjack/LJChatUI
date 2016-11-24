@@ -21,4 +21,14 @@
  */
 - (void)reserveChatInputPanelState;
 
+- (void)finishSendingMessage;
+
+- (void)finishSendingMessageAnimated:(BOOL)animated;
+
+- (void)finishReceivingMessage;
+
+- (void)finishReceivingMessageAnimated:(BOOL)animated;
+
+- (void)scrollToBottomAnimated:(BOOL)animated;
+
 @end

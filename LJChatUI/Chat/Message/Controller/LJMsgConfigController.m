@@ -25,7 +25,7 @@
 #define kScreenHeight [UIScreen mainScreen].bounds.size.height
 
 
-@interface LJMsgConfigController ()<GJGCChatInputPanelDelegate, TZImagePickerControllerDelegate, LJRecordVideoViewDelegate, UIImagePickerControllerDelegate,UINavigationControllerDelegate>
+@interface LJMsgConfigController ()<GJGCChatInputPanelDelegate, TZImagePickerControllerDelegate, LJRecordVideoViewDelegate, UIImagePickerControllerDelegate,UINavigationControllerDelegate, LJMessagesModelDelegate>
 
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 
@@ -43,8 +43,15 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
-    [self jsq_configureMessagesInputPanel];
+    self.msgModel.delegate = self;
+    [self configureMessagesInputPanel];
+    self.tableView.estimatedRowHeight = 100;
+    self.tableView.rowHeight = UITableViewAutomaticDimension;
+}
+
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    [self scrollToBottomAnimated:animated];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -54,7 +61,7 @@
 
 //========================   输入键盘工具 开始  ================================
 
-- (void)jsq_configureMessagesInputPanel {
+- (void)configureMessagesInputPanel {
     CGFloat originY = 0;
     /* 输入面板 */
     self.inputPanel = [[GJGCChatInputPanel alloc] initWithPanelDelegate:self];
@@ -181,7 +188,6 @@
 
 - (void)chatInputPanel:(GJGCChatInputPanel *)panel sendTextMessage:(NSString *)text {
     [self.msgModel sendTextMediaMessageWithText:text];
-    
 }
 
 - (void)chatInputPanel:(GJGCChatInputPanel *)panel didFinishRecord:(LJSoundModel *)soundModel {
@@ -394,5 +400,53 @@
 }
 
 //========================   输入键盘工具 结束  ================================
+
+#pragma mark - LJMessagesModelDelegate
+
+- (void)messagesModel:(LJMessagesModel *)messagesModel didSendFinishRowAtIndex:(NSUInteger)index {
+    [self finishSendingMessage];
+}
+
+- (void)messagesModel:(LJMessagesModel *)messagesModel didReveiceFinishRowAtIndex:(NSUInteger)index {
+    NSLog(@"didReveiceFinishRowAtIndex");
+    [self finishReceivingMessage];
+}
+
+#pragma mark - 公开方法
+
+- (void)finishSendingMessage {
+    [self finishSendingMessageAnimated:YES];
+}
+
+- (void)finishSendingMessageAnimated:(BOOL)animated {
+    [self tableViewInsertRowAtLastIndexPath];
+    [self scrollToBottomAnimated:animated];
+}
+
+- (void)finishReceivingMessage {
+    [self finishReceivingMessageAnimated:YES];
+}
+
+- (void)finishReceivingMessageAnimated:(BOOL)animated {
+    [self tableViewInsertRowAtLastIndexPath];
+    [self scrollToBottomAnimated:animated];
+}
+
+- (void)tableViewInsertRowAtLastIndexPath {
+    [self.tableView beginUpdates];
+    NSIndexPath *lastCell = [NSIndexPath indexPathForRow:self.msgModel.messages.count -1 inSection:0];
+    [self.tableView insertRowsAtIndexPaths:@[lastCell] withRowAnimation:UITableViewRowAnimationBottom];
+    [self.tableView endUpdates];
+}
+
+- (void)scrollToBottomAnimated:(BOOL)animated {
+    NSUInteger rows = [self.tableView numberOfRowsInSection:0];
+    if (rows == 0) return;
+    
+    NSIndexPath *lastCell = [NSIndexPath indexPathForRow:rows - 1 inSection:0];
+    [self.tableView scrollToRowAtIndexPath:lastCell
+                          atScrollPosition:UITableViewScrollPositionBottom
+                                  animated:animated];
+}
 
 @end

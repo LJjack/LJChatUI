@@ -7,6 +7,7 @@
 //
 
 #import "LJTextElemCell.h"
+#import "NSAttributedString+LJEmoji.h"
 
 @interface LJTextElemCell ()
 
@@ -30,9 +31,12 @@
 
 - (void)setElem:(TIMTextElem *)elem {
     [super setElem:elem];
+    NSDictionary *attributes = @{
+                                 NSFontAttributeName : self.textView.font?:[UIFont systemFontOfSize:16.],
+             NSForegroundColorAttributeName:[UIColor blackColor]
+             };
+    _textView.attributedText = [NSAttributedString lj_formateContent:elem.text attributes:attributes];
     
-    NSAttributedString *aString = [[NSAttributedString alloc] initWithString:elem.text];
-    _textView.attributedText = aString;
 }
 
 @end

@@ -12,7 +12,7 @@
 @implementation UIView (LJMask)
 
 - (void)lj_maskViewWithImage:(UIImage *)image {
-    [self lj_maskViewWithImage:image contentStretch:CGRectMake(0.2, 0.5, 0.1, 0.1)];
+    [self lj_maskViewWithImage:image contentStretch:CGRectMake(0.2, 0.6, 0.1, 0.1)];
 }
 
 - (void)lj_maskViewWithImage:(UIImage *)image
@@ -35,7 +35,7 @@
 }
 
 - (void)lj_addMaskViewWithImage:(UIImage *)image {
-    [self lj_addMaskViewWithImage:image contentStretch:CGRectMake(0.2, 0.5, 0.1, 0.1)];
+    [self lj_addMaskViewWithImage:image contentStretch:CGRectMake(0.2, 0.6, 0.1, 0.1)];
 }
 
 - (void)lj_addMaskViewWithImage:(UIImage *)image
