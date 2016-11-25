@@ -43,15 +43,15 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.msgModel.delegate = self;
-    [self configureMessagesInputPanel];
     self.tableView.estimatedRowHeight = 100;
     self.tableView.rowHeight = UITableViewAutomaticDimension;
+    self.msgModel.delegate = self;
+    [self configureMessagesInputPanel];
 }
 
-- (void)viewWillAppear:(BOOL)animated {
-    [super viewWillAppear:animated];
-    [self scrollToBottomAnimated:animated];
+- (void)viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:animated];
+    [self scrollToBottomAnimated:YES];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -75,31 +75,44 @@
         }
         
         [UIView animateWithDuration:duration animations:^{
-            CGFloat viewHeight = kScreenHeight - weakSelf.inputPanel.inputBarHeight - originY - keyboardEndFrame.size.height;
+            weakSelf.tableView.gjcf_height = kScreenHeight - weakSelf.inputPanel.inputBarHeight - originY - keyboardEndFrame.size.height;
             if (keyboardEndFrame.origin.y == kScreenHeight) {
-                weakSelf.tableView.transform = CGAffineTransformIdentity;
                 if (isPanelReserve) {
                     weakSelf.inputPanel.gjcf_top = kScreenHeight - weakSelf.inputPanel.inputBarHeight  - originY;
+                    weakSelf.tableView.gjcf_height = kScreenHeight - weakSelf.inputPanel.inputBarHeight - originY;
                 } else {
                     weakSelf.inputPanel.gjcf_top = kScreenHeight - 216 - weakSelf.inputPanel.inputBarHeight - originY;
-                    weakSelf.tableView.transform = CGAffineTransformMakeTranslation(0, - 216);
+                    weakSelf.tableView.gjcf_height = kScreenHeight - weakSelf.inputPanel.inputBarHeight - originY - 216;
                 }
             } else {
-                weakSelf.inputPanel.gjcf_top = viewHeight;
-                weakSelf.tableView.transform = CGAffineTransformMakeTranslation(0, keyboardEndFrame.origin.y - kScreenHeight);
+                weakSelf.inputPanel.gjcf_top = weakSelf.tableView.gjcf_bottom;
             }
         }];
+        
+        [weakSelf.tableView scrollRectToVisible:CGRectMake(0, weakSelf.tableView.contentSize.height - weakSelf.tableView.bounds.size.height, weakSelf.tableView.gjcf_width, weakSelf.tableView.gjcf_height) animated:NO];
+        
     }];
     
     [self.inputPanel configInputPanelRecordStateChange:^(GJGCChatInputPanel *panel, BOOL isRecording) {
-        NSLog(@"=======");
+        if (isRecording) {
+            dispatch_async(dispatch_get_main_queue(), ^{
+                weakSelf.tableView.userInteractionEnabled = NO;
+            });
+        }else{
+            dispatch_async(dispatch_get_main_queue(), ^{
+                weakSelf.tableView.userInteractionEnabled = YES;
+            });
+        }
     }];
     
     [self.inputPanel configInputPanelInputTextViewHeightChangedBlock:^(GJGCChatInputPanel *panel, CGFloat changeDelta) {
         panel.gjcf_top = panel.gjcf_top - changeDelta;
         
         panel.gjcf_height = panel.gjcf_height + changeDelta;
-        
+        [UIView animateWithDuration:0.2 animations:^{
+            weakSelf.tableView.gjcf_height = weakSelf.tableView.gjcf_height - changeDelta;
+        }];
+        [weakSelf.tableView scrollRectToVisible:CGRectMake(0, weakSelf.tableView.contentSize.height - weakSelf.tableView.bounds.size.height, weakSelf.tableView.gjcf_width, weakSelf.tableView.gjcf_height) animated:NO];
     }];
     
     /* 动作变化 */
@@ -118,13 +131,9 @@
     /* 收起输入键盘 */
     [UIView animateWithDuration:0.26 animations:^{
         if (self.inputPanel.isFullState) {
-            
             CGFloat originY = 0;
-            
             self.inputPanel.gjcf_top = kScreenHeight - self.inputPanel.inputBarHeight - originY;
-            
             self.tableView.transform = CGAffineTransformIdentity;
-            
             [self.inputPanel reserveState];
         }
     }];
@@ -141,11 +150,8 @@
 #pragma mark - 属性变化观察
 - (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary *)change context:(void *)context {
     if ([keyPath isEqualToString:@"frame"] && object == self.inputPanel) {
-        
         CGRect newFrame = [[change objectForKey:NSKeyValueChangeNewKey] CGRectValue];
-        
         CGFloat originY = 0;
-        
         //50.f 高度是输入条在底部的时候显示的高度，在录音状态下就是50
         if (newFrame.origin.y < kScreenHeight - 50.f - originY) {
             self.inputPanel.isFullState = YES;
@@ -165,20 +171,24 @@
             if (self.inputPanel.isFullState) {
                 [UIView animateWithDuration:0.26 animations:^{
                     self.inputPanel.gjcf_top = kScreenHeight - self.inputPanel.inputBarHeight - originY;
-                    self.tableView.transform = CGAffineTransformIdentity;
+                    self.tableView.gjcf_height = kScreenHeight - self.inputPanel.inputBarHeight - originY;
+                    
                 }];
+                
+                [self.tableView scrollRectToVisible:CGRectMake(0, self.tableView.contentSize.height - self.tableView.bounds.size.height, self.tableView.gjcf_width, self.tableView.gjcf_height) animated:NO];
             }
         } break;
         case GJGCChatInputBarActionTypeChooseEmoji:
         case GJGCChatInputBarActionTypeExpandPanel: {
             if (!self.inputPanel.isFullState) {
                 [UIView animateWithDuration:0.26 animations:^{
-                    self.inputPanel.gjcf_top = kScreenHeight - (self.inputPanel.inputBarHeight + 216 + originY);
-                    self.tableView.transform = CGAffineTransformMakeTranslation(0, -(216 + originY));
+                    self.inputPanel.gjcf_top = kScreenHeight - self.inputPanel.inputBarHeight - 216 - originY;
+                    self.tableView.gjcf_height = kScreenHeight - self.inputPanel.inputBarHeight - 216 - originY;
                 }];
+                
+                [self.tableView scrollRectToVisible:CGRectMake(0, self.tableView.contentSize.height - self.tableView.bounds.size.height, self.tableView.gjcf_width, self.tableView.gjcf_height) animated:NO];
             }
         } break;
-            
         default:
             break;
     }
@@ -309,7 +319,6 @@
             if (audioStatus == AVAuthorizationStatusNotDetermined) {
                 //请求麦克风权限
                 [AVCaptureDevice requestAccessForMediaType:AVMediaTypeAudio completionHandler:^(BOOL granted){
-                    
                     dispatch_async(dispatch_get_main_queue(), ^{
                         if (granted) {
                             [weakSelf addRecordVideoView];
@@ -342,18 +351,12 @@
 
 #pragma mark - TZImagePickerControllerDelegate
 
-// 这个照片选择器会自己dismiss，当选择器dismiss的时候，会执行下面的代理方法
-// 如果isSelectOriginalPhoto为YES，表明用户选择了原图
-// 你可以通过一个asset获得原图，通过这个方法：[[TZImageManager manager] getOriginalPhotoWithAsset:completion:]
-// photos数组里的UIImage对象，默认是828像素宽，你可以通过设置photoWidth属性的值来改变它
 - (void)imagePickerController:(TZImagePickerController *)picker didFinishPickingPhotos:(NSArray<UIImage *> *)photos sourceAssets:(NSArray *)assets isSelectOriginalPhoto:(BOOL)isSelectOriginalPhoto {
     for (UIImage *image in photos) {
         [self.msgModel sendPhotoMediaMessageWithImage:image];
     }
 }
 
-// 如果用户选择了一个视频，下面的handle会被执行
-// 如果系统版本大于iOS8，asset是PHAsset类的对象，否则是ALAsset类的对象
 - (void)imagePickerController:(TZImagePickerController *)picker didFinishPickingVideo:(UIImage *)coverImage sourceAssets:(id)asset {
     // 打开这段代码发送视频
     __weak typeof(self) weakSelf = self;
@@ -408,7 +411,6 @@
 }
 
 - (void)messagesModel:(LJMessagesModel *)messagesModel didReveiceFinishRowAtIndex:(NSUInteger)index {
-    NSLog(@"didReveiceFinishRowAtIndex");
     [self finishReceivingMessage];
 }
 
@@ -441,7 +443,7 @@
 
 - (void)scrollToBottomAnimated:(BOOL)animated {
     NSUInteger rows = [self.tableView numberOfRowsInSection:0];
-    if (rows == 0) return;
+    if (!rows) return;
     
     NSIndexPath *lastCell = [NSIndexPath indexPathForRow:rows - 1 inSection:0];
     [self.tableView scrollToRowAtIndexPath:lastCell

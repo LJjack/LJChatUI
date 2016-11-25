@@ -19,11 +19,11 @@
                         <viewControllerLayoutGuide type="bottom" id="XjN-1q-Gyp"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="VS4-mV-MF4">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="1667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="1400"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="60" sectionHeaderHeight="1" sectionFooterHeight="1" translatesAutoresizingMaskIntoConstraints="NO" id="pPL-ZQ-FAO">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="1623"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="1350"/>
                                 <color key="backgroundColor" red="0.92156862750000001" green="0.92156862750000001" blue="0.92156862750000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="receiverTextElemCell" rowHeight="49" id="per-vk-3l9" customClass="LJTextElemCell">
@@ -266,7 +266,7 @@
                                                     <subviews>
                                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ReceiverNode" highlightedImage="ReceiverNodeHL" translatesAutoresizingMaskIntoConstraints="NO" id="7tO-UY-hzJ">
                                                             <rect key="frame" x="0.0" y="0.0" width="84" height="50"/>
-                                                            <rect key="contentStretch" x="0.20000000000000001" y="0.5" width="0.10000000000000001" height="0.10000000000000001"/>
+                                                            <rect key="contentStretch" x="0.20000000000000001" y="0.59999999999999998" width="0.10000000000000001" height="0.10000000000000001"/>
                                                         </imageView>
                                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ReceiverVoiceNodePlaying" translatesAutoresizingMaskIntoConstraints="NO" id="3EZ-6J-ba7">
                                                             <rect key="frame" x="18" y="12" width="12" height="17"/>
@@ -341,7 +341,7 @@
                                                     <subviews>
                                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SenderNode" highlightedImage="SenderNodeHL" translatesAutoresizingMaskIntoConstraints="NO" id="DDK-2p-q5C">
                                                             <rect key="frame" x="0.0" y="0.0" width="84" height="50"/>
-                                                            <rect key="contentStretch" x="0.20000000000000001" y="0.5" width="0.10000000000000001" height="0.10000000000000001"/>
+                                                            <rect key="contentStretch" x="0.20000000000000001" y="0.59999999999999998" width="0.10000000000000001" height="0.10000000000000001"/>
                                                         </imageView>
                                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SenderVoiceNodePlaying" translatesAutoresizingMaskIntoConstraints="NO" id="8wc-al-tUQ">
                                                             <rect key="frame" x="54" y="12" width="12" height="17"/>
@@ -589,21 +589,21 @@
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
-                                    <outlet property="dataSource" destination="DFX-gF-vlL" id="cKZ-hw-id9"/>
-                                    <outlet property="delegate" destination="DFX-gF-vlL" id="HGR-d0-EkQ"/>
+                                    <outlet property="dataSource" destination="DFX-gF-vlL" id="2be-ex-lgC"/>
+                                    <outlet property="delegate" destination="DFX-gF-vlL" id="J3k-v9-A5F"/>
                                 </connections>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="XjN-1q-Gyp" firstAttribute="top" secondItem="pPL-ZQ-FAO" secondAttribute="bottom" constant="44" id="KMn-om-nL9"/>
+                            <constraint firstItem="XjN-1q-Gyp" firstAttribute="top" secondItem="pPL-ZQ-FAO" secondAttribute="bottom" constant="50" id="KMn-om-nL9"/>
                             <constraint firstAttribute="trailing" secondItem="pPL-ZQ-FAO" secondAttribute="trailing" id="kjH-NU-lw3"/>
                             <constraint firstItem="pPL-ZQ-FAO" firstAttribute="top" secondItem="VS4-mV-MF4" secondAttribute="top" id="lls-pZ-CpJ"/>
                             <constraint firstItem="pPL-ZQ-FAO" firstAttribute="leading" secondItem="VS4-mV-MF4" secondAttribute="leading" id="xuP-vI-LIQ"/>
                         </constraints>
                     </view>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-                    <size key="freeformSize" width="375" height="1667"/>
+                    <size key="freeformSize" width="375" height="1400"/>
                     <connections>
                         <outlet property="tableView" destination="pPL-ZQ-FAO" id="dce-MZ-AUP"/>
                     </connections>

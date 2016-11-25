@@ -12,7 +12,7 @@
 
 #import "LJElemCellHeader.h"
 
-@interface LJMessageController ()<UITableViewDataSource, UITableViewDelegate,LJElemCellDelegate>
+@interface LJMessageController ()<LJElemCellDelegate, UITableViewDelegate, UITableViewDataSource>
 
 
 @end
@@ -21,7 +21,6 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
 }
 
 - (void)didReceiveMemoryWarning {

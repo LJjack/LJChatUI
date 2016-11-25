@@ -29,6 +29,4 @@
 
 - (void)finishReceivingMessageAnimated:(BOOL)animated;
 
-- (void)scrollToBottomAnimated:(BOOL)animated;
-
 @end
