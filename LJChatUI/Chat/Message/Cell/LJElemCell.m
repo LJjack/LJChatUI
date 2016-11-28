@@ -8,11 +8,15 @@
 
 #import "LJElemCell.h"
 
+#import "LJMessageStateBtn.h"
+
 @interface LJElemCell ()<LJBubbleContainerViewDelegate>
 
 @property (weak, nonatomic) IBOutlet LJBubbleContainerView *borderView;
 
 @property (weak, nonatomic) IBOutlet UIImageView *iconView;
+
+@property (strong, nonatomic) LJMessageStateBtn *stateBtn;
 
 @end
 
@@ -21,43 +25,49 @@
 - (void)awakeFromNib {
     [super awakeFromNib];
     self.borderView.delegate = self;
-}
-
-- (void)setIsSelfBubble:(BOOL)isSelfBubble {
-    _isSelfBubble = isSelfBubble;
-    self.borderView.hasReceiver = !isSelfBubble;
+    [self.contentView addSubview:self.stateBtn];
+    NSLayoutAttribute stateAttribute;
+    NSLayoutAttribute borderAttribute;
+    CGFloat constant;
+    if ([self.reuseIdentifier containsString:@"sender"]) {
+        stateAttribute = NSLayoutAttributeRight;
+        borderAttribute = NSLayoutAttributeLeft;
+        constant = -5.0;
+        self.borderView.hasReceiver = NO;
+    } else {
+        stateAttribute = NSLayoutAttributeLeft;
+        borderAttribute = NSLayoutAttributeRight;
+        constant = 5.0;
+        self.borderView.hasReceiver = YES;
+    }
+    self.stateBtn.translatesAutoresizingMaskIntoConstraints = NO;
+    [self.stateBtn addConstraint:[NSLayoutConstraint constraintWithItem:self.stateBtn
+                                                              attribute:NSLayoutAttributeWidth
+                                                              relatedBy:NSLayoutRelationEqual
+                                                                 toItem:nil
+                                                              attribute:NSLayoutAttributeNotAnAttribute
+                                                             multiplier:1.0
+                                                               constant:30]];
+    [self.stateBtn addConstraint:[NSLayoutConstraint constraintWithItem:self.stateBtn
+                                                              attribute:NSLayoutAttributeHeight
+                                                              relatedBy:NSLayoutRelationEqual
+                                                                 toItem:nil
+                                                              attribute:NSLayoutAttributeNotAnAttribute
+                                                             multiplier:1.0
+                                                               constant:30]];
+    [self.contentView addConstraint:[NSLayoutConstraint constraintWithItem:self.stateBtn attribute:stateAttribute relatedBy:NSLayoutRelationEqual toItem:self.borderView attribute:borderAttribute multiplier:1.0 constant:constant]];
+    [self.contentView addConstraint:[NSLayoutConstraint constraintWithItem:self.stateBtn attribute:NSLayoutAttributeCenterY relatedBy:NSLayoutRelationEqual toItem:self.contentView attribute:NSLayoutAttributeCenterY multiplier:1.0 constant:0.0]];
 }
 
 - (void)setMessage:(TIMMessage *)message {
     _message = message;
-//    NSLog(@"昵称= %@",[[message GetSenderProfile] nickname]);
-//    
-//    NSString *senderId = [message sender];
-//    TIMUserProfile *user = [message GetSenderProfile];
-//    displayName = user.nickname.length?user.nickname:senderId;
-    
     self.elem = [message getElem:0];
-    
-//    int elemCount = [message elemCount];
-//    for (int i = 0 ; i < elemCount; i ++) {
-//        TIMElem *elem = [message getElem:i];
-//        if ([elem isKindOfClass:[TIMTextElem class]]) {
-//           
-//            
-//        } else if ([elem isKindOfClass:[TIMImageElem class]]) {
-//           
-//            
-//        } else if ([elem isKindOfClass:[TIMLocationElem class]]) {
-//            
-//        } else if ([elem isKindOfClass:[TIMSoundElem class]]) {
-//            
-//        } else if ([elem isKindOfClass:[TIMVideoElem class]]) {
-//           
-//        } else if ([elem isKindOfClass:[TIMCustomElem class]]) {
-//            
-//        }
-//        
-//    }
+    self.status = [message status];
+}
+
+- (void)setStatus:(TIMMessageStatus)status {
+    _status = status;
+    self.stateBtn.dataState = status;
 }
 
 #pragma mark - LJBubbleContainerViewDelegate
@@ -66,6 +76,13 @@
     if ([self.delegate respondsToSelector:@selector(elemCell:didTapBubbleIndexPath:)]) {
         [self.delegate elemCell:self didTapBubbleIndexPath:self.indexPath];
     }
+}
+
+- (LJMessageStateBtn *)stateBtn {
+    if (!_stateBtn) {
+        _stateBtn = [[LJMessageStateBtn alloc] init];
+    }
+    return _stateBtn;
 }
 
 @end

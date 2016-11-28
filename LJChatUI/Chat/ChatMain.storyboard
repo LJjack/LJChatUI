@@ -247,11 +247,11 @@
                                             <outlet property="showImageView" destination="I6y-fD-UOW" id="SOX-Wz-2JR"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="receiverSoundElemCell" id="bcu-fP-Gi1" customClass="LJSoundElemCell">
-                                        <rect key="frame" x="0.0" y="419" width="375" height="60"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="receiverSoundElemCell" rowHeight="56" id="bcu-fP-Gi1" customClass="LJSoundElemCell">
+                                        <rect key="frame" x="0.0" y="419" width="375" height="56"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="bcu-fP-Gi1" id="Zi4-6p-8B5">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="60"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="56"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="message-touxiang" translatesAutoresizingMaskIntoConstraints="NO" id="lRc-We-hjz">
@@ -262,10 +262,10 @@
                                                     </constraints>
                                                 </imageView>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iZr-xJ-3uv" customClass="LJBubbleContainerView">
-                                                    <rect key="frame" x="66" y="5" width="84" height="50"/>
+                                                    <rect key="frame" x="66" y="8" width="56" height="40"/>
                                                     <subviews>
                                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ReceiverNode" highlightedImage="ReceiverNodeHL" translatesAutoresizingMaskIntoConstraints="NO" id="7tO-UY-hzJ">
-                                                            <rect key="frame" x="0.0" y="0.0" width="84" height="50"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="56" height="40"/>
                                                             <rect key="contentStretch" x="0.20000000000000001" y="0.59999999999999998" width="0.10000000000000001" height="0.10000000000000001"/>
                                                         </imageView>
                                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ReceiverVoiceNodePlaying" translatesAutoresizingMaskIntoConstraints="NO" id="3EZ-6J-ba7">
@@ -274,18 +274,17 @@
                                                     </subviews>
                                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                     <constraints>
-                                                        <constraint firstItem="3EZ-6J-ba7" firstAttribute="leading" secondItem="iZr-xJ-3uv" secondAttribute="leading" constant="18" id="92R-ox-q7n"/>
-                                                        <constraint firstAttribute="width" constant="84" id="H3I-hP-n1f"/>
-                                                        <constraint firstItem="3EZ-6J-ba7" firstAttribute="top" secondItem="iZr-xJ-3uv" secondAttribute="top" constant="12" id="bi8-Af-kiM"/>
-                                                        <constraint firstAttribute="trailing" secondItem="7tO-UY-hzJ" secondAttribute="trailing" id="cMa-By-x7B"/>
-                                                        <constraint firstItem="7tO-UY-hzJ" firstAttribute="leading" secondItem="iZr-xJ-3uv" secondAttribute="leading" id="iJE-So-052"/>
-                                                        <constraint firstAttribute="height" constant="50" id="lCy-Na-DNp"/>
-                                                        <constraint firstAttribute="bottom" secondItem="7tO-UY-hzJ" secondAttribute="bottom" id="pX0-e7-sum"/>
-                                                        <constraint firstItem="7tO-UY-hzJ" firstAttribute="top" secondItem="iZr-xJ-3uv" secondAttribute="top" id="psp-k8-Ukn"/>
+                                                        <constraint firstItem="7tO-UY-hzJ" firstAttribute="leading" secondItem="iZr-xJ-3uv" secondAttribute="leading" id="C5l-9Z-Mum"/>
+                                                        <constraint firstItem="3EZ-6J-ba7" firstAttribute="leading" secondItem="iZr-xJ-3uv" secondAttribute="leading" constant="18" id="ENl-Y7-btI"/>
+                                                        <constraint firstAttribute="trailing" secondItem="7tO-UY-hzJ" secondAttribute="trailing" id="KmO-Rp-gwg"/>
+                                                        <constraint firstAttribute="width" constant="56" id="RCf-hm-6aM"/>
+                                                        <constraint firstItem="7tO-UY-hzJ" firstAttribute="top" secondItem="iZr-xJ-3uv" secondAttribute="top" id="X4D-Vb-ggf"/>
+                                                        <constraint firstItem="3EZ-6J-ba7" firstAttribute="centerY" secondItem="iZr-xJ-3uv" secondAttribute="centerY" id="o3Y-uk-eIZ"/>
+                                                        <constraint firstAttribute="bottom" secondItem="7tO-UY-hzJ" secondAttribute="bottom" id="zr6-Cv-CUi"/>
                                                     </constraints>
                                                 </view>
                                                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2&quot;" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nt0-ea-G6h">
-                                                    <rect key="frame" x="152" y="23" width="13" height="15"/>
+                                                    <rect key="frame" x="127" y="29" width="13" height="15"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -296,37 +295,37 @@
                                                     </userDefinedRuntimeAttributes>
                                                 </label>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="soundNodeUnread" translatesAutoresizingMaskIntoConstraints="NO" id="dfI-3F-K1G">
-                                                    <rect key="frame" x="153" y="10" width="10" height="10"/>
+                                                    <rect key="frame" x="127" y="10" width="10" height="10"/>
                                                 </imageView>
                                             </subviews>
                                             <constraints>
+                                                <constraint firstItem="nt0-ea-G6h" firstAttribute="leading" secondItem="iZr-xJ-3uv" secondAttribute="trailing" constant="5" id="3ip-0H-otA"/>
                                                 <constraint firstItem="lRc-We-hjz" firstAttribute="leading" secondItem="Zi4-6p-8B5" secondAttribute="leading" constant="12" id="3pq-ac-YIS"/>
-                                                <constraint firstItem="iZr-xJ-3uv" firstAttribute="top" secondItem="Zi4-6p-8B5" secondAttribute="top" constant="5" id="4Cx-Q5-dWr"/>
-                                                <constraint firstAttribute="bottom" secondItem="nt0-ea-G6h" secondAttribute="bottom" constant="22" id="UVt-ED-1eT"/>
-                                                <constraint firstItem="iZr-xJ-3uv" firstAttribute="leading" secondItem="lRc-We-hjz" secondAttribute="trailing" constant="8" id="YDp-wM-dNz"/>
-                                                <constraint firstItem="dfI-3F-K1G" firstAttribute="leading" secondItem="iZr-xJ-3uv" secondAttribute="trailing" constant="3" id="eVc-9a-M6w"/>
-                                                <constraint firstAttribute="bottom" secondItem="iZr-xJ-3uv" secondAttribute="bottom" constant="5" id="qAE-fD-mMX"/>
-                                                <constraint firstItem="dfI-3F-K1G" firstAttribute="top" secondItem="Zi4-6p-8B5" secondAttribute="top" constant="10" id="svt-NW-Q5K"/>
-                                                <constraint firstItem="nt0-ea-G6h" firstAttribute="leading" secondItem="iZr-xJ-3uv" secondAttribute="trailing" constant="2" id="wED-Mn-ykx"/>
+                                                <constraint firstAttribute="bottom" secondItem="iZr-xJ-3uv" secondAttribute="bottom" constant="8" id="6Fb-wP-D1a"/>
+                                                <constraint firstItem="dfI-3F-K1G" firstAttribute="leading" secondItem="iZr-xJ-3uv" secondAttribute="trailing" constant="5" id="QyG-XD-a9D"/>
+                                                <constraint firstAttribute="bottom" secondItem="nt0-ea-G6h" secondAttribute="bottom" constant="12" id="oN4-WT-Ed4"/>
+                                                <constraint firstItem="iZr-xJ-3uv" firstAttribute="leading" secondItem="lRc-We-hjz" secondAttribute="trailing" constant="8" id="tld-cz-fhP"/>
+                                                <constraint firstItem="iZr-xJ-3uv" firstAttribute="top" secondItem="Zi4-6p-8B5" secondAttribute="top" constant="8" id="u5F-u4-VDG"/>
                                                 <constraint firstItem="lRc-We-hjz" firstAttribute="top" secondItem="Zi4-6p-8B5" secondAttribute="top" constant="4" id="xa7-5e-b3h"/>
+                                                <constraint firstItem="dfI-3F-K1G" firstAttribute="top" secondItem="Zi4-6p-8B5" secondAttribute="top" constant="10" id="xqo-z7-gDu"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" red="0.92156862750000001" green="0.92156862750000001" blue="0.92156862750000001" alpha="1" colorSpace="calibratedRGB"/>
                                         <connections>
                                             <outlet property="borderView" destination="iZr-xJ-3uv" id="eTa-2I-MHI"/>
                                             <outlet property="bubbleImageView" destination="7tO-UY-hzJ" id="M0U-8p-7iS"/>
-                                            <outlet property="bubbleWidth" destination="H3I-hP-n1f" id="etI-W8-ekd"/>
+                                            <outlet property="bubbleWidth" destination="RCf-hm-6aM" id="i3p-KL-pYu"/>
                                             <outlet property="iconView" destination="lRc-We-hjz" id="KCa-cc-ZIB"/>
                                             <outlet property="playImageView" destination="3EZ-6J-ba7" id="LL6-Bf-mdL"/>
                                             <outlet property="secondLabel" destination="nt0-ea-G6h" id="4wn-UM-K3M"/>
                                             <outlet property="unreadImageView" destination="dfI-3F-K1G" id="Dm2-p0-Uc5"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="senderSoundElemCell" rowHeight="60" id="IIs-4H-ddo" customClass="LJSoundElemCell">
-                                        <rect key="frame" x="0.0" y="479" width="375" height="60"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="senderSoundElemCell" rowHeight="56" id="IIs-4H-ddo" customClass="LJSoundElemCell">
+                                        <rect key="frame" x="0.0" y="475" width="375" height="56"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="IIs-4H-ddo" id="K8J-mg-MzR">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="60"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="56"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="message-touxiang" translatesAutoresizingMaskIntoConstraints="NO" id="1av-mK-TNS">
@@ -337,30 +336,29 @@
                                                     </constraints>
                                                 </imageView>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1mJ-eF-WMZ" customClass="LJBubbleContainerView">
-                                                    <rect key="frame" x="225" y="5" width="84" height="50"/>
+                                                    <rect key="frame" x="251" y="8" width="58" height="40"/>
                                                     <subviews>
                                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SenderNode" highlightedImage="SenderNodeHL" translatesAutoresizingMaskIntoConstraints="NO" id="DDK-2p-q5C">
-                                                            <rect key="frame" x="0.0" y="0.0" width="84" height="50"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="58" height="40"/>
                                                             <rect key="contentStretch" x="0.20000000000000001" y="0.59999999999999998" width="0.10000000000000001" height="0.10000000000000001"/>
                                                         </imageView>
                                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SenderVoiceNodePlaying" translatesAutoresizingMaskIntoConstraints="NO" id="8wc-al-tUQ">
-                                                            <rect key="frame" x="54" y="12" width="12" height="17"/>
+                                                            <rect key="frame" x="28" y="12" width="12" height="17"/>
                                                         </imageView>
                                                     </subviews>
                                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                     <constraints>
-                                                        <constraint firstItem="8wc-al-tUQ" firstAttribute="top" secondItem="1mJ-eF-WMZ" secondAttribute="top" constant="12" id="98C-O1-XP0"/>
-                                                        <constraint firstItem="DDK-2p-q5C" firstAttribute="leading" secondItem="1mJ-eF-WMZ" secondAttribute="leading" id="BIA-Yb-CMt"/>
-                                                        <constraint firstItem="DDK-2p-q5C" firstAttribute="top" secondItem="1mJ-eF-WMZ" secondAttribute="top" id="GYO-SM-6f1"/>
-                                                        <constraint firstAttribute="width" constant="84" id="XQe-x8-fKp"/>
-                                                        <constraint firstAttribute="height" constant="50" id="Ysn-Ne-K4y"/>
-                                                        <constraint firstAttribute="trailing" secondItem="DDK-2p-q5C" secondAttribute="trailing" id="eEc-ei-h82"/>
-                                                        <constraint firstAttribute="bottom" secondItem="DDK-2p-q5C" secondAttribute="bottom" id="qkq-Jl-J2h"/>
-                                                        <constraint firstAttribute="trailing" secondItem="8wc-al-tUQ" secondAttribute="trailing" constant="18" id="sv2-EI-k2d"/>
+                                                        <constraint firstItem="8wc-al-tUQ" firstAttribute="centerY" secondItem="1mJ-eF-WMZ" secondAttribute="centerY" id="2vk-dw-SLi"/>
+                                                        <constraint firstAttribute="bottom" secondItem="DDK-2p-q5C" secondAttribute="bottom" id="4IH-kz-3uM"/>
+                                                        <constraint firstAttribute="trailing" secondItem="8wc-al-tUQ" secondAttribute="trailing" constant="18" id="5bS-3a-Jcf"/>
+                                                        <constraint firstAttribute="trailing" secondItem="DDK-2p-q5C" secondAttribute="trailing" id="Zkp-ad-7Pi"/>
+                                                        <constraint firstAttribute="width" constant="58" id="p1p-ry-fAi"/>
+                                                        <constraint firstItem="DDK-2p-q5C" firstAttribute="top" secondItem="1mJ-eF-WMZ" secondAttribute="top" id="rEx-jg-bRi"/>
+                                                        <constraint firstItem="DDK-2p-q5C" firstAttribute="leading" secondItem="1mJ-eF-WMZ" secondAttribute="leading" id="v8o-RC-bLI"/>
                                                     </constraints>
                                                 </view>
                                                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2&quot;" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MGT-Fr-U5y">
-                                                    <rect key="frame" x="210" y="23" width="13" height="15"/>
+                                                    <rect key="frame" x="233" y="29" width="13" height="15"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -372,27 +370,27 @@
                                                 </label>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="1av-mK-TNS" firstAttribute="leading" secondItem="1mJ-eF-WMZ" secondAttribute="trailing" constant="8" id="33w-QQ-8Fs"/>
-                                                <constraint firstItem="1mJ-eF-WMZ" firstAttribute="leading" secondItem="MGT-Fr-U5y" secondAttribute="trailing" constant="2" id="99O-HF-Dfc"/>
+                                                <constraint firstItem="1av-mK-TNS" firstAttribute="leading" secondItem="1mJ-eF-WMZ" secondAttribute="trailing" constant="8" id="2b8-6j-Mj1"/>
                                                 <constraint firstItem="1av-mK-TNS" firstAttribute="top" secondItem="K8J-mg-MzR" secondAttribute="top" constant="4" id="HFl-lr-YES"/>
-                                                <constraint firstItem="1mJ-eF-WMZ" firstAttribute="top" secondItem="K8J-mg-MzR" secondAttribute="top" constant="5" id="HML-PJ-llO"/>
-                                                <constraint firstAttribute="bottom" secondItem="MGT-Fr-U5y" secondAttribute="bottom" constant="22" id="RPs-cf-IYV"/>
-                                                <constraint firstAttribute="bottom" secondItem="1mJ-eF-WMZ" secondAttribute="bottom" constant="5" id="Ztc-oR-BZx"/>
+                                                <constraint firstAttribute="bottom" secondItem="MGT-Fr-U5y" secondAttribute="bottom" constant="12" id="I6C-F8-zZF"/>
+                                                <constraint firstItem="1mJ-eF-WMZ" firstAttribute="leading" secondItem="MGT-Fr-U5y" secondAttribute="trailing" constant="5" id="NIE-Ep-88q"/>
+                                                <constraint firstItem="1mJ-eF-WMZ" firstAttribute="top" secondItem="K8J-mg-MzR" secondAttribute="top" constant="8" id="pOf-FP-Cdj"/>
                                                 <constraint firstAttribute="trailing" secondItem="1av-mK-TNS" secondAttribute="trailing" constant="12" id="r4q-1d-67f"/>
+                                                <constraint firstAttribute="bottom" secondItem="1mJ-eF-WMZ" secondAttribute="bottom" constant="8" id="suw-2p-HLj"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" red="0.92156862750000001" green="0.92156862750000001" blue="0.92156862750000001" alpha="1" colorSpace="calibratedRGB"/>
                                         <connections>
                                             <outlet property="borderView" destination="1mJ-eF-WMZ" id="eq5-NB-ynl"/>
                                             <outlet property="bubbleImageView" destination="DDK-2p-q5C" id="LcS-iy-0gN"/>
-                                            <outlet property="bubbleWidth" destination="XQe-x8-fKp" id="1T4-ZV-HuU"/>
+                                            <outlet property="bubbleWidth" destination="p1p-ry-fAi" id="kRg-fR-Mut"/>
                                             <outlet property="iconView" destination="1av-mK-TNS" id="lXY-Ed-38F"/>
                                             <outlet property="playImageView" destination="8wc-al-tUQ" id="0LW-E3-CdO"/>
                                             <outlet property="secondLabel" destination="MGT-Fr-U5y" id="vGM-Sl-aQN"/>
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="receiverLocationElemCell" rowHeight="160" id="FrY-Hb-1oA" customClass="LJLocationElemCell">
-                                        <rect key="frame" x="0.0" y="539" width="375" height="160"/>
+                                        <rect key="frame" x="0.0" y="531" width="375" height="160"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="FrY-Hb-1oA" id="TRQ-bk-aoy">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="160"/>
@@ -441,7 +439,7 @@
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="senderLocationElemCell" rowHeight="160" id="02w-qx-VsI" customClass="LJLocationElemCell">
-                                        <rect key="frame" x="0.0" y="699" width="375" height="160"/>
+                                        <rect key="frame" x="0.0" y="691" width="375" height="160"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="02w-qx-VsI" id="rPa-UR-wwR">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="160"/>
@@ -490,7 +488,7 @@
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="senderVideoElemCell" rowHeight="160" id="ZJq-Rd-cQW" customClass="LJVideoElemCell">
-                                        <rect key="frame" x="0.0" y="859" width="375" height="160"/>
+                                        <rect key="frame" x="0.0" y="851" width="375" height="160"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ZJq-Rd-cQW" id="WXt-9k-Vh2">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="160"/>
@@ -539,7 +537,7 @@
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="receiverVideoElemCell" rowHeight="160" id="nVo-x0-hvD" customClass="LJVideoElemCell">
-                                        <rect key="frame" x="0.0" y="1019" width="375" height="160"/>
+                                        <rect key="frame" x="0.0" y="1011" width="375" height="160"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="nVo-x0-hvD" id="40d-vP-aBu">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="160"/>
@@ -728,13 +726,7 @@
                             <outlet property="delegate" destination="YKp-pi-aBR" id="JnG-q7-zFf"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="kKF-u6-Pdx">
-                        <barButtonItem key="leftBarButtonItem" image="login-off" id="ANc-Po-4nS">
-                            <connections>
-                                <action selector="clickClosedBtn:" destination="YKp-pi-aBR" id="SbB-dH-GYt"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" id="kKF-u6-Pdx"/>
                     <connections>
                         <segue destination="DFX-gF-vlL" kind="show" identifier="showMessageC" id="cOP-fT-Wgy"/>
                     </connections>
@@ -753,7 +745,6 @@
         <image name="SenderVoiceNodePlaying" width="12" height="17"/>
         <image name="goldengate" width="320" height="180"/>
         <image name="location" width="161" height="109"/>
-        <image name="login-off" width="46" height="46"/>
         <image name="message-touxiang" width="46" height="46"/>
         <image name="soundNodeUnread" width="10" height="10"/>
         <image name="video" width="318" height="196"/>

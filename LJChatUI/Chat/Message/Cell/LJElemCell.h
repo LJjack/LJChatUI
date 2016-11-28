@@ -29,11 +29,11 @@
 
 @property (nonatomic,   weak) id<LJElemCellDelegate> delegate;
 
-@property (nonatomic, assign) BOOL isSelfBubble;
-
 @property (nonatomic, strong) TIMMessage *message;
 
 @property (nonatomic, strong) TIMElem *elem;
+
+@property (nonatomic, assign) TIMMessageStatus status;
 
 - (void)bubbleContainerViewDidTap:(LJBubbleContainerView *)bubbleView;
 

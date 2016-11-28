@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		830BD4901DEC15B800963447 /* IMCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 830BD48D1DEC15B800963447 /* IMCore.framework */; };
+		830BD4911DEC15B800963447 /* ImSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 830BD48E1DEC15B800963447 /* ImSDK.framework */; };
+		830BD4921DEC15B800963447 /* TLSSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 830BD48F1DEC15B800963447 /* TLSSDK.framework */; };
+		830BD4941DEC15CB00963447 /* QALSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 830BD4931DEC15CB00963447 /* QALSDK.framework */; };
 		832663D41DDEF513003FC30C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 832663D31DDEF513003FC30C /* main.m */; };
 		8326642B1DDEF579003FC30C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 832664101DDEF579003FC30C /* AppDelegate.m */; };
 		8326642C1DDEF579003FC30C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 832664111DDEF579003FC30C /* Assets.xcassets */; };
@@ -53,6 +57,7 @@
 		83B38FF31DE2FBFB00D443A7 /* UIViewController+LJHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 83B38FF21DE2FBFB00D443A7 /* UIViewController+LJHUD.m */; };
 		83B38FF61DE2FC6B00D443A7 /* LJMsgConfigController.m in Sources */ = {isa = PBXBuildFile; fileRef = 83B38FF51DE2FC6B00D443A7 /* LJMsgConfigController.m */; };
 		83B38FF81DE2FE7D00D443A7 /* ChatMain.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83B38FF71DE2FE7D00D443A7 /* ChatMain.storyboard */; };
+		83DC7FEC1DE7D96D0074DDD6 /* LJMessageStateBtn.m in Sources */ = {isa = PBXBuildFile; fileRef = 83DC7FEB1DE7D96D0074DDD6 /* LJMessageStateBtn.m */; };
 		83EB1A071DE297D1003C1E98 /* NSDictionary+LJURL.m in Sources */ = {isa = PBXBuildFile; fileRef = 83EB192A1DE297D1003C1E98 /* NSDictionary+LJURL.m */; };
 		83EB1A081DE297D1003C1E98 /* NSObject+LDProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = 83EB192C1DE297D1003C1E98 /* NSObject+LDProperty.m */; };
 		83EB1A091DE297D1003C1E98 /* LDFmdbProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 83EB192F1DE297D1003C1E98 /* LDFmdbProvider.m */; };
@@ -60,10 +65,6 @@
 		83EB1A0B1DE297D1003C1E98 /* LDRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 83EB19331DE297D1003C1E98 /* LDRequest.m */; };
 		83EB1A0C1DE297D1003C1E98 /* LDRequestBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 83EB19351DE297D1003C1E98 /* LDRequestBuilder.m */; };
 		83EB1A0D1DE297D1003C1E98 /* BJURLRequestSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 83EB19381DE297D1003C1E98 /* BJURLRequestSerialization.m */; };
-		83EB1A0E1DE297D1003C1E98 /* IMCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83EB193A1DE297D1003C1E98 /* IMCore.framework */; };
-		83EB1A0F1DE297D1003C1E98 /* ImSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83EB193B1DE297D1003C1E98 /* ImSDK.framework */; };
-		83EB1A101DE297D1003C1E98 /* QALSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83EB193C1DE297D1003C1E98 /* QALSDK.framework */; };
-		83EB1A111DE297D1003C1E98 /* TLSSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83EB193D1DE297D1003C1E98 /* TLSSDK.framework */; };
 		83EB1AFE1DE29D87003C1E98 /* GJGCChatInputBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 83EB1A3C1DE29D87003C1E98 /* GJGCChatInputBar.m */; };
 		83EB1AFF1DE29D87003C1E98 /* GJGCChatInputBarItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 83EB1A3E1DE29D87003C1E98 /* GJGCChatInputBarItem.m */; };
 		83EB1B001DE29D87003C1E98 /* GJGCChatInputConst.m in Sources */ = {isa = PBXBuildFile; fileRef = 83EB1A401DE29D87003C1E98 /* GJGCChatInputConst.m */; };
@@ -243,6 +244,10 @@
 
 /* Begin PBXFileReference section */
 		4B4252FB0A6388864088E720 /* libPods-LJChatUI.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LJChatUI.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		830BD48D1DEC15B800963447 /* IMCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = IMCore.framework; sourceTree = "<group>"; };
+		830BD48E1DEC15B800963447 /* ImSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ImSDK.framework; sourceTree = "<group>"; };
+		830BD48F1DEC15B800963447 /* TLSSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TLSSDK.framework; sourceTree = "<group>"; };
+		830BD4931DEC15CB00963447 /* QALSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = QALSDK.framework; sourceTree = "<group>"; };
 		832663CF1DDEF513003FC30C /* LJChatUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LJChatUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		832663D31DDEF513003FC30C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		832663E31DDEF513003FC30C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -332,6 +337,8 @@
 		83B38FF41DE2FC6B00D443A7 /* LJMsgConfigController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJMsgConfigController.h; sourceTree = "<group>"; };
 		83B38FF51DE2FC6B00D443A7 /* LJMsgConfigController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LJMsgConfigController.m; sourceTree = "<group>"; };
 		83B38FF71DE2FE7D00D443A7 /* ChatMain.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ChatMain.storyboard; sourceTree = "<group>"; };
+		83DC7FEA1DE7D96D0074DDD6 /* LJMessageStateBtn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJMessageStateBtn.h; sourceTree = "<group>"; };
+		83DC7FEB1DE7D96D0074DDD6 /* LJMessageStateBtn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LJMessageStateBtn.m; sourceTree = "<group>"; };
 		83EB19291DE297D1003C1E98 /* NSDictionary+LJURL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+LJURL.h"; sourceTree = "<group>"; };
 		83EB192A1DE297D1003C1E98 /* NSDictionary+LJURL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+LJURL.m"; sourceTree = "<group>"; };
 		83EB192B1DE297D1003C1E98 /* NSObject+LDProperty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+LDProperty.h"; sourceTree = "<group>"; };
@@ -346,10 +353,6 @@
 		83EB19351DE297D1003C1E98 /* LDRequestBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LDRequestBuilder.m; sourceTree = "<group>"; };
 		83EB19371DE297D1003C1E98 /* BJURLRequestSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BJURLRequestSerialization.h; sourceTree = "<group>"; };
 		83EB19381DE297D1003C1E98 /* BJURLRequestSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BJURLRequestSerialization.m; sourceTree = "<group>"; };
-		83EB193A1DE297D1003C1E98 /* IMCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = IMCore.framework; sourceTree = "<group>"; };
-		83EB193B1DE297D1003C1E98 /* ImSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ImSDK.framework; sourceTree = "<group>"; };
-		83EB193C1DE297D1003C1E98 /* QALSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = QALSDK.framework; sourceTree = "<group>"; };
-		83EB193D1DE297D1003C1E98 /* TLSSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TLSSDK.framework; sourceTree = "<group>"; };
 		83EB1A3B1DE29D87003C1E98 /* GJGCChatInputBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GJGCChatInputBar.h; sourceTree = "<group>"; };
 		83EB1A3C1DE29D87003C1E98 /* GJGCChatInputBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GJGCChatInputBar.m; sourceTree = "<group>"; };
 		83EB1A3D1DE29D87003C1E98 /* GJGCChatInputBarItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GJGCChatInputBarItem.h; sourceTree = "<group>"; };
@@ -560,18 +563,18 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				830BD4941DEC15CB00963447 /* QALSDK.framework in Frameworks */,
 				83EB1BB11DE29E6F003C1E98 /* libicucore.tbd in Frameworks */,
 				83EB1BAF1DE29E5C003C1E98 /* libsqlite3.tbd in Frameworks */,
 				83EB1BAC1DE29E3F003C1E98 /* libc++.tbd in Frameworks */,
 				832DF9881DE3EF1A00F60632 /* Reveal.framework in Frameworks */,
+				830BD4901DEC15B800963447 /* IMCore.framework in Frameworks */,
 				83EB1BAD1DE29E3F003C1E98 /* libc++abi.tbd in Frameworks */,
+				830BD4921DEC15B800963447 /* TLSSDK.framework in Frameworks */,
 				83EB1BA91DE29E25003C1E98 /* libz.1.2.8.tbd in Frameworks */,
 				83EB1BA71DE29E0F003C1E98 /* libstdc++.6.0.9.tbd in Frameworks */,
-				83EB1A101DE297D1003C1E98 /* QALSDK.framework in Frameworks */,
-				83EB1A111DE297D1003C1E98 /* TLSSDK.framework in Frameworks */,
-				83EB1A0E1DE297D1003C1E98 /* IMCore.framework in Frameworks */,
-				83EB1A0F1DE297D1003C1E98 /* ImSDK.framework in Frameworks */,
 				9EC5DBC28C3EF7B16B558A2B /* libPods-LJChatUI.a in Frameworks */,
+				830BD4911DEC15B800963447 /* ImSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -808,6 +811,8 @@
 		83B38FC81DE2FA5100D443A7 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				83DC7FEA1DE7D96D0074DDD6 /* LJMessageStateBtn.h */,
+				83DC7FEB1DE7D96D0074DDD6 /* LJMessageStateBtn.m */,
 				83B38FC91DE2FA5100D443A7 /* LJBubbleContainerView.h */,
 				83B38FCA1DE2FA5100D443A7 /* LJBubbleContainerView.m */,
 			);
@@ -884,10 +889,10 @@
 		83EB19391DE297D1003C1E98 /* Tim_IM_2.4.0 */ = {
 			isa = PBXGroup;
 			children = (
-				83EB193A1DE297D1003C1E98 /* IMCore.framework */,
-				83EB193B1DE297D1003C1E98 /* ImSDK.framework */,
-				83EB193C1DE297D1003C1E98 /* QALSDK.framework */,
-				83EB193D1DE297D1003C1E98 /* TLSSDK.framework */,
+				830BD4931DEC15CB00963447 /* QALSDK.framework */,
+				830BD48D1DEC15B800963447 /* IMCore.framework */,
+				830BD48E1DEC15B800963447 /* ImSDK.framework */,
+				830BD48F1DEC15B800963447 /* TLSSDK.framework */,
 			);
 			path = Tim_IM_2.4.0;
 			sourceTree = "<group>";
@@ -1486,6 +1491,7 @@
 				83B38FD21DE2FA5100D443A7 /* LJSoundManager.m in Sources */,
 				83B38FE31DE2FA5100D443A7 /* LJTextElemCell.m in Sources */,
 				83B38FD61DE2FA5100D443A7 /* NSString+LJFile.m in Sources */,
+				83DC7FEC1DE7D96D0074DDD6 /* LJMessageStateBtn.m in Sources */,
 				83B38FCC1DE2FA5100D443A7 /* LJChatCell.m in Sources */,
 				83EB1B051DE29D87003C1E98 /* GJGCChatInputExpandEmojiPanelMenuBarDataSource.m in Sources */,
 				83B38FCD1DE2FA5100D443A7 /* LJIMConfigFile.m in Sources */,

@@ -20,9 +20,20 @@ NS_ASSUME_NONNULL_BEGIN
 @required
 
 /**
+ *  消息发送中
+ */
+- (void)messagesModel:(LJMessagesModel *)messagesModel sendRunningRowAtIndex:(NSUInteger)index;
+
+/**
  *  消息发送完成
  */
 - (void)messagesModel:(LJMessagesModel *)messagesModel didSendFinishRowAtIndex:(NSUInteger)index;
+
+/**
+ *  消息发送失败
+ */
+
+- (void)messagesModel:(LJMessagesModel *)messagesModel didSendFailRowAtIndex:(NSUInteger)index;
 
 /**
  *  完成接受消息

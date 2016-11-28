@@ -10,8 +10,6 @@
 #import "LJShowImageController.h"
 #import "LJMapController.h"
 
-#import "LJElemCellHeader.h"
-
 @interface LJMessageController ()<LJElemCellDelegate, UITableViewDelegate, UITableViewDataSource>
 
 
@@ -49,8 +47,7 @@
                   @"senderLocationElemCell",@"receiverLocationElemCell",
                   @"senderVideoElemCell"   ,@"receiverVideoElemCell"];
     });
-    BOOL isSelf = message.isSelf;
-    NSInteger num = isSelf?0:1;
+    NSInteger num = message.isSelf ? 0 : 1;
     if ([elem isKindOfClass:[TIMTextElem class]]) {
         num += 0;
     } else if ([elem isKindOfClass:[TIMImageElem class]]) {
@@ -68,7 +65,6 @@
     LJElemCell *cell = [tableView dequeueReusableCellWithIdentifier:identifier
                                                            forIndexPath:indexPath];
     cell.delegate = self;
-    cell.isSelfBubble = isSelf;
     cell.message = message;
     
     return cell;

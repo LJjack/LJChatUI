@@ -277,15 +277,19 @@
 - (void)sendMessage:(TIMMessage*)message {
     [self.messages addObject:message];
     
-    if ([self.delegate respondsToSelector:@selector(messagesModel:didSendFinishRowAtIndex:)]) {
-        [self.delegate messagesModel:self didSendFinishRowAtIndex:self.messages.count - 1];
+    if ([self.delegate respondsToSelector:@selector(messagesModel:sendRunningRowAtIndex:)]) {
+        [self.delegate messagesModel:self sendRunningRowAtIndex:self.messages.count - 1];
     }
     
     [self.chatingConversation sendMessage:message succ:^{
-        
+        if ([self.delegate respondsToSelector:@selector(messagesModel:didSendFinishRowAtIndex:)]) {
+            [self.delegate messagesModel:self didSendFinishRowAtIndex:self.messages.count - 1];
+        }
         NSLog(@"发送 成功");
     } fail:^(int code, NSString *msg) {
-        
+        if ([self.delegate respondsToSelector:@selector(messagesModel:didSendFailRowAtIndex:)]) {
+            [self.delegate messagesModel:self didSendFailRowAtIndex:self.messages.count - 1];
+        }
         NSLog(@"发送 失败 msg = %@",msg);
         
     }];

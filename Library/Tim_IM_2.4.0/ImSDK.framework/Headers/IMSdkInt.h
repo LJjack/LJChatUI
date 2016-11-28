@@ -85,7 +85,7 @@
 -(int)requestMultiVideoInfo:(NSData*)reqbody okBlock:(OMCommandSucc)succ errBlock:(OMErr)err;
 
 /**
- *  音频测速请求
+ *  音频测速请求，默认填写bussType=7，authType=6
  *
  *  @param bussType 业务类型
  *  @param authType 鉴权类型
@@ -97,7 +97,7 @@
 - (int)requestMeasureSpeedWith:(short)bussType authType:(short)authType succ:(OMCommandSucc)succ fail:(OMErr)fail;
 
 /**
- *  音频测速结果上报
+ *  音频测速结果上报，默认填写bussType=7，authType=6
  *
  *  @param resp requestMeasureSpeedWith:authType:succ:fail 成功时返回的响应中序列化出来的对像
  *  @param bussType 鉴权类型(同requestMeasureSpeedWith:authType:succ:fail 中的 bussType)

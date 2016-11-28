@@ -88,9 +88,7 @@
                 weakSelf.inputPanel.gjcf_top = weakSelf.tableView.gjcf_bottom;
             }
         }];
-        
-        [weakSelf.tableView scrollRectToVisible:CGRectMake(0, weakSelf.tableView.contentSize.height - weakSelf.tableView.bounds.size.height, weakSelf.tableView.gjcf_width, weakSelf.tableView.gjcf_height) animated:NO];
-        
+        [weakSelf scrollToBottomAnimated:NO];
     }];
     
     [self.inputPanel configInputPanelRecordStateChange:^(GJGCChatInputPanel *panel, BOOL isRecording) {
@@ -112,7 +110,7 @@
         [UIView animateWithDuration:0.2 animations:^{
             weakSelf.tableView.gjcf_height = weakSelf.tableView.gjcf_height - changeDelta;
         }];
-        [weakSelf.tableView scrollRectToVisible:CGRectMake(0, weakSelf.tableView.contentSize.height - weakSelf.tableView.bounds.size.height, weakSelf.tableView.gjcf_width, weakSelf.tableView.gjcf_height) animated:NO];
+        [weakSelf scrollToBottomAnimated:NO];
     }];
     
     /* 动作变化 */
@@ -174,8 +172,7 @@
                     self.tableView.gjcf_height = kScreenHeight - self.inputPanel.inputBarHeight - originY;
                     
                 }];
-                
-                [self.tableView scrollRectToVisible:CGRectMake(0, self.tableView.contentSize.height - self.tableView.bounds.size.height, self.tableView.gjcf_width, self.tableView.gjcf_height) animated:NO];
+                [self scrollToBottomAnimated:NO];
             }
         } break;
         case GJGCChatInputBarActionTypeChooseEmoji:
@@ -185,8 +182,7 @@
                     self.inputPanel.gjcf_top = kScreenHeight - self.inputPanel.inputBarHeight - 216 - originY;
                     self.tableView.gjcf_height = kScreenHeight - self.inputPanel.inputBarHeight - 216 - originY;
                 }];
-                
-                [self.tableView scrollRectToVisible:CGRectMake(0, self.tableView.contentSize.height - self.tableView.bounds.size.height, self.tableView.gjcf_width, self.tableView.gjcf_height) animated:NO];
+                [self scrollToBottomAnimated:NO];
             }
         } break;
         default:
@@ -406,8 +402,20 @@
 
 #pragma mark - LJMessagesModelDelegate
 
-- (void)messagesModel:(LJMessagesModel *)messagesModel didSendFinishRowAtIndex:(NSUInteger)index {
+- (void)messagesModel:(LJMessagesModel *)messagesModel sendRunningRowAtIndex:(NSUInteger)index {
     [self finishSendingMessage];
+}
+
+- (void)messagesModel:(LJMessagesModel *)messagesModel didSendFinishRowAtIndex:(NSUInteger)index {
+    NSIndexPath *indexPath = [NSIndexPath indexPathForRow:index inSection:0];
+    LJElemCell *cell = [self.tableView cellForRowAtIndexPath:indexPath];
+    cell.status = TIM_MSG_STATUS_SEND_SUCC;
+}
+
+- (void)messagesModel:(LJMessagesModel *)messagesModel didSendFailRowAtIndex:(NSUInteger)index {
+    NSIndexPath *indexPath = [NSIndexPath indexPathForRow:index inSection:0];
+    LJElemCell *cell = [self.tableView cellForRowAtIndexPath:indexPath];
+    cell.status = TIM_MSG_STATUS_SEND_FAIL;
 }
 
 - (void)messagesModel:(LJMessagesModel *)messagesModel didReveiceFinishRowAtIndex:(NSUInteger)index {

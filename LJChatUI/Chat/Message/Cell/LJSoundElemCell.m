@@ -54,14 +54,14 @@
 
 - (void)setElem:(TIMSoundElem *)elem {
     [super setElem:elem];
-    self.secondLabel.text = [NSString stringWithFormat:@"%d",elem.second];
-    [elem getSound:^(NSData *data) {
-        
-        
-    } fail:^(int code, NSString *msg) {
-        
-        NSLog(@"下载音频失败, %@",msg);
-    }];
+    self.secondLabel.text = [NSString stringWithFormat:@"%d\"",elem.second];
+//    [elem getSound:^(NSData *data) {
+//        
+//        
+//    } fail:^(int code, NSString *msg) {
+//        
+//        NSLog(@"下载音频失败, %@",msg);
+//    }];
 }
 
 

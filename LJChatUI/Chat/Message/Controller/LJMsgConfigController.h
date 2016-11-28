@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "LJMessagesModel.h"
+#import "LJElemCellHeader.h"
 
 @interface LJMsgConfigController : UIViewController
 
