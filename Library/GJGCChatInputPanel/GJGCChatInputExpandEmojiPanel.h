@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-
+IB_DESIGNABLE
 @interface GJGCChatInputExpandEmojiPanel : UIView
 
 @property (nonatomic,strong)NSString *panelIdentifier;

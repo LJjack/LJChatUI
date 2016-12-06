@@ -13,17 +13,17 @@
         <!--Message Controller-->
         <scene sceneID="ivC-FE-fQS">
             <objects>
-                <viewController id="DFX-gF-vlL" customClass="LJMessageController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LJMessageController" id="DFX-gF-vlL" customClass="LJMessageController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="8ua-Pt-rcp"/>
                         <viewControllerLayoutGuide type="bottom" id="XjN-1q-Gyp"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="VS4-mV-MF4">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="1400"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="1600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="60" sectionHeaderHeight="1" sectionFooterHeight="1" translatesAutoresizingMaskIntoConstraints="NO" id="pPL-ZQ-FAO">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="1350"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="1333"/>
                                 <color key="backgroundColor" red="0.92156862750000001" green="0.92156862750000001" blue="0.92156862750000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="receiverTextElemCell" rowHeight="49" id="per-vk-3l9" customClass="LJTextElemCell">
@@ -591,24 +591,103 @@
                                     <outlet property="delegate" destination="DFX-gF-vlL" id="J3k-v9-A5F"/>
                                 </connections>
                             </tableView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xoj-gf-N5r" customClass="LJInputPanelView">
+                                <rect key="frame" x="0.0" y="1333" width="375" height="267"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="K2I-NX-O75">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Dd-b1-ZJ4">
+                                                <rect key="frame" x="8" y="8" width="35" height="35"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="35" id="TU7-Ur-lyB"/>
+                                                    <constraint firstAttribute="height" constant="35" id="uOx-Yf-Knd"/>
+                                                </constraints>
+                                                <state key="normal" image="ToolViewInputVoice"/>
+                                            </button>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Lt non proident," textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Tph-79-8Vl" customClass="LJInputTextView">
+                                                <rect key="frame" x="51" y="8" width="230" height="35"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="35" id="wN9-2I-YeR"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="addBorder" value="YES"/>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                        <real key="value" value="0.5"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="3"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                        <color key="value" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </textView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7uV-6N-YJc">
+                                                <rect key="frame" x="289" y="8" width="35" height="35"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="35" id="9Ue-ZD-PMG"/>
+                                                    <constraint firstAttribute="width" constant="35" id="K61-dq-EAH"/>
+                                                </constraints>
+                                                <state key="normal" image="ToolViewEmotion"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Oxm-qM-DAK">
+                                                <rect key="frame" x="332" y="8" width="35" height="35"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="35" id="05x-4J-l2n"/>
+                                                    <constraint firstAttribute="height" constant="35" id="Akk-qh-Jzb"/>
+                                                </constraints>
+                                                <state key="normal" image="ToolViewMedia"/>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="Tph-79-8Vl" secondAttribute="bottom" constant="7.5" id="5cs-e8-rIp"/>
+                                            <constraint firstItem="7uV-6N-YJc" firstAttribute="leading" secondItem="Tph-79-8Vl" secondAttribute="trailing" constant="8" id="7YQ-xR-kSy"/>
+                                            <constraint firstItem="7Dd-b1-ZJ4" firstAttribute="centerY" secondItem="K2I-NX-O75" secondAttribute="centerY" id="AbK-I0-KfC"/>
+                                            <constraint firstItem="Oxm-qM-DAK" firstAttribute="leading" secondItem="7uV-6N-YJc" secondAttribute="trailing" constant="8" id="FcR-ZG-zSs"/>
+                                            <constraint firstItem="7Dd-b1-ZJ4" firstAttribute="leading" secondItem="K2I-NX-O75" secondAttribute="leading" constant="8" id="H9X-0L-pbF"/>
+                                            <constraint firstItem="7uV-6N-YJc" firstAttribute="centerY" secondItem="K2I-NX-O75" secondAttribute="centerY" id="JO9-xf-knf"/>
+                                            <constraint firstAttribute="trailing" secondItem="Oxm-qM-DAK" secondAttribute="trailing" constant="8" id="Lzz-Hg-nfI"/>
+                                            <constraint firstAttribute="height" constant="50" id="O3t-8n-Pi1"/>
+                                            <constraint firstItem="Tph-79-8Vl" firstAttribute="leading" secondItem="7Dd-b1-ZJ4" secondAttribute="trailing" constant="8" id="QIf-Jb-5eX"/>
+                                            <constraint firstItem="Oxm-qM-DAK" firstAttribute="centerY" secondItem="K2I-NX-O75" secondAttribute="centerY" id="WMk-cW-VWN"/>
+                                            <constraint firstItem="Tph-79-8Vl" firstAttribute="top" secondItem="K2I-NX-O75" secondAttribute="top" constant="7.5" id="fPh-3X-XaG"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" red="0.95294117647058818" green="0.95294117647058818" blue="0.95294117647058818" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="K2I-NX-O75" secondAttribute="trailing" id="MD7-P1-Ozm"/>
+                                    <constraint firstItem="K2I-NX-O75" firstAttribute="top" secondItem="xoj-gf-N5r" secondAttribute="top" id="bTO-Lf-cbE"/>
+                                    <constraint firstAttribute="height" constant="267" id="iEp-q9-aap"/>
+                                    <constraint firstItem="K2I-NX-O75" firstAttribute="leading" secondItem="xoj-gf-N5r" secondAttribute="leading" id="mGd-5o-BwA"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="XjN-1q-Gyp" firstAttribute="top" secondItem="pPL-ZQ-FAO" secondAttribute="bottom" constant="50" id="KMn-om-nL9"/>
+                            <constraint firstItem="xoj-gf-N5r" firstAttribute="leading" secondItem="VS4-mV-MF4" secondAttribute="leading" id="SBr-Ut-0Wm"/>
+                            <constraint firstItem="xoj-gf-N5r" firstAttribute="top" secondItem="pPL-ZQ-FAO" secondAttribute="bottom" id="TOz-ID-p29"/>
+                            <constraint firstAttribute="trailing" secondItem="xoj-gf-N5r" secondAttribute="trailing" id="Xbq-On-bnO"/>
                             <constraint firstAttribute="trailing" secondItem="pPL-ZQ-FAO" secondAttribute="trailing" id="kjH-NU-lw3"/>
+                            <constraint firstItem="XjN-1q-Gyp" firstAttribute="top" secondItem="xoj-gf-N5r" secondAttribute="bottom" id="lcj-Yf-bev"/>
                             <constraint firstItem="pPL-ZQ-FAO" firstAttribute="top" secondItem="VS4-mV-MF4" secondAttribute="top" id="lls-pZ-CpJ"/>
                             <constraint firstItem="pPL-ZQ-FAO" firstAttribute="leading" secondItem="VS4-mV-MF4" secondAttribute="leading" id="xuP-vI-LIQ"/>
                         </constraints>
                     </view>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-                    <size key="freeformSize" width="375" height="1400"/>
+                    <size key="freeformSize" width="375" height="1600"/>
                     <connections>
                         <outlet property="tableView" destination="pPL-ZQ-FAO" id="dce-MZ-AUP"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jaY-4M-f0r" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1767" y="51"/>
+            <point key="canvasLocation" x="1765.5999999999999" y="50.374812593703155"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="5AP-8n-22g">
@@ -642,7 +721,7 @@
                                 <rect key="frame" x="0.0" y="28" width="375" height="69"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="wjf-br-2NP" id="3Gn-5O-SGu">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="69"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="68"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="message-touxiang" translatesAutoresizingMaskIntoConstraints="NO" id="d3t-es-aOy">
@@ -743,6 +822,9 @@
         <image name="SenderNode" width="58" height="41"/>
         <image name="SenderNodeHL" width="57" height="40"/>
         <image name="SenderVoiceNodePlaying" width="12" height="17"/>
+        <image name="ToolViewEmotion" width="35" height="35"/>
+        <image name="ToolViewInputVoice" width="35" height="35"/>
+        <image name="ToolViewMedia" width="35" height="35"/>
         <image name="goldengate" width="320" height="180"/>
         <image name="location" width="161" height="109"/>
         <image name="message-touxiang" width="46" height="46"/>

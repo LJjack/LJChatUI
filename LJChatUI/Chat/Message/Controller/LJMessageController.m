@@ -13,6 +13,7 @@
 @interface LJMessageController ()<LJElemCellDelegate, UITableViewDelegate, UITableViewDataSource>
 
 
+
 @end
 
 @implementation LJMessageController

@@ -88,7 +88,9 @@
                 weakSelf.inputPanel.gjcf_top = weakSelf.tableView.gjcf_bottom;
             }
         }];
-        [weakSelf scrollToBottomAnimated:NO];
+        
+        [weakSelf.tableView scrollRectToVisible:CGRectMake(0, weakSelf.tableView.contentSize.height - weakSelf.tableView.bounds.size.height, weakSelf.tableView.gjcf_width, weakSelf.tableView.gjcf_height) animated:NO];
+//        [weakSelf scrollToBottomAnimated:NO];
     }];
     
     [self.inputPanel configInputPanelRecordStateChange:^(GJGCChatInputPanel *panel, BOOL isRecording) {
@@ -110,7 +112,8 @@
         [UIView animateWithDuration:0.2 animations:^{
             weakSelf.tableView.gjcf_height = weakSelf.tableView.gjcf_height - changeDelta;
         }];
-        [weakSelf scrollToBottomAnimated:NO];
+        [weakSelf.tableView scrollRectToVisible:CGRectMake(0, weakSelf.tableView.contentSize.height - weakSelf.tableView.bounds.size.height, weakSelf.tableView.gjcf_width, weakSelf.tableView.gjcf_height) animated:NO];
+//        [weakSelf scrollToBottomAnimated:NO];
     }];
     
     /* 动作变化 */
@@ -172,7 +175,9 @@
                     self.tableView.gjcf_height = kScreenHeight - self.inputPanel.inputBarHeight - originY;
                     
                 }];
-                [self scrollToBottomAnimated:NO];
+                
+                [self.tableView scrollRectToVisible:CGRectMake(0, self.tableView.contentSize.height - self.tableView.bounds.size.height, self.tableView.gjcf_width, self.tableView.gjcf_height) animated:NO];
+//                [self scrollToBottomAnimated:NO];
             }
         } break;
         case GJGCChatInputBarActionTypeChooseEmoji:
@@ -182,7 +187,9 @@
                     self.inputPanel.gjcf_top = kScreenHeight - self.inputPanel.inputBarHeight - 216 - originY;
                     self.tableView.gjcf_height = kScreenHeight - self.inputPanel.inputBarHeight - 216 - originY;
                 }];
-                [self scrollToBottomAnimated:NO];
+                
+                [self.tableView scrollRectToVisible:CGRectMake(0, self.tableView.contentSize.height - self.tableView.bounds.size.height, self.tableView.gjcf_width, self.tableView.gjcf_height) animated:NO];
+//                [self scrollToBottomAnimated:NO];
             }
         } break;
         default:

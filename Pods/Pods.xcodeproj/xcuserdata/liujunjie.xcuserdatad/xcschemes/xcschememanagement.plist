@@ -14,6 +14,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>Masonry.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-LJChatUI.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -32,7 +37,17 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>538774B32AB415FF8970675202758E99</key>
+		<key>39309878E7F58DFDE62933BB5D9E923A</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>53480ED0BE09FF49E34B1702D485CAAB</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>909982E4399552F8A565C80528D900A9</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -47,12 +62,7 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>DD86496546E337CCD5C8FFAEFBBAD3DB</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>F88C4D5CC6F80519E73E22A7BCF72285</key>
+		<key>E69262AABB2AB72B4C0189AB34C1323B</key>
 		<dict>
 			<key>primary</key>
 			<true/>
